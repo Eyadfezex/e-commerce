@@ -1,0 +1,25 @@
+{
+  "targetDefaults": {
+    "test": {
+      "dependsOn": []
+    },
+    "start": {
+      "dependsOn": []
+    },
+    "dev": {
+      "dependsOn": []
+    },
+    "build": {
+      "dependsOn": []
+    },
+    "lint": {
+      "dependsOn": []
+    },
+    "storybook": {
+      "dependsOn": []
+    },
+    "build-storybook": {
+      "dependsOn": []
+    }
+  }
+}
