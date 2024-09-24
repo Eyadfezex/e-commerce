@@ -18,11 +18,7 @@ const addToCart = catchAsync(async (req, res, next) => {
     if (productInCart) {
       productInCart.quantity += quantity;
       await cart.save();
-      return res.status(200).json({
-        status: "success",
-        message: "Product added to cart",
-        data: cart,
-      });
+      return res.status(200).json({ message: "Product added to cart" });
     } else {
       cart.products.push({ productId, quantity });
       await cart.save();
