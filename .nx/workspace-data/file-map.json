@@ -9,36 +9,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
+        "file": "nx.json",
+        "hash": "10146023197190099756"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
+        "file": "pnpm-lock.yaml",
+        "hash": "6122930717960960926"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
+      },
+      {
         "file": "package.json",
         "hash": "12440314922548810535"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "6122930717960960926"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       }
     ],
     "projectFileMap": {
@@ -190,7 +190,7 @@
         },
         {
           "file": "packages/backend/controllers/cartControllers.js",
-          "hash": "12781005297761417895"
+          "hash": "16668809165764197113"
         },
         {
           "file": "packages/backend/controllers/errorControllers.js",
