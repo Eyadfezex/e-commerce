@@ -2560,13 +2560,22 @@
         "hash": "sha512-CHp/3XSB/AWyoP9b2tNaaKNTyftLPIPWqMhqhH1V5irjXhLDpBBEkmgbvB19xJ4qCfDjjOjokSLmSBaVOnzv2g=="
       }
     },
-    "npm:@storybook/addon-measure": {
+    "npm:@storybook/addon-measure@8.3.2": {
       "type": "npm",
-      "name": "npm:@storybook/addon-measure",
+      "name": "npm:@storybook/addon-measure@8.3.2",
       "data": {
         "version": "8.3.2",
         "packageName": "@storybook/addon-measure",
         "hash": "sha512-5RPF2oEw5XnTmz2cvjqz2WGnqOrJ1NxXIuJc6QeO6EXQqqjPnj/9rV/MBmzMd9cjk8Ud8c4AA5+jJbl4IgcwhQ=="
+      }
+    },
+    "npm:@storybook/addon-measure@8.3.3": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-measure@8.3.3",
+      "data": {
+        "version": "8.3.3",
+        "packageName": "@storybook/addon-measure",
+        "hash": "sha512-R20Z83gnxDRrocES344dw1Of/zDhe3XHSM6TLq80UQTJ9PhnMI+wYHQlK9DsdP3KiRkI+pQA6GCOp0s2ZRy5dg=="
       }
     },
     "npm:@storybook/addon-onboarding": {
@@ -2587,6 +2596,15 @@
         "hash": "sha512-VxUYCHPCZQDwnj/9U4d6QLsfGi9wHGO0hOENjC5ZCwzMNCq6t7XNRToSsq4zUPucH5XKaQW2vyTdbNdUQiki4Q=="
       }
     },
+    "npm:@storybook/addon-storysource": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-storysource",
+      "data": {
+        "version": "8.3.3",
+        "packageName": "@storybook/addon-storysource",
+        "hash": "sha512-yPYQH9NepSNxoSsV9E7OV3/EVFrbU/r2B3E5WP/mCfqTXPg/5noce7iRi+rWqcVM1tsN1qPnSjfQQc7noF0h0Q=="
+      }
+    },
     "npm:@storybook/addon-toolbars": {
       "type": "npm",
       "name": "npm:@storybook/addon-toolbars",
@@ -2596,13 +2614,22 @@
         "hash": "sha512-y3mokzvoeEE1ga96c8KX7anb9fU5wRGWZBsX7cQkm5ebXHsXjH2Y0pcdFnw6UxFbPMjh70LlZF9UhXnz7UC7Hw=="
       }
     },
-    "npm:@storybook/addon-viewport": {
+    "npm:@storybook/addon-viewport@8.3.2": {
       "type": "npm",
-      "name": "npm:@storybook/addon-viewport",
+      "name": "npm:@storybook/addon-viewport@8.3.2",
       "data": {
         "version": "8.3.2",
         "packageName": "@storybook/addon-viewport",
         "hash": "sha512-AyXpQ2ntpRoNfOWPnaUX4CTWSj163ncgzcoUyBRWL/yiu/PcMK4tlQ141mWwoamAcXEVDK40Q0vWmRwZ06C2gw=="
+      }
+    },
+    "npm:@storybook/addon-viewport@8.3.3": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-viewport@8.3.3",
+      "data": {
+        "version": "8.3.3",
+        "packageName": "@storybook/addon-viewport",
+        "hash": "sha512-2S+UpbKAL+z1ppzUCkixjaem2UDMkfmm/kyJ1wm3A/ofGLYi4fjMSKNRckk+7NdolXGQJjBo0RcaotUTxFIFwQ=="
       }
     },
     "npm:@storybook/blocks": {
@@ -2765,6 +2792,15 @@
         "version": "8.3.2",
         "packageName": "@storybook/react",
         "hash": "sha512-GvnqhxvaYC6s8WMiDWr184UlNp5jmRVNMBHasXlUsVDYvs6J1tStJeN+XBZbAJBW/0zkHLuf4REk8lLBi2eKRQ=="
+      }
+    },
+    "npm:@storybook/source-loader": {
+      "type": "npm",
+      "name": "npm:@storybook/source-loader",
+      "data": {
+        "version": "8.3.3",
+        "packageName": "@storybook/source-loader",
+        "hash": "sha512-NeP7l53mvnnfwi+91vtRaibZer+UJi6gkoaGRCpphL3L+3qVIXN3p41uXhAy+TahdFI2dbrWvLSNgtsvdXVaFg=="
       }
     },
     "npm:@storybook/test": {
@@ -13389,6 +13425,21 @@
       },
       {
         "source": "client",
+        "target": "npm:@storybook/addon-measure@8.3.3",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@storybook/addon-storysource",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@storybook/addon-viewport@8.3.3",
+        "type": "static"
+      },
+      {
+        "source": "client",
         "target": "npm:next",
         "type": "static"
       },
@@ -17434,7 +17485,7 @@
       },
       {
         "source": "npm:@storybook/addon-essentials",
-        "target": "npm:@storybook/addon-measure",
+        "target": "npm:@storybook/addon-measure@8.3.2",
         "type": "static"
       },
       {
@@ -17449,7 +17500,7 @@
       },
       {
         "source": "npm:@storybook/addon-essentials",
-        "target": "npm:@storybook/addon-viewport",
+        "target": "npm:@storybook/addon-viewport@8.3.2",
         "type": "static"
       },
       {
@@ -17534,19 +17585,36 @@
         "type": "static"
       }
     ],
-    "npm:@storybook/addon-measure": [
+    "npm:@storybook/addon-measure@8.3.2": [
       {
-        "source": "npm:@storybook/addon-measure",
+        "source": "npm:@storybook/addon-measure@8.3.2",
         "target": "npm:@storybook/global",
         "type": "static"
       },
       {
-        "source": "npm:@storybook/addon-measure",
+        "source": "npm:@storybook/addon-measure@8.3.2",
         "target": "npm:storybook",
         "type": "static"
       },
       {
-        "source": "npm:@storybook/addon-measure",
+        "source": "npm:@storybook/addon-measure@8.3.2",
+        "target": "npm:tiny-invariant",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/addon-measure@8.3.3": [
+      {
+        "source": "npm:@storybook/addon-measure@8.3.3",
+        "target": "npm:@storybook/global",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-measure@8.3.3",
+        "target": "npm:storybook",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-measure@8.3.3",
         "target": "npm:tiny-invariant",
         "type": "static"
       }
@@ -17580,6 +17648,28 @@
         "type": "static"
       }
     ],
+    "npm:@storybook/addon-storysource": [
+      {
+        "source": "npm:@storybook/addon-storysource",
+        "target": "npm:@storybook/source-loader",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-storysource",
+        "target": "npm:estraverse@5.3.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-storysource",
+        "target": "npm:storybook",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-storysource",
+        "target": "npm:tiny-invariant",
+        "type": "static"
+      }
+    ],
     "npm:@storybook/addon-toolbars": [
       {
         "source": "npm:@storybook/addon-toolbars",
@@ -17587,14 +17677,26 @@
         "type": "static"
       }
     ],
-    "npm:@storybook/addon-viewport": [
+    "npm:@storybook/addon-viewport@8.3.2": [
       {
-        "source": "npm:@storybook/addon-viewport",
+        "source": "npm:@storybook/addon-viewport@8.3.2",
         "target": "npm:memoizerific",
         "type": "static"
       },
       {
-        "source": "npm:@storybook/addon-viewport",
+        "source": "npm:@storybook/addon-viewport@8.3.2",
+        "target": "npm:storybook",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/addon-viewport@8.3.3": [
+      {
+        "source": "npm:@storybook/addon-viewport@8.3.3",
+        "target": "npm:memoizerific",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-viewport@8.3.3",
         "target": "npm:storybook",
         "type": "static"
       }
@@ -18505,6 +18607,33 @@
       {
         "source": "npm:@storybook/react",
         "target": "npm:typescript",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/source-loader": [
+      {
+        "source": "npm:@storybook/source-loader",
+        "target": "npm:@storybook/csf@0.1.11",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/source-loader",
+        "target": "npm:estraverse@5.3.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/source-loader",
+        "target": "npm:lodash",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/source-loader",
+        "target": "npm:prettier",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/source-loader",
+        "target": "npm:storybook",
         "type": "static"
       }
     ],

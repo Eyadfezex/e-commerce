@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "dev_server": "lerna run start --scope=backend",
-    "dev_client": "lerna run dev --scope=client"
+    "dev_client": "lerna run dev --scope=client",
+    "dev_story": "lerna run storybook --scope=client"
   }
 }
