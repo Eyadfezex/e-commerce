@@ -25,3 +25,36 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("./fonts/Satoshi-Regular.otf") format("otf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("./fonts/Satoshi-Medium.otf") format("otf");
+
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("./fonts/Satoshi-Bold.otf") format("otf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IntegralCF-Bold";
+  src: url("./fonts/Fontspring-DEMO-integralcf-bold.otf") format("otf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

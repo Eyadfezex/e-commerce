@@ -12,6 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        satoshi: ["Satoshi-Regular", "sans-serif"],
+        satoshi_M: ["Satoshi-Medium", "sans-serif"],
+        satoshi_B: ["Satoshi-Bold", "sans-serif"],
+        IntegralCF_B: ["IntegralCF-Bold", "sans-serif"],
+      },
     },
   },
   plugins: [],
