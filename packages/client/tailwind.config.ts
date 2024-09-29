@@ -13,10 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        satoshi: ["Satoshi-Regular", "sans-serif"],
-        satoshi_M: ["Satoshi-Medium", "sans-serif"],
-        satoshi_B: ["Satoshi-Bold", "sans-serif"],
-        IntegralCF_B: ["IntegralCF-Bold", "sans-serif"],
+        sans: ["Satoshi-Regular", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
       },
     },
   },

@@ -4,6 +4,8 @@ import {
   MINIMAL_VIEWPORTS,
 } from "@storybook/addon-viewport";
 
+import "../app/globals.css";
+
 const preview: Preview = {
   parameters: {
     controls: {
