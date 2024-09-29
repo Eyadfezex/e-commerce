@@ -6984,6 +6984,15 @@
         "hash": "sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag=="
       }
     },
+    "npm:hamburger-react": {
+      "type": "npm",
+      "name": "npm:hamburger-react",
+      "data": {
+        "version": "2.5.1",
+        "packageName": "hamburger-react",
+        "hash": "sha512-XlTIinYeYzLu76q4Vd9olwOJP0hFgAeZfJFX6tTT/ufTLhmOjI77CGFYIwGc6gcDeeT86660ZoKx3/L67vdZEw=="
+      }
+    },
     "npm:handlebars": {
       "type": "npm",
       "name": "npm:handlebars",
@@ -23047,6 +23056,11 @@
     {
       "source": "npm:gopd",
       "target": "npm:get-intrinsic",
+      "type": "static"
+    },
+    {
+      "source": "npm:hamburger-react",
+      "target": "npm:react",
       "type": "static"
     },
     {

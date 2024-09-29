@@ -9,24 +9,16 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "6122930717960960926"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": "package.json",
-        "hash": "12440314922548810535"
+        "file": "nx.json",
+        "hash": "10146023197190099756"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -37,8 +29,16 @@
         "hash": "8265667529379852321"
       },
       {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
+        "file": "package.json",
+        "hash": "12440314922548810535"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "9987464925804764357"
       }
     ],
     "projectFileMap": {
@@ -57,7 +57,7 @@
         },
         {
           "file": "packages/client/.storybook/preview.ts",
-          "hash": "4683904418567341529"
+          "hash": "18365219240716471590"
         },
         {
           "file": "packages/client/README.md",
@@ -68,16 +68,60 @@
           "hash": "9157999678830540297"
         },
         {
-          "file": "packages/client/app/fonts/GeistMonoVF.woff",
-          "hash": "17799230542345324615"
+          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
+          "hash": "10648935345635237157"
         },
         {
-          "file": "packages/client/app/fonts/GeistVF.woff",
-          "hash": "6578897518916770501"
+          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
+          "hash": "9515624319395975955"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
+          "hash": "15220361477244295055"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
+          "hash": "14182897448607956662"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
+          "hash": "3977039100317460061"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
+          "hash": "345143232118275278"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
+          "hash": "4280300880547919822"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
+          "hash": "6538674733602554051"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
+          "hash": "14524909222801850226"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
+          "hash": "1386078019167196222"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
+          "hash": "996530835745513683"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
+          "hash": "4658125103796669334"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
+          "hash": "8772877621724132239"
         },
         {
           "file": "packages/client/app/globals.css",
-          "hash": "14281198697001825807"
+          "hash": "2227184248507689446"
         },
         {
           "file": "packages/client/app/layout.tsx",
@@ -92,12 +136,16 @@
           "hash": "9064107291103111533"
         },
         {
+          "file": "packages/client/components/navBar/NavBar.tsx",
+          "hash": "17852920772173121937"
+        },
+        {
           "file": "packages/client/next.config.mjs",
           "hash": "3099306030354460128"
         },
         {
           "file": "packages/client/package.json",
-          "hash": "12064472283978914092",
+          "hash": "482366263723737067",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -121,6 +169,7 @@
             "npm:@storybook/addon-measure@8.3.3",
             "npm:@storybook/addon-storysource",
             "npm:@storybook/addon-viewport@8.3.3",
+            "npm:hamburger-react",
             "npm:next",
             "npm:react",
             "npm:react-dom"
@@ -131,44 +180,12 @@
           "hash": "17882505348629598648"
         },
         {
-          "file": "packages/client/stories/Button.stories.ts",
-          "hash": "7999878786431116536"
-        },
-        {
-          "file": "packages/client/stories/Button.tsx",
-          "hash": "5503941017439815503"
-        },
-        {
-          "file": "packages/client/stories/Header.stories.ts",
-          "hash": "2380440441481320103"
-        },
-        {
-          "file": "packages/client/stories/Header.tsx",
-          "hash": "14095109716619670359"
-        },
-        {
-          "file": "packages/client/stories/Page.stories.ts",
-          "hash": "720513626188748551"
-        },
-        {
-          "file": "packages/client/stories/Page.tsx",
-          "hash": "16597526023869900701"
-        },
-        {
-          "file": "packages/client/stories/button.css",
-          "hash": "1162494160190532166"
-        },
-        {
-          "file": "packages/client/stories/header.css",
-          "hash": "7316568374726987284"
-        },
-        {
-          "file": "packages/client/stories/page.css",
-          "hash": "7781708917412170280"
+          "file": "packages/client/stories/NavBar.stories.ts",
+          "hash": "493546717408264518"
         },
         {
           "file": "packages/client/tailwind.config.ts",
-          "hash": "1224321569704827708"
+          "hash": "4379770607621329311"
         },
         {
           "file": "packages/client/tsconfig.json",
