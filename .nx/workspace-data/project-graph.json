@@ -1543,6 +1543,51 @@
         "hash": "sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q=="
       }
     },
+    "npm:@formatjs/ecma402-abstract": {
+      "type": "npm",
+      "name": "npm:@formatjs/ecma402-abstract",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "@formatjs/ecma402-abstract",
+        "hash": "sha512-rRqXOqdFmk7RYvj4khklyqzcfQl9vEL/usogncBHRZfZBDOwMGuSRNFl02fu5KGHXdbinju+YXyuR+Nk8xlr/g=="
+      }
+    },
+    "npm:@formatjs/fast-memoize": {
+      "type": "npm",
+      "name": "npm:@formatjs/fast-memoize",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "@formatjs/fast-memoize",
+        "hash": "sha512-hnk/nY8FyrL5YxwP9e4r9dqeM6cAbo8PeU9UjyXojZMNvVad2Z06FAVHyR3Ecw6fza+0GH7vdJgiKIVXTMbSBA=="
+      }
+    },
+    "npm:@formatjs/icu-messageformat-parser": {
+      "type": "npm",
+      "name": "npm:@formatjs/icu-messageformat-parser",
+      "data": {
+        "version": "2.7.8",
+        "packageName": "@formatjs/icu-messageformat-parser",
+        "hash": "sha512-nBZJYmhpcSX0WeJ5SDYUkZ42AgR3xiyhNCsQweFx3cz/ULJjym8bHAzWKvG5e2+1XO98dBYC0fWeeAECAVSwLA=="
+      }
+    },
+    "npm:@formatjs/icu-skeleton-parser": {
+      "type": "npm",
+      "name": "npm:@formatjs/icu-skeleton-parser",
+      "data": {
+        "version": "1.8.2",
+        "packageName": "@formatjs/icu-skeleton-parser",
+        "hash": "sha512-k4ERKgw7aKGWJZgTarIcNEmvyTVD9FYh0mTrrBMHZ1b8hUu6iOJ4SzsZlo3UNAvHYa+PnvntIwRPt1/vy4nA9Q=="
+      }
+    },
+    "npm:@formatjs/intl-localematcher": {
+      "type": "npm",
+      "name": "npm:@formatjs/intl-localematcher",
+      "data": {
+        "version": "0.5.4",
+        "packageName": "@formatjs/intl-localematcher",
+        "hash": "sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g=="
+      }
+    },
     "npm:@humanwhocodes/config-array": {
       "type": "npm",
       "name": "npm:@humanwhocodes/config-array",
@@ -1748,6 +1793,42 @@
         "version": "0.33.5",
         "packageName": "@img/sharp-win32-x64",
         "hash": "sha512-MpY/o8/8kj+EcnxwvrP4aTJSWw/aZ7JIGR4aBeZkZw5B7/Jn+tY9/VNwtcoGmdT7GfggGIU4kygOMSbYnOrAbg=="
+      }
+    },
+    "npm:@internationalized/date": {
+      "type": "npm",
+      "name": "npm:@internationalized/date",
+      "data": {
+        "version": "3.5.5",
+        "packageName": "@internationalized/date",
+        "hash": "sha512-H+CfYvOZ0LTJeeLOqm19E3uj/4YjrmOFtBufDHPfvtI80hFAMqtrp7oCACpe4Cil5l8S0Qu/9dYfZc/5lY8WQQ=="
+      }
+    },
+    "npm:@internationalized/message": {
+      "type": "npm",
+      "name": "npm:@internationalized/message",
+      "data": {
+        "version": "3.1.4",
+        "packageName": "@internationalized/message",
+        "hash": "sha512-Dygi9hH1s7V9nha07pggCkvmRfDd3q2lWnMGvrJyrOwYMe1yj4D2T9BoH9I6MGR7xz0biQrtLPsqUkqXzIrBOw=="
+      }
+    },
+    "npm:@internationalized/number": {
+      "type": "npm",
+      "name": "npm:@internationalized/number",
+      "data": {
+        "version": "3.5.3",
+        "packageName": "@internationalized/number",
+        "hash": "sha512-rd1wA3ebzlp0Mehj5YTuTI50AQEx80gWFyHcQu+u91/5NgdwBecO8BH6ipPfE+lmQ9d63vpB3H9SHoIUiupllw=="
+      }
+    },
+    "npm:@internationalized/string": {
+      "type": "npm",
+      "name": "npm:@internationalized/string",
+      "data": {
+        "version": "3.2.3",
+        "packageName": "@internationalized/string",
+        "hash": "sha512-9kpfLoA8HegiWTeCbR2livhdVeKobCnVv8tlJ6M2jF+4tcMqDo94ezwlnrUANBWPgd8U7OXIHCk2Ov2qhk4KXw=="
       }
     },
     "npm:@isaacs/cliui": {
@@ -1964,6 +2045,186 @@
         "version": "14.2.13",
         "packageName": "@next/swc-win32-x64-msvc",
         "hash": "sha512-WwzOEAFBGhlDHE5Z73mNU8CO8mqMNLqaG+AO9ETmzdCQlJhVtWZnOl2+rqgVQS+YHunjOWptdFmNfbpwcUuEsw=="
+      }
+    },
+    "npm:@nextui-org/aria-utils": {
+      "type": "npm",
+      "name": "npm:@nextui-org/aria-utils",
+      "data": {
+        "version": "2.0.26",
+        "packageName": "@nextui-org/aria-utils",
+        "hash": "sha512-e81HxkNI3/HCPPJT9OVK0g0ivTkuqeeQ043WlAxvgf+upFTEvNN5vmsSKBfWGgfZpsVHgNyHIzwbHjy9zKePLQ=="
+      }
+    },
+    "npm:@nextui-org/button": {
+      "type": "npm",
+      "name": "npm:@nextui-org/button",
+      "data": {
+        "version": "2.0.38",
+        "packageName": "@nextui-org/button",
+        "hash": "sha512-XbgyqBv+X7QirXeriGwkqkMOENpAxXRo+jzfMyBMvfsM3kwrFj92OSF1F7/dWDvcW7imVZB9o2Ci7LIppq9ZZQ=="
+      }
+    },
+    "npm:@nextui-org/divider": {
+      "type": "npm",
+      "name": "npm:@nextui-org/divider",
+      "data": {
+        "version": "2.0.32",
+        "packageName": "@nextui-org/divider",
+        "hash": "sha512-2B2j3VmvVDFnMc9Uw7UWMkByA+osgnRmVwMZNZjl9g3oCycz3UDXotNJXjgsLocT8tGO8UwMcrdgo7QBZl52uw=="
+      }
+    },
+    "npm:@nextui-org/dropdown": {
+      "type": "npm",
+      "name": "npm:@nextui-org/dropdown",
+      "data": {
+        "version": "2.1.31",
+        "packageName": "@nextui-org/dropdown",
+        "hash": "sha512-tP6c5MAhWK4hJ6U02oX6APUpjjrn97Zn7t+56Xx4YyQOSj0CJx18VF0JsU+MrjFZxPX3UBKU3B2zGBHOEGE4Kw=="
+      }
+    },
+    "npm:@nextui-org/framer-utils": {
+      "type": "npm",
+      "name": "npm:@nextui-org/framer-utils",
+      "data": {
+        "version": "2.0.25",
+        "packageName": "@nextui-org/framer-utils",
+        "hash": "sha512-bhQKDg4c5Da4II4UYLKyvYagusTd62eVwPqpfUP+GHZKKZcmRaS6MQZTh4xJYbpyh298S4jRSH/AUAiN/OK3TQ=="
+      }
+    },
+    "npm:@nextui-org/menu": {
+      "type": "npm",
+      "name": "npm:@nextui-org/menu",
+      "data": {
+        "version": "2.0.30",
+        "packageName": "@nextui-org/menu",
+        "hash": "sha512-hZRr/EQ5JxB6yQFmUhDSv9pyLTJmaB4SFC/t5A17UljRhMexlvTU6QpalYIkbY0R/bUXvOkTJNzsRgI5OOQ/aA=="
+      }
+    },
+    "npm:@nextui-org/popover": {
+      "type": "npm",
+      "name": "npm:@nextui-org/popover",
+      "data": {
+        "version": "2.1.29",
+        "packageName": "@nextui-org/popover",
+        "hash": "sha512-qGjMnAQVHQNfG571h9Tah2MXPs5mhxcTIj4TuBgwPzQTWXjjeffaHV3FlHdg5PxjTpNZOdDfrg0eRhDqIjKocQ=="
+      }
+    },
+    "npm:@nextui-org/react-rsc-utils": {
+      "type": "npm",
+      "name": "npm:@nextui-org/react-rsc-utils",
+      "data": {
+        "version": "2.0.14",
+        "packageName": "@nextui-org/react-rsc-utils",
+        "hash": "sha512-s0GVgDhScyx+d9FtXd8BXf049REyaPvWsO4RRr7JDHrk91NlQ11Mqxka9o+8g5NX0rphI0rbe3/b1Dz+iQRx3w=="
+      }
+    },
+    "npm:@nextui-org/react-utils": {
+      "type": "npm",
+      "name": "npm:@nextui-org/react-utils",
+      "data": {
+        "version": "2.0.17",
+        "packageName": "@nextui-org/react-utils",
+        "hash": "sha512-U/b49hToVfhOM4dg4n57ZyUjLpts4JogQ139lfQBYPTb8z/ATNsJ3vLIqW5ZvDK6L0Er+JT11UVQ+03m7QMvaQ=="
+      }
+    },
+    "npm:@nextui-org/ripple": {
+      "type": "npm",
+      "name": "npm:@nextui-org/ripple",
+      "data": {
+        "version": "2.0.33",
+        "packageName": "@nextui-org/ripple",
+        "hash": "sha512-Zsa60CXtGCF7weTCFbSfT0OlxlGHdd5b/sSJTYrmMZRHOIUpHW8kT0bxVYF/6X8nCCJYxzBKXUqdE3Y31fhNeQ=="
+      }
+    },
+    "npm:@nextui-org/shared-utils": {
+      "type": "npm",
+      "name": "npm:@nextui-org/shared-utils",
+      "data": {
+        "version": "2.0.8",
+        "packageName": "@nextui-org/shared-utils",
+        "hash": "sha512-ZEtoMPXS+IjT8GvpJTS9IWDnT1JNCKV+NDqqgysAf1niJmOFLyJgl6dh/9n4ufcGf1GbSEQN+VhJasEw7ajYGQ=="
+      }
+    },
+    "npm:@nextui-org/spinner": {
+      "type": "npm",
+      "name": "npm:@nextui-org/spinner",
+      "data": {
+        "version": "2.0.34",
+        "packageName": "@nextui-org/spinner",
+        "hash": "sha512-YKw/6xSLhsXU1k22OvYKyWhtJCHzW2bRAiieVSVG5xak3gYwknTds5H9s5uur+oAZVK9AkyAObD19QuZND32Jg=="
+      }
+    },
+    "npm:@nextui-org/system-rsc": {
+      "type": "npm",
+      "name": "npm:@nextui-org/system-rsc",
+      "data": {
+        "version": "2.1.6",
+        "packageName": "@nextui-org/system-rsc",
+        "hash": "sha512-Wl2QwEFjYwuvw26R1RH3ZY81PD8YmfgtIjFvJZRP2VEIT6rPvlQ4ojgqdrkVkQZQ0L/K+5ZLbTKgLEFkj5ysdQ=="
+      }
+    },
+    "npm:@nextui-org/system": {
+      "type": "npm",
+      "name": "npm:@nextui-org/system",
+      "data": {
+        "version": "2.2.6",
+        "packageName": "@nextui-org/system",
+        "hash": "sha512-tjIkOI0w32g68CGWleuSyIbEz8XBbeoNogR2lu7MWk3QovHCqgr4VVrP1cwMRYnwDPFQP3OpmH+NR9yzt+pIfg=="
+      }
+    },
+    "npm:@nextui-org/theme": {
+      "type": "npm",
+      "name": "npm:@nextui-org/theme",
+      "data": {
+        "version": "2.2.11",
+        "packageName": "@nextui-org/theme",
+        "hash": "sha512-bg9+KNnFxcP3w/ugivEJtvQibODbTxfl6UdVvx7TCY8Rd269U7F2+nhnw1Qd1xJT5yZQnX6m//9wOoGtJV+6Kg=="
+      }
+    },
+    "npm:@nextui-org/use-aria-button": {
+      "type": "npm",
+      "name": "npm:@nextui-org/use-aria-button",
+      "data": {
+        "version": "2.0.10",
+        "packageName": "@nextui-org/use-aria-button",
+        "hash": "sha512-tUpp4QMr1zugKPevyToeRHIufTuc/g+67/r/oQLRTG0mMo3yGVmggykQuYn22fqqZPpW6nHcB9VYc+XtZZ27TQ=="
+      }
+    },
+    "npm:@nextui-org/use-aria-menu": {
+      "type": "npm",
+      "name": "npm:@nextui-org/use-aria-menu",
+      "data": {
+        "version": "2.0.7",
+        "packageName": "@nextui-org/use-aria-menu",
+        "hash": "sha512-5U91zFiWTLXsOhE0W3CThsD5TmL3ANeTEtoimtPgSLWV9keZBD9Ja62WsnPZPPAWhmv7jtL0/qk4d/YOra7PVA=="
+      }
+    },
+    "npm:@nextui-org/use-is-mobile": {
+      "type": "npm",
+      "name": "npm:@nextui-org/use-is-mobile",
+      "data": {
+        "version": "2.0.9",
+        "packageName": "@nextui-org/use-is-mobile",
+        "hash": "sha512-u5pRmPV0wacdpOcAkQnWwE30yNBl2uk1WvbWkrSELxIVRN22+fTIYn8ynnHK0JbJFTA6/5zh7uIfETQu3L6KjA=="
+      }
+    },
+    "npm:@nextui-org/use-measure": {
+      "type": "npm",
+      "name": "npm:@nextui-org/use-measure",
+      "data": {
+        "version": "2.0.2",
+        "packageName": "@nextui-org/use-measure",
+        "hash": "sha512-H/RSPPA9B5sZ10wiXR3jLlYFEuiVnc0O/sgLLQfrb5M0hvHoaqMThnsZpm//5iyS7tD7kxPeYNLa1EhzlQKxDA=="
+      }
+    },
+    "npm:@nextui-org/use-safe-layout-effect": {
+      "type": "npm",
+      "name": "npm:@nextui-org/use-safe-layout-effect",
+      "data": {
+        "version": "2.0.6",
+        "packageName": "@nextui-org/use-safe-layout-effect",
+        "hash": "sha512-xzEJXf/g9GaSqjLpQ4+Z2/pw1GPq2Fc5cWRGqEXbGauEMXuH8UboRls1BmIV1RuOpqI6FgxkEmxL1EuVIRVmvQ=="
       }
     },
     "npm:@nodelib/fs.scandir": {
@@ -2407,6 +2668,348 @@
         "hash": "sha512-LFWllMA55pzB9D34w/wXUCf8+c+IYKuJDgxiZ3qMhl64KRMBHYM1I3VdGaD2BV5FNPV2/S2596bppxHbv2ZydQ=="
       }
     },
+    "npm:@react-aria/button": {
+      "type": "npm",
+      "name": "npm:@react-aria/button",
+      "data": {
+        "version": "3.9.5",
+        "packageName": "@react-aria/button",
+        "hash": "sha512-dgcYR6j8WDOMLKuVrtxzx4jIC05cVKDzc+HnPO8lNkBAOfjcuN5tkGRtIjLtqjMvpZHhQT5aDbgFpIaZzxgFIg=="
+      }
+    },
+    "npm:@react-aria/dialog": {
+      "type": "npm",
+      "name": "npm:@react-aria/dialog",
+      "data": {
+        "version": "3.5.14",
+        "packageName": "@react-aria/dialog",
+        "hash": "sha512-oqDCjQ8hxe3GStf48XWBf2CliEnxlR9GgSYPHJPUc69WBj68D9rVcCW3kogJnLAnwIyf3FnzbX4wSjvUa88sAQ=="
+      }
+    },
+    "npm:@react-aria/focus@3.17.1": {
+      "type": "npm",
+      "name": "npm:@react-aria/focus@3.17.1",
+      "data": {
+        "version": "3.17.1",
+        "packageName": "@react-aria/focus",
+        "hash": "sha512-FLTySoSNqX++u0nWZJPPN5etXY0WBxaIe/YuL/GTEeuqUIuC/2bJSaw5hlsM6T2yjy6Y/VAxBcKSdAFUlU6njQ=="
+      }
+    },
+    "npm:@react-aria/focus@3.18.2": {
+      "type": "npm",
+      "name": "npm:@react-aria/focus@3.18.2",
+      "data": {
+        "version": "3.18.2",
+        "packageName": "@react-aria/focus",
+        "hash": "sha512-Jc/IY+StjA3uqN73o6txKQ527RFU7gnG5crEl5Xy3V+gbYp2O5L3ezAo/E0Ipi2cyMbG6T5Iit1IDs7hcGu8aw=="
+      }
+    },
+    "npm:@react-aria/i18n@3.11.1": {
+      "type": "npm",
+      "name": "npm:@react-aria/i18n@3.11.1",
+      "data": {
+        "version": "3.11.1",
+        "packageName": "@react-aria/i18n",
+        "hash": "sha512-vuiBHw1kZruNMYeKkTGGnmPyMnM5T+gT8bz97H1FqIq1hQ6OPzmtBZ6W6l6OIMjeHI5oJo4utTwfZl495GALFQ=="
+      }
+    },
+    "npm:@react-aria/i18n@3.12.2": {
+      "type": "npm",
+      "name": "npm:@react-aria/i18n@3.12.2",
+      "data": {
+        "version": "3.12.2",
+        "packageName": "@react-aria/i18n",
+        "hash": "sha512-PvEyC6JWylTpe8dQEWqQwV6GiA+pbTxHQd//BxtMSapRW3JT9obObAnb/nFhj3HthkUvqHyj0oO1bfeN+mtD8A=="
+      }
+    },
+    "npm:@react-aria/interactions@3.21.3": {
+      "type": "npm",
+      "name": "npm:@react-aria/interactions@3.21.3",
+      "data": {
+        "version": "3.21.3",
+        "packageName": "@react-aria/interactions",
+        "hash": "sha512-BWIuf4qCs5FreDJ9AguawLVS0lV9UU+sK4CCnbCNNmYqOWY+1+gRXCsnOM32K+oMESBxilAjdHW5n1hsMqYMpA=="
+      }
+    },
+    "npm:@react-aria/interactions@3.22.2": {
+      "type": "npm",
+      "name": "npm:@react-aria/interactions@3.22.2",
+      "data": {
+        "version": "3.22.2",
+        "packageName": "@react-aria/interactions",
+        "hash": "sha512-xE/77fRVSlqHp2sfkrMeNLrqf2amF/RyuAS6T5oDJemRSgYM3UoxTbWjucPhfnoW7r32pFPHHgz4lbdX8xqD/g=="
+      }
+    },
+    "npm:@react-aria/menu": {
+      "type": "npm",
+      "name": "npm:@react-aria/menu",
+      "data": {
+        "version": "3.14.1",
+        "packageName": "@react-aria/menu",
+        "hash": "sha512-BYliRb38uAzq05UOFcD5XkjA5foQoXRbcH3ZufBsc4kvh79BcP1PMW6KsXKGJ7dC/PJWUwCui6QL1kUg8PqMHA=="
+      }
+    },
+    "npm:@react-aria/overlays@3.22.1": {
+      "type": "npm",
+      "name": "npm:@react-aria/overlays@3.22.1",
+      "data": {
+        "version": "3.22.1",
+        "packageName": "@react-aria/overlays",
+        "hash": "sha512-GHiFMWO4EQ6+j6b5QCnNoOYiyx1Gk8ZiwLzzglCI4q1NY5AG2EAmfU4Z1+Gtrf2S5Y0zHbumC7rs9GnPoGLUYg=="
+      }
+    },
+    "npm:@react-aria/overlays@3.23.2": {
+      "type": "npm",
+      "name": "npm:@react-aria/overlays@3.23.2",
+      "data": {
+        "version": "3.23.2",
+        "packageName": "@react-aria/overlays",
+        "hash": "sha512-vjlplr953YAuJfHiP4O+CyrTlr6OaFgXAGrzWq4MVMjnpV/PT5VRJWYFHR0sUGlHTPqeKS4NZbi/xCSgl/3pGQ=="
+      }
+    },
+    "npm:@react-aria/selection@3.18.1": {
+      "type": "npm",
+      "name": "npm:@react-aria/selection@3.18.1",
+      "data": {
+        "version": "3.18.1",
+        "packageName": "@react-aria/selection",
+        "hash": "sha512-GSqN2jX6lh7v+ldqhVjAXDcrWS3N4IsKXxO6L6Ygsye86Q9q9Mq9twWDWWu5IjHD6LoVZLUBCMO+ENGbOkyqeQ=="
+      }
+    },
+    "npm:@react-aria/selection@3.19.3": {
+      "type": "npm",
+      "name": "npm:@react-aria/selection@3.19.3",
+      "data": {
+        "version": "3.19.3",
+        "packageName": "@react-aria/selection",
+        "hash": "sha512-GYoObXCXlmGK08hp7Qfl6Bk0U+bKP5YDWSsX+MzNjJsqzQSLm4S06tRB9ACM7gIo9dDCvL4IRxdSYTJAlJc6bw=="
+      }
+    },
+    "npm:@react-aria/ssr@3.9.4": {
+      "type": "npm",
+      "name": "npm:@react-aria/ssr@3.9.4",
+      "data": {
+        "version": "3.9.4",
+        "packageName": "@react-aria/ssr",
+        "hash": "sha512-4jmAigVq409qcJvQyuorsmBR4+9r3+JEC60wC+Y0MZV0HCtTmm8D9guYXlJMdx0SSkgj0hHAyFm/HvPNFofCoQ=="
+      }
+    },
+    "npm:@react-aria/ssr@3.9.5": {
+      "type": "npm",
+      "name": "npm:@react-aria/ssr@3.9.5",
+      "data": {
+        "version": "3.9.5",
+        "packageName": "@react-aria/ssr",
+        "hash": "sha512-xEwGKoysu+oXulibNUSkXf8itW0npHHTa6c4AyYeZIJyRoegeteYuFpZUBPtIDE8RfHdNsSmE1ssOkxRnwbkuQ=="
+      }
+    },
+    "npm:@react-aria/utils@3.24.1": {
+      "type": "npm",
+      "name": "npm:@react-aria/utils@3.24.1",
+      "data": {
+        "version": "3.24.1",
+        "packageName": "@react-aria/utils",
+        "hash": "sha512-O3s9qhPMd6n42x9sKeJ3lhu5V1Tlnzhu6Yk8QOvDuXf7UGuUjXf9mzfHJt1dYzID4l9Fwm8toczBzPM9t0jc8Q=="
+      }
+    },
+    "npm:@react-aria/utils@3.25.2": {
+      "type": "npm",
+      "name": "npm:@react-aria/utils@3.25.2",
+      "data": {
+        "version": "3.25.2",
+        "packageName": "@react-aria/utils",
+        "hash": "sha512-GdIvG8GBJJZygB4L2QJP1Gabyn2mjFsha73I2wSe+o4DYeGWoJiMZRM06PyTIxLH4S7Sn7eVDtsSBfkc2VY/NA=="
+      }
+    },
+    "npm:@react-aria/visually-hidden": {
+      "type": "npm",
+      "name": "npm:@react-aria/visually-hidden",
+      "data": {
+        "version": "3.8.15",
+        "packageName": "@react-aria/visually-hidden",
+        "hash": "sha512-l+sJ7xTdD5Sd6+rDNDaeJCSPnHOsI+BaJyApvb/YcVgHa7rB47lp6TXCWUCDItcPY4JqRGyeByRJVrtzBFTWCw=="
+      }
+    },
+    "npm:@react-stately/collections@3.10.7": {
+      "type": "npm",
+      "name": "npm:@react-stately/collections@3.10.7",
+      "data": {
+        "version": "3.10.7",
+        "packageName": "@react-stately/collections",
+        "hash": "sha512-KRo5O2MWVL8n3aiqb+XR3vP6akmHLhLWYZEmPKjIv0ghQaEebBTrN3wiEjtd6dzllv0QqcWvDLM1LntNfJ2TsA=="
+      }
+    },
+    "npm:@react-stately/collections@3.10.9": {
+      "type": "npm",
+      "name": "npm:@react-stately/collections@3.10.9",
+      "data": {
+        "version": "3.10.9",
+        "packageName": "@react-stately/collections",
+        "hash": "sha512-plyrng6hOQMG8LrjArMA6ts/DgWyXln3g90/hFNbqe/hdVYF53sDVsj8Jb+5LtoYTpiAlV6eOvy1XR0vPZUf8w=="
+      }
+    },
+    "npm:@react-stately/menu": {
+      "type": "npm",
+      "name": "npm:@react-stately/menu",
+      "data": {
+        "version": "3.7.1",
+        "packageName": "@react-stately/menu",
+        "hash": "sha512-mX1w9HHzt+xal1WIT2xGrTQsoLvDwuB2R1Er1MBABs//MsJzccycatcgV/J/28m6tO5M9iuFQQvLV+i1dCtodg=="
+      }
+    },
+    "npm:@react-stately/overlays@3.6.10": {
+      "type": "npm",
+      "name": "npm:@react-stately/overlays@3.6.10",
+      "data": {
+        "version": "3.6.10",
+        "packageName": "@react-stately/overlays",
+        "hash": "sha512-XxZ2qScT5JPwGk9qiVJE4dtVh3AXTcYwGRA5RsHzC26oyVVsegPqY2PmNJGblAh6Q57VyodoVUyebE0Eo5CzRw=="
+      }
+    },
+    "npm:@react-stately/overlays@3.6.7": {
+      "type": "npm",
+      "name": "npm:@react-stately/overlays@3.6.7",
+      "data": {
+        "version": "3.6.7",
+        "packageName": "@react-stately/overlays",
+        "hash": "sha512-6zp8v/iNUm6YQap0loaFx6PlvN8C0DgWHNlrlzMtMmNuvjhjR0wYXVaTfNoUZBWj25tlDM81ukXOjpRXg9rLrw=="
+      }
+    },
+    "npm:@react-stately/selection": {
+      "type": "npm",
+      "name": "npm:@react-stately/selection",
+      "data": {
+        "version": "3.16.2",
+        "packageName": "@react-stately/selection",
+        "hash": "sha512-C4eSKw7BIZHJLPzwqGqCnsyFHiUIEyryVQZTJDt6d0wYBOHU6k1pW+Q4VhrZuzSv+IMiI2RkiXeJKc55f0ZXrg=="
+      }
+    },
+    "npm:@react-stately/toggle": {
+      "type": "npm",
+      "name": "npm:@react-stately/toggle",
+      "data": {
+        "version": "3.7.7",
+        "packageName": "@react-stately/toggle",
+        "hash": "sha512-AS+xB4+hHWa3wzYkbS6pwBkovPfIE02B9SnuYTe0stKcuejpWKo5L3QMptW0ftFYsW3ZPCXuneImfObEw2T01A=="
+      }
+    },
+    "npm:@react-stately/tree@3.8.1": {
+      "type": "npm",
+      "name": "npm:@react-stately/tree@3.8.1",
+      "data": {
+        "version": "3.8.1",
+        "packageName": "@react-stately/tree",
+        "hash": "sha512-LOdkkruJWch3W89h4B/bXhfr0t0t1aRfEp+IMrrwdRAl23NaPqwl5ILHs4Xu5XDHqqhg8co73pHrJwUyiTWEjw=="
+      }
+    },
+    "npm:@react-stately/tree@3.8.4": {
+      "type": "npm",
+      "name": "npm:@react-stately/tree@3.8.4",
+      "data": {
+        "version": "3.8.4",
+        "packageName": "@react-stately/tree",
+        "hash": "sha512-HFNclIXJ/3QdGQWxXbj+tdlmIX/XwCfzAMB5m26xpJ6HtJhia6dtx3GLfcdyHNjmuRbAsTBsAAnnVKBmNRUdIQ=="
+      }
+    },
+    "npm:@react-stately/utils@3.10.1": {
+      "type": "npm",
+      "name": "npm:@react-stately/utils@3.10.1",
+      "data": {
+        "version": "3.10.1",
+        "packageName": "@react-stately/utils",
+        "hash": "sha512-VS/EHRyicef25zDZcM/ClpzYMC5i2YGN6uegOeQawmgfGjb02yaCX0F0zR69Pod9m2Hr3wunTbtpgVXvYbZItg=="
+      }
+    },
+    "npm:@react-stately/utils@3.10.3": {
+      "type": "npm",
+      "name": "npm:@react-stately/utils@3.10.3",
+      "data": {
+        "version": "3.10.3",
+        "packageName": "@react-stately/utils",
+        "hash": "sha512-moClv7MlVSHpbYtQIkm0Cx+on8Pgt1XqtPx6fy9rQFb2DNc9u1G3AUVnqA17buOkH1vLxAtX4MedlxMWyRCYYA=="
+      }
+    },
+    "npm:@react-types/button@3.9.4": {
+      "type": "npm",
+      "name": "npm:@react-types/button@3.9.4",
+      "data": {
+        "version": "3.9.4",
+        "packageName": "@react-types/button",
+        "hash": "sha512-raeQBJUxBp0axNF74TXB8/H50GY8Q3eV6cEKMbZFP1+Dzr09Ngv0tJBeW0ewAxAguNH5DRoMUAUGIXtSXskVdA=="
+      }
+    },
+    "npm:@react-types/button@3.9.6": {
+      "type": "npm",
+      "name": "npm:@react-types/button@3.9.6",
+      "data": {
+        "version": "3.9.6",
+        "packageName": "@react-types/button",
+        "hash": "sha512-8lA+D5JLbNyQikf8M/cPP2cji91aVTcqjrGpDqI7sQnaLFikM8eFR6l1ZWGtZS5MCcbfooko77ha35SYplSQvw=="
+      }
+    },
+    "npm:@react-types/checkbox": {
+      "type": "npm",
+      "name": "npm:@react-types/checkbox",
+      "data": {
+        "version": "3.8.3",
+        "packageName": "@react-types/checkbox",
+        "hash": "sha512-f4c1mnLEt0iS1NMkyZXgT3q3AgcxzDk7w6MSONOKydcnh0xG5L2oefY14DhVDLkAuQS7jThlUFwiAs+MxiO3MA=="
+      }
+    },
+    "npm:@react-types/dialog": {
+      "type": "npm",
+      "name": "npm:@react-types/dialog",
+      "data": {
+        "version": "3.5.12",
+        "packageName": "@react-types/dialog",
+        "hash": "sha512-JmpQbSpXltqEyYfEwoqDolABIiojeExkqolHNdQlayIsfFuSxZxNwXZPOpz58Ri/iwv21JP7K3QF0Gb2Ohxl9w=="
+      }
+    },
+    "npm:@react-types/menu": {
+      "type": "npm",
+      "name": "npm:@react-types/menu",
+      "data": {
+        "version": "3.9.9",
+        "packageName": "@react-types/menu",
+        "hash": "sha512-FamUaPVs1Fxr4KOMI0YcR2rYZHoN7ypGtgiEiJ11v/tEPjPPGgeKDxii0McCrdOkjheatLN1yd2jmMwYj6hTDg=="
+      }
+    },
+    "npm:@react-types/overlays@3.8.7": {
+      "type": "npm",
+      "name": "npm:@react-types/overlays@3.8.7",
+      "data": {
+        "version": "3.8.7",
+        "packageName": "@react-types/overlays",
+        "hash": "sha512-zCOYvI4at2DkhVpviIClJ7bRrLXYhSg3Z3v9xymuPH3mkiuuP/dm8mUCtkyY4UhVeUTHmrQh1bzaOP00A+SSQA=="
+      }
+    },
+    "npm:@react-types/overlays@3.8.9": {
+      "type": "npm",
+      "name": "npm:@react-types/overlays@3.8.9",
+      "data": {
+        "version": "3.8.9",
+        "packageName": "@react-types/overlays",
+        "hash": "sha512-9ni9upQgXPnR+K9cWmbYWvm3ll9gH8P/XsEZprqIV5zNLMF334jADK48h4jafb1X9RFnj0WbHo6BqcSObzjTig=="
+      }
+    },
+    "npm:@react-types/shared@3.23.1": {
+      "type": "npm",
+      "name": "npm:@react-types/shared@3.23.1",
+      "data": {
+        "version": "3.23.1",
+        "packageName": "@react-types/shared",
+        "hash": "sha512-5d+3HbFDxGZjhbMBeFHRQhexMFt4pUce3okyRtUVKbbedQFUrtXSBg9VszgF2RTeQDKDkMCIQDtz5ccP/Lk1gw=="
+      }
+    },
+    "npm:@react-types/shared@3.24.1": {
+      "type": "npm",
+      "name": "npm:@react-types/shared@3.24.1",
+      "data": {
+        "version": "3.24.1",
+        "packageName": "@react-types/shared",
+        "hash": "sha512-AUQeGYEm/zDTN6zLzdXolDxz3Jk5dDL7f506F07U8tBwxNNI3WRdhU84G0/AaFikOZzDXhOZDr3MhQMzyE7Ydw=="
+      }
+    },
     "npm:@rtsao/scc": {
       "type": "npm",
       "name": "npm:@rtsao/scc",
@@ -2837,6 +3440,24 @@
         "version": "0.5.5",
         "packageName": "@swc/helpers",
         "hash": "sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A=="
+      }
+    },
+    "npm:@tanstack/query-core": {
+      "type": "npm",
+      "name": "npm:@tanstack/query-core",
+      "data": {
+        "version": "5.56.2",
+        "packageName": "@tanstack/query-core",
+        "hash": "sha512-gor0RI3/R5rVV3gXfddh1MM+hgl0Z4G7tj6Xxpq6p2I03NGPaJ8dITY9Gz05zYYb/EJq9vPas/T4wn9EaDPd4Q=="
+      }
+    },
+    "npm:@tanstack/react-query": {
+      "type": "npm",
+      "name": "npm:@tanstack/react-query",
+      "data": {
+        "version": "5.56.2",
+        "packageName": "@tanstack/react-query",
+        "hash": "sha512-SR0GzHVo6yzhN72pnRhkEFRAHMsUo5ZPzAxfTMvUxFIDVS6W9LYUp6nXW3fcHVdg0ZJl8opSH85jqahvm6DSVg=="
       }
     },
     "npm:@testing-library/dom": {
@@ -4837,6 +5458,24 @@
         "hash": "sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg=="
       }
     },
+    "npm:clsx@1.2.1": {
+      "type": "npm",
+      "name": "npm:clsx@1.2.1",
+      "data": {
+        "version": "1.2.1",
+        "packageName": "clsx",
+        "hash": "sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg=="
+      }
+    },
+    "npm:clsx@2.1.1": {
+      "type": "npm",
+      "name": "npm:clsx@2.1.1",
+      "data": {
+        "version": "2.1.1",
+        "packageName": "clsx",
+        "hash": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA=="
+      }
+    },
     "npm:cmd-shim": {
       "type": "npm",
       "name": "npm:cmd-shim",
@@ -4898,6 +5537,15 @@
         "version": "1.1.3",
         "packageName": "color-support",
         "hash": "sha512-qiBjkpbMLO/HL68y+lh4q0/O1MZFj2RX6X/KmMa3+gJD3z+WwI1ZzDHysvqHGS3mP6mznPckpXmw1nI9cJjyRg=="
+      }
+    },
+    "npm:color2k": {
+      "type": "npm",
+      "name": "npm:color2k",
+      "data": {
+        "version": "2.0.3",
+        "packageName": "color2k",
+        "hash": "sha512-zW190nQTIoXcGCaU08DvVNFTmQhUpnJfVuAKfWqUQkflXKpaDdpaYoM0iluLS9lgJNHyBF58KKA2FBEwkD7wog=="
       }
     },
     "npm:color": {
@@ -5591,6 +6239,15 @@
         "version": "2.0.3",
         "packageName": "detect-libc",
         "hash": "sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw=="
+      }
+    },
+    "npm:detect-node-es": {
+      "type": "npm",
+      "name": "npm:detect-node-es",
+      "data": {
+        "version": "1.1.0",
+        "packageName": "detect-node-es",
+        "hash": "sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ=="
       }
     },
     "npm:didyoumean": {
@@ -6754,6 +7411,15 @@
         "hash": "sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow=="
       }
     },
+    "npm:framer-motion": {
+      "type": "npm",
+      "name": "npm:framer-motion",
+      "data": {
+        "version": "11.9.0",
+        "packageName": "framer-motion",
+        "hash": "sha512-nCfGxvsQecVLjjYDu35G2F5ls+ArE3FBfhxV0RSiisMaUKqteq5DMBFNRKwMyVj+VqKTNhawt+BV480YCHKFlQ=="
+      }
+    },
     "npm:fresh": {
       "type": "npm",
       "name": "npm:fresh",
@@ -6914,6 +7580,15 @@
         "version": "1.2.4",
         "packageName": "get-intrinsic",
         "hash": "sha512-5uYhsJH8VJBTv7oslg4BznJYhDoRI6waYCxMmCdnTrcCrHA/fCFKoTFz2JKKE0HdDFUF7/oQuhzumXJK7paBRQ=="
+      }
+    },
+    "npm:get-nonce": {
+      "type": "npm",
+      "name": "npm:get-nonce",
+      "data": {
+        "version": "1.0.1",
+        "packageName": "get-nonce",
+        "hash": "sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q=="
       }
     },
     "npm:get-pkg-repo": {
@@ -7634,6 +8309,24 @@
         "version": "1.0.7",
         "packageName": "internal-slot",
         "hash": "sha512-NGnrKwXzSms2qUUih/ILZ5JBqNTSa1+ZmP6flaIp6KmSElgE9qdndzS3cqjrDovwFdmwsGsLdeFgB6suw+1e9g=="
+      }
+    },
+    "npm:intl-messageformat": {
+      "type": "npm",
+      "name": "npm:intl-messageformat",
+      "data": {
+        "version": "10.5.14",
+        "packageName": "intl-messageformat",
+        "hash": "sha512-IjC6sI0X7YRjjyVH9aUgdftcmZK7WXdHeil4KwbjDnRWjnVitKpAx3rr6t6di1joFp5188VqKcobOPA6mCLG/w=="
+      }
+    },
+    "npm:invariant": {
+      "type": "npm",
+      "name": "npm:invariant",
+      "data": {
+        "version": "2.2.4",
+        "packageName": "invariant",
+        "hash": "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA=="
       }
     },
     "npm:ip-address": {
@@ -8644,6 +9337,24 @@
         "hash": "sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow=="
       }
     },
+    "npm:lodash.foreach": {
+      "type": "npm",
+      "name": "npm:lodash.foreach",
+      "data": {
+        "version": "4.5.0",
+        "packageName": "lodash.foreach",
+        "hash": "sha512-aEXTF4d+m05rVOAUG3z4vZZ4xVexLKZGF0lIxuHZ1Hplpk/3B6Z1+/ICICYRLm7c41Z2xiejbkCkJoTlypoXhQ=="
+      }
+    },
+    "npm:lodash.get": {
+      "type": "npm",
+      "name": "npm:lodash.get",
+      "data": {
+        "version": "4.4.2",
+        "packageName": "lodash.get",
+        "hash": "sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ=="
+      }
+    },
     "npm:lodash.includes": {
       "type": "npm",
       "name": "npm:lodash.includes",
@@ -8707,6 +9418,24 @@
         "hash": "sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw=="
       }
     },
+    "npm:lodash.kebabcase": {
+      "type": "npm",
+      "name": "npm:lodash.kebabcase",
+      "data": {
+        "version": "4.1.1",
+        "packageName": "lodash.kebabcase",
+        "hash": "sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g=="
+      }
+    },
+    "npm:lodash.mapkeys": {
+      "type": "npm",
+      "name": "npm:lodash.mapkeys",
+      "data": {
+        "version": "4.6.0",
+        "packageName": "lodash.mapkeys",
+        "hash": "sha512-0Al+hxpYvONWtg+ZqHpa/GaVzxuN3V7Xeo2p+bY06EaK/n+Y9R7nBePPN2o1LxmL0TWQSwP8LYZ008/hc9JzhA=="
+      }
+    },
     "npm:lodash.merge": {
       "type": "npm",
       "name": "npm:lodash.merge",
@@ -8714,6 +9443,15 @@
         "version": "4.6.2",
         "packageName": "lodash.merge",
         "hash": "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+      }
+    },
+    "npm:lodash.omit": {
+      "type": "npm",
+      "name": "npm:lodash.omit",
+      "data": {
+        "version": "4.5.0",
+        "packageName": "lodash.omit",
+        "hash": "sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg=="
       }
     },
     "npm:lodash.once": {
@@ -10750,6 +11488,15 @@
         "hash": "sha512-UDg4lXB6BzlobN60P8fHWVPX3Kyw8ORrTeBtClmIlGdkOOE+GYQSFvmEU5iLLpwp/6v42DINwNcwOhOLfQ//FQ=="
       }
     },
+    "npm:react-icons": {
+      "type": "npm",
+      "name": "npm:react-icons",
+      "data": {
+        "version": "5.3.0",
+        "packageName": "react-icons",
+        "hash": "sha512-DnUk8aFbTyQPSkCfF8dbX6kQjXA9DktMeJqfjrg6cK9vwQVMxmcA3BfP4QoiztVmEHtwlTgLFsPuH2NskKT6eg=="
+      }
+    },
     "npm:react-is@16.13.1": {
       "type": "npm",
       "name": "npm:react-is@16.13.1",
@@ -10793,6 +11540,33 @@
         "version": "0.14.2",
         "packageName": "react-refresh",
         "hash": "sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA=="
+      }
+    },
+    "npm:react-remove-scroll-bar": {
+      "type": "npm",
+      "name": "npm:react-remove-scroll-bar",
+      "data": {
+        "version": "2.3.6",
+        "packageName": "react-remove-scroll-bar",
+        "hash": "sha512-DtSYaao4mBmX+HDo5YWYdBWQwYIQQshUV/dVxFxK+KM26Wjwp1gZ6rv6OC3oujI6Bfu6Xyg3TwK533AQutsn/g=="
+      }
+    },
+    "npm:react-remove-scroll": {
+      "type": "npm",
+      "name": "npm:react-remove-scroll",
+      "data": {
+        "version": "2.6.0",
+        "packageName": "react-remove-scroll",
+        "hash": "sha512-I2U4JVEsQenxDAKaVa3VZ/JeJZe0/2DxPWL8Tj8yLKctQJQiZM52pn/GWFpSp8dftjM3pSAHVJZscAnC/y+ySQ=="
+      }
+    },
+    "npm:react-style-singleton": {
+      "type": "npm",
+      "name": "npm:react-style-singleton",
+      "data": {
+        "version": "2.2.1",
+        "packageName": "react-style-singleton",
+        "hash": "sha512-ZWj0fHEMyWkHzKYUr2Bs/4zU6XLmq9HsgBURm7g5pAVfyn49DgUiNgY2d4lXRlYSiCif9YBGpQleewkcqddc7g=="
       }
     },
     "npm:react": {
@@ -12028,6 +12802,24 @@
         "hash": "sha512-7gr8p9TQP6RAHusBOSLs46F4564ZrjV8xFmw5zCmgmhGUcw2hxsShhJ6CEiHQMgPDwAQ1fWHPM0ypc4RMAig4A=="
       }
     },
+    "npm:tailwind-merge": {
+      "type": "npm",
+      "name": "npm:tailwind-merge",
+      "data": {
+        "version": "1.14.0",
+        "packageName": "tailwind-merge",
+        "hash": "sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ=="
+      }
+    },
+    "npm:tailwind-variants": {
+      "type": "npm",
+      "name": "npm:tailwind-variants",
+      "data": {
+        "version": "0.1.20",
+        "packageName": "tailwind-variants",
+        "hash": "sha512-AMh7x313t/V+eTySKB0Dal08RHY7ggYK0MSn/ad8wKWOrDUIzyiWNayRUm2PIJ4VRkvRnfNuyRuKbLV3EN+ewQ=="
+      }
+    },
     "npm:tailwindcss": {
       "type": "npm",
       "name": "npm:tailwindcss",
@@ -12701,6 +13493,24 @@
         "version": "0.11.4",
         "packageName": "url",
         "hash": "sha512-oCwdVC7mTuWiPyjLUz/COz5TLk6wgp0RCsN+wHZ2Ekneac9w8uuV0njcbbie2ME+Vs+d6duwmYuR3HgQXs1fOg=="
+      }
+    },
+    "npm:use-callback-ref": {
+      "type": "npm",
+      "name": "npm:use-callback-ref",
+      "data": {
+        "version": "1.3.2",
+        "packageName": "use-callback-ref",
+        "hash": "sha512-elOQwe6Q8gqZgDA8mrh44qRTQqpIHDcZ3hXTLjBe1i4ph8XpNJnO+aQf3NaG+lriLopI4HMx9VjQLfPQ6vhnoA=="
+      }
+    },
+    "npm:use-sidecar": {
+      "type": "npm",
+      "name": "npm:use-sidecar",
+      "data": {
+        "version": "1.1.2",
+        "packageName": "use-sidecar",
+        "hash": "sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw=="
       }
     },
     "npm:util-deprecate": {
@@ -13434,6 +14244,16 @@
       },
       {
         "source": "client",
+        "target": "npm:@nextui-org/button",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@nextui-org/dropdown",
+        "type": "static"
+      },
+      {
+        "source": "client",
         "target": "npm:@storybook/addon-measure@8.3.3",
         "type": "static"
       },
@@ -13445,6 +14265,11 @@
       {
         "source": "client",
         "target": "npm:@storybook/addon-viewport@8.3.3",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:@tanstack/react-query",
         "type": "static"
       },
       {
@@ -13465,6 +14290,11 @@
       {
         "source": "client",
         "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "client",
+        "target": "npm:react-icons",
         "type": "static"
       }
     ],
@@ -15944,6 +16774,61 @@
         "type": "static"
       }
     ],
+    "npm:@formatjs/ecma402-abstract": [
+      {
+        "source": "npm:@formatjs/ecma402-abstract",
+        "target": "npm:@formatjs/intl-localematcher",
+        "type": "static"
+      },
+      {
+        "source": "npm:@formatjs/ecma402-abstract",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:@formatjs/fast-memoize": [
+      {
+        "source": "npm:@formatjs/fast-memoize",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:@formatjs/icu-messageformat-parser": [
+      {
+        "source": "npm:@formatjs/icu-messageformat-parser",
+        "target": "npm:@formatjs/ecma402-abstract",
+        "type": "static"
+      },
+      {
+        "source": "npm:@formatjs/icu-messageformat-parser",
+        "target": "npm:@formatjs/icu-skeleton-parser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@formatjs/icu-messageformat-parser",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:@formatjs/icu-skeleton-parser": [
+      {
+        "source": "npm:@formatjs/icu-skeleton-parser",
+        "target": "npm:@formatjs/ecma402-abstract",
+        "type": "static"
+      },
+      {
+        "source": "npm:@formatjs/icu-skeleton-parser",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:@formatjs/intl-localematcher": [
+      {
+        "source": "npm:@formatjs/intl-localematcher",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
     "npm:@humanwhocodes/config-array": [
       {
         "source": "npm:@humanwhocodes/config-array",
@@ -16021,6 +16906,39 @@
       {
         "source": "npm:@img/sharp-wasm32",
         "target": "npm:@emnapi/runtime",
+        "type": "static"
+      }
+    ],
+    "npm:@internationalized/date": [
+      {
+        "source": "npm:@internationalized/date",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      }
+    ],
+    "npm:@internationalized/message": [
+      {
+        "source": "npm:@internationalized/message",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@internationalized/message",
+        "target": "npm:intl-messageformat",
+        "type": "static"
+      }
+    ],
+    "npm:@internationalized/number": [
+      {
+        "source": "npm:@internationalized/number",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      }
+    ],
+    "npm:@internationalized/string": [
+      {
+        "source": "npm:@internationalized/string",
+        "target": "npm:@swc/helpers",
         "type": "static"
       }
     ],
@@ -16506,6 +17424,834 @@
       {
         "source": "npm:@next/eslint-plugin-next",
         "target": "npm:glob@10.3.10",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/aria-utils": [
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@nextui-org/react-rsc-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@react-stately/collections@3.10.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@react-stately/overlays@3.6.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@react-types/overlays@3.8.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/aria-utils",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/button": [
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/ripple",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/spinner",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@nextui-org/use-aria-button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-aria/button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-aria/focus@3.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-aria/interactions@3.21.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-types/button@3.9.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/button",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/divider": [
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:@nextui-org/react-rsc-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:@nextui-org/system-rsc",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/divider",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/dropdown": [
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/aria-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/popover",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@react-aria/focus@3.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@react-aria/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@react-stately/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:@react-types/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/dropdown",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/framer-utils": [
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:@nextui-org/use-measure",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/framer-utils",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/menu": [
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/aria-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/divider",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/use-aria-menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@nextui-org/use-is-mobile",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-aria/focus@3.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-aria/interactions@3.21.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-aria/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-stately/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-stately/tree@3.8.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-types/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/menu",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/popover": [
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/aria-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/framer-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/use-aria-button",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@nextui-org/use-safe-layout-effect",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-aria/dialog",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-aria/focus@3.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-aria/interactions@3.21.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-aria/overlays@3.22.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-stately/overlays@3.6.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-types/button@3.9.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:@react-types/overlays@3.8.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/popover",
+        "target": "npm:react-remove-scroll",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/react-rsc-utils": [
+      {
+        "source": "npm:@nextui-org/react-rsc-utils",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/react-utils": [
+      {
+        "source": "npm:@nextui-org/react-utils",
+        "target": "npm:@nextui-org/react-rsc-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/react-utils",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/react-utils",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/ripple": [
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:@nextui-org/system",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/ripple",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/spinner": [
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:@nextui-org/shared-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:@nextui-org/system-rsc",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/spinner",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/system-rsc": [
+      {
+        "source": "npm:@nextui-org/system-rsc",
+        "target": "npm:@nextui-org/theme",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system-rsc",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system-rsc",
+        "target": "npm:clsx@1.2.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system-rsc",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/system": [
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@internationalized/date",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@nextui-org/react-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@nextui-org/system-rsc",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@react-aria/i18n@3.11.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@react-aria/overlays@3.22.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:@react-stately/utils@3.10.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:framer-motion",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/system",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/theme": [
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:clsx@1.2.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:color",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:color2k",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:deepmerge",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:flat",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:lodash.foreach",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:lodash.get",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:lodash.kebabcase",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:lodash.mapkeys",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:lodash.omit",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:tailwind-merge",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:tailwind-variants",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/theme",
+        "target": "npm:tailwindcss",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/use-aria-button": [
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:@react-aria/focus@3.17.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:@react-aria/interactions@3.21.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:@react-types/button@3.9.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-button",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/use-aria-menu": [
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-aria/i18n@3.11.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-aria/interactions@3.21.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-aria/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-aria/selection@3.18.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-aria/utils@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-stately/collections@3.10.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-stately/tree@3.8.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-types/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:@react-types/shared@3.23.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-aria-menu",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/use-is-mobile": [
+      {
+        "source": "npm:@nextui-org/use-is-mobile",
+        "target": "npm:@react-aria/ssr@3.9.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@nextui-org/use-is-mobile",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/use-measure": [
+      {
+        "source": "npm:@nextui-org/use-measure",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@nextui-org/use-safe-layout-effect": [
+      {
+        "source": "npm:@nextui-org/use-safe-layout-effect",
+        "target": "npm:react",
         "type": "static"
       }
     ],
@@ -17252,6 +18998,1072 @@
       {
         "source": "npm:@pmmmwh/react-refresh-webpack-plugin",
         "target": "npm:webpack-hot-middleware",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/button": [
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-stately/toggle",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-types/button@3.9.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/button",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/dialog": [
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@react-aria/overlays@3.22.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@react-types/dialog",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/dialog",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/focus@3.17.1": [
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.17.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/focus@3.18.2": [
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/focus@3.18.2",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/i18n@3.11.1": [
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@internationalized/date",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@internationalized/message",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@internationalized/number",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@internationalized/string",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.11.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/i18n@3.12.2": [
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@internationalized/date",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@internationalized/message",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@internationalized/number",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@internationalized/string",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/i18n@3.12.2",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/interactions@3.21.3": [
+      {
+        "source": "npm:@react-aria/interactions@3.21.3",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.21.3",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.21.3",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.21.3",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.21.3",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/interactions@3.22.2": [
+      {
+        "source": "npm:@react-aria/interactions@3.22.2",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.22.2",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.22.2",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.22.2",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/interactions@3.22.2",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/menu": [
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/i18n@3.12.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/overlays@3.23.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/selection@3.19.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-stately/collections@3.10.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-stately/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-stately/tree@3.8.4",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-types/button@3.9.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-types/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/menu",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/overlays@3.22.1": [
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/i18n@3.12.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-aria/visually-hidden",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-stately/overlays@3.6.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-types/button@3.9.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-types/overlays@3.8.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.22.1",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/overlays@3.23.2": [
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/i18n@3.12.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-aria/visually-hidden",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-stately/overlays@3.6.10",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-types/button@3.9.6",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-types/overlays@3.8.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/overlays@3.23.2",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/selection@3.18.1": [
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-aria/i18n@3.11.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-stately/selection",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.18.1",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/selection@3.19.3": [
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-aria/focus@3.18.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-aria/i18n@3.12.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-stately/selection",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/selection@3.19.3",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/ssr@3.9.4": [
+      {
+        "source": "npm:@react-aria/ssr@3.9.4",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/ssr@3.9.4",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/ssr@3.9.5": [
+      {
+        "source": "npm:@react-aria/ssr@3.9.5",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/ssr@3.9.5",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/utils@3.24.1": [
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.24.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/utils@3.25.2": [
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:@react-aria/ssr@3.9.5",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/utils@3.25.2",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-aria/visually-hidden": [
+      {
+        "source": "npm:@react-aria/visually-hidden",
+        "target": "npm:@react-aria/interactions@3.22.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/visually-hidden",
+        "target": "npm:@react-aria/utils@3.25.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/visually-hidden",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/visually-hidden",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-aria/visually-hidden",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/collections@3.10.7": [
+      {
+        "source": "npm:@react-stately/collections@3.10.7",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/collections@3.10.7",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/collections@3.10.7",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/collections@3.10.9": [
+      {
+        "source": "npm:@react-stately/collections@3.10.9",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/collections@3.10.9",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/collections@3.10.9",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/menu": [
+      {
+        "source": "npm:@react-stately/menu",
+        "target": "npm:@react-stately/overlays@3.6.10",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/menu",
+        "target": "npm:@react-types/menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/menu",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/menu",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/menu",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/overlays@3.6.10": [
+      {
+        "source": "npm:@react-stately/overlays@3.6.10",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.10",
+        "target": "npm:@react-types/overlays@3.8.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.10",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.10",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/overlays@3.6.7": [
+      {
+        "source": "npm:@react-stately/overlays@3.6.7",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.7",
+        "target": "npm:@react-types/overlays@3.8.7",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.7",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/overlays@3.6.7",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/selection": [
+      {
+        "source": "npm:@react-stately/selection",
+        "target": "npm:@react-stately/collections@3.10.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/selection",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/selection",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/selection",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/selection",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/toggle": [
+      {
+        "source": "npm:@react-stately/toggle",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/toggle",
+        "target": "npm:@react-types/checkbox",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/toggle",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/toggle",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/tree@3.8.1": [
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:@react-stately/collections@3.10.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:@react-stately/selection",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/tree@3.8.4": [
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:@react-stately/collections@3.10.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:@react-stately/selection",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:@react-stately/utils@3.10.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/tree@3.8.4",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/utils@3.10.1": [
+      {
+        "source": "npm:@react-stately/utils@3.10.1",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/utils@3.10.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-stately/utils@3.10.3": [
+      {
+        "source": "npm:@react-stately/utils@3.10.3",
+        "target": "npm:@swc/helpers",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-stately/utils@3.10.3",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/button@3.9.4": [
+      {
+        "source": "npm:@react-types/button@3.9.4",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/button@3.9.4",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/button@3.9.6": [
+      {
+        "source": "npm:@react-types/button@3.9.6",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/button@3.9.6",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/checkbox": [
+      {
+        "source": "npm:@react-types/checkbox",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/checkbox",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/dialog": [
+      {
+        "source": "npm:@react-types/dialog",
+        "target": "npm:@react-types/overlays@3.8.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/dialog",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/dialog",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/menu": [
+      {
+        "source": "npm:@react-types/menu",
+        "target": "npm:@react-types/overlays@3.8.9",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/menu",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/menu",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/overlays@3.8.7": [
+      {
+        "source": "npm:@react-types/overlays@3.8.7",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/overlays@3.8.7",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/overlays@3.8.9": [
+      {
+        "source": "npm:@react-types/overlays@3.8.9",
+        "target": "npm:@react-types/shared@3.24.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:@react-types/overlays@3.8.9",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/shared@3.23.1": [
+      {
+        "source": "npm:@react-types/shared@3.23.1",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:@react-types/shared@3.24.1": [
+      {
+        "source": "npm:@react-types/shared@3.24.1",
+        "target": "npm:react",
         "type": "static"
       }
     ],
@@ -18719,6 +21531,18 @@
       {
         "source": "npm:@swc/helpers",
         "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:@tanstack/react-query": [
+      {
+        "source": "npm:@tanstack/react-query",
+        "target": "npm:@tanstack/query-core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@tanstack/react-query",
+        "target": "npm:react",
         "type": "static"
       }
     ],
@@ -23928,6 +26752,23 @@
         "type": "static"
       }
     ],
+    "npm:framer-motion": [
+      {
+        "source": "npm:framer-motion",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:framer-motion",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:framer-motion",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
     "npm:front-matter": [
       {
         "source": "npm:front-matter",
@@ -24831,6 +27672,35 @@
       {
         "source": "npm:internal-slot",
         "target": "npm:side-channel",
+        "type": "static"
+      }
+    ],
+    "npm:intl-messageformat": [
+      {
+        "source": "npm:intl-messageformat",
+        "target": "npm:@formatjs/ecma402-abstract",
+        "type": "static"
+      },
+      {
+        "source": "npm:intl-messageformat",
+        "target": "npm:@formatjs/fast-memoize",
+        "type": "static"
+      },
+      {
+        "source": "npm:intl-messageformat",
+        "target": "npm:@formatjs/icu-messageformat-parser",
+        "type": "static"
+      },
+      {
+        "source": "npm:intl-messageformat",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      }
+    ],
+    "npm:invariant": [
+      {
+        "source": "npm:invariant",
+        "target": "npm:loose-envify",
         "type": "static"
       }
     ],
@@ -28315,6 +31185,99 @@
         "type": "static"
       }
     ],
+    "npm:react-icons": [
+      {
+        "source": "npm:react-icons",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
+    "npm:react-remove-scroll-bar": [
+      {
+        "source": "npm:react-remove-scroll-bar",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll-bar",
+        "target": "npm:react-style-singleton",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll-bar",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll-bar",
+        "target": "npm:@types/react",
+        "type": "static"
+      }
+    ],
+    "npm:react-remove-scroll": [
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:react-remove-scroll-bar",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:react-style-singleton",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:use-callback-ref",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:use-sidecar",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-remove-scroll",
+        "target": "npm:@types/react",
+        "type": "static"
+      }
+    ],
+    "npm:react-style-singleton": [
+      {
+        "source": "npm:react-style-singleton",
+        "target": "npm:get-nonce",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-style-singleton",
+        "target": "npm:invariant",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-style-singleton",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-style-singleton",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:react-style-singleton",
+        "target": "npm:@types/react",
+        "type": "static"
+      }
+    ],
     "npm:react": [
       {
         "source": "npm:react",
@@ -29825,6 +32788,18 @@
         "type": "static"
       }
     ],
+    "npm:tailwind-variants": [
+      {
+        "source": "npm:tailwind-variants",
+        "target": "npm:tailwind-merge",
+        "type": "static"
+      },
+      {
+        "source": "npm:tailwind-variants",
+        "target": "npm:tailwindcss",
+        "type": "static"
+      }
+    ],
     "npm:tailwindcss": [
       {
         "source": "npm:tailwindcss",
@@ -30476,6 +33451,45 @@
       {
         "source": "npm:url",
         "target": "npm:qs",
+        "type": "static"
+      }
+    ],
+    "npm:use-callback-ref": [
+      {
+        "source": "npm:use-callback-ref",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:use-callback-ref",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:use-callback-ref",
+        "target": "npm:@types/react",
+        "type": "static"
+      }
+    ],
+    "npm:use-sidecar": [
+      {
+        "source": "npm:use-sidecar",
+        "target": "npm:detect-node-es",
+        "type": "static"
+      },
+      {
+        "source": "npm:use-sidecar",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:use-sidecar",
+        "target": "npm:tslib@2.7.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:use-sidecar",
+        "target": "npm:@types/react",
         "type": "static"
       }
     ],

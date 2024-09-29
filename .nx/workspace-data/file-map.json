@@ -9,36 +9,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
+        "file": "nx.json",
+        "hash": "10146023197190099756"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": "package.json",
-        "hash": "12440314922548810535"
+        "file": "pnpm-lock.yaml",
+        "hash": "14079705710322172102"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "9987464925804764357"
+        "file": "package.json",
+        "hash": "12440314922548810535"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
@@ -57,7 +57,7 @@
         },
         {
           "file": "packages/client/.storybook/preview.ts",
-          "hash": "18365219240716471590"
+          "hash": "13472062729864149085"
         },
         {
           "file": "packages/client/README.md",
@@ -132,12 +132,28 @@
           "hash": "7221403389816235909"
         },
         {
+          "file": "packages/client/assets/svgs/logo.svg",
+          "hash": "10230734186477549327"
+        },
+        {
           "file": "packages/client/chromatic.config.json",
           "hash": "9064107291103111533"
         },
         {
-          "file": "packages/client/components/navBar/NavBar.tsx",
-          "hash": "17852920772173121937"
+          "file": "packages/client/components/NavBar.tsx",
+          "hash": "215278235703105792"
+        },
+        {
+          "file": "packages/client/components/NavLinks.tsx",
+          "hash": "17524627323541915923"
+        },
+        {
+          "file": "packages/client/components/SearchBar.tsx",
+          "hash": "17657102603118530655"
+        },
+        {
+          "file": "packages/client/constants/index.ts",
+          "hash": "14987130906635681400"
         },
         {
           "file": "packages/client/next.config.mjs",
@@ -145,7 +161,7 @@
         },
         {
           "file": "packages/client/package.json",
-          "hash": "482366263723737067",
+          "hash": "10955116672811475290",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -166,13 +182,17 @@
             "npm:storybook",
             "npm:tailwindcss",
             "npm:typescript",
+            "npm:@nextui-org/button",
+            "npm:@nextui-org/dropdown",
             "npm:@storybook/addon-measure@8.3.3",
             "npm:@storybook/addon-storysource",
             "npm:@storybook/addon-viewport@8.3.3",
+            "npm:@tanstack/react-query",
             "npm:hamburger-react",
             "npm:next",
             "npm:react",
-            "npm:react-dom"
+            "npm:react-dom",
+            "npm:react-icons"
           ]
         },
         {
@@ -181,7 +201,11 @@
         },
         {
           "file": "packages/client/stories/NavBar.stories.ts",
-          "hash": "493546717408264518"
+          "hash": "13619088864199606854"
+        },
+        {
+          "file": "packages/client/stories/SearchBar.stories.ts",
+          "hash": "9990847073748174178"
         },
         {
           "file": "packages/client/tailwind.config.ts",
@@ -190,6 +214,10 @@
         {
           "file": "packages/client/tsconfig.json",
           "hash": "2185939425434508362"
+        },
+        {
+          "file": "packages/client/assets/svgs/dot-small-svgrepo-com.svg",
+          "hash": "14133594487879085616"
         }
       ],
       "backend": [

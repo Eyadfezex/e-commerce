@@ -19,7 +19,6 @@ const preview: Preview = {
         ...INITIAL_VIEWPORTS,
         ...MINIMAL_VIEWPORTS,
       },
-      defaultViewport: "iphone14promax",
     },
   },
 };
