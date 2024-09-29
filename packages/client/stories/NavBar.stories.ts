@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import NavBar from "../components/navBar/NavBar";
+import NavBar from "../components/NavBar";
 const meta = {
-  title: "Example/NavBar",
+  title: "NavBar",
   component: NavBar,
   parameters: {
     layout: "fullscreen",
@@ -19,7 +19,6 @@ type Story = StoryObj<typeof meta>;
 
 export const navBar: Story = {
   args: {
-    primary: true,
     label: "NavBar",
   },
 };

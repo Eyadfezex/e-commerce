@@ -17,7 +17,7 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="flex items-center gap-[0.5rem]">
-            <IoSearch size={24} />
+            <IoSearch size={24} className="md:hidden" />
             <RiShoppingCart2Line size={24} />
             <MdAccountCircle size={24} />
           </div>
