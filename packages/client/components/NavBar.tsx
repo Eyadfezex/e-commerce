@@ -13,8 +13,8 @@ const NavBar = () => {
   return (
     <nav className="w-full">
       <div className="flex justify-center py-[0.5rem] md:py-[1rem]">
-        <div className="flex justify-between items-center px-[16px] md:gap-[10rem] lg:gap-[2rem] lg:w-[90%] w-full max-w-[1920px]">
-          <div className="flex items-center gap-[0.5rem] md:gap-[1rem] lg:gap-[2rem] w-full">
+        <div className="flex justify-between items-center px-[16px] md:gap-[10rem] xl:w-[95%] lg:gap-[2rem]  w-full max-w-[1920px]">
+          <div className="flex items-center gap-[0.5rem] md:gap-[1rem] xl:gap-[2rem] w-full">
             <div className="lg:hidden">
               <Hamburger size={24} rounded />
             </div>
@@ -25,7 +25,9 @@ const NavBar = () => {
                 className="w-[80%] md:w-[90%] lg:w-full"
               />
             </Link>
-            <NavLinks />
+            <div className="lg:w-[65%] xl:w-full max-w-[300px]">
+              <NavLinks />
+            </div>
             <SearchBar />
           </div>
           <div className="flex items-center gap-[0.5rem]">

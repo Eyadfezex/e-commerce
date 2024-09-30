@@ -13,7 +13,7 @@ import Image from "next/image";
 import dot from "../assets/svgs/dot-small-svgrepo-com.svg";
 const NavLinks = () => {
   return (
-    <div className="lg:flex items-center gap-[2rem] hidden font-sans">
+    <div className="lg:flex items-center gap-[2rem] lg:gap-[1rem] hidden font-sans">
       {/* ---dropdown--- */}
       <Dropdown>
         <DropdownTrigger>
