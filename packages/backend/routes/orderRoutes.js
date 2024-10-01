@@ -6,7 +6,9 @@ const router = express();
 
 router.use(AC.protect);
 
-router.route("/").post(OC.createOrder).get(OC.getMyOrders);
+router.route("/create").post(OC.createOrderFromCart);
+
+router.route("/").get(OC.getMyOrders);
 
 router
   .route("/:id")
