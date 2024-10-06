@@ -9,176 +9,39 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "14079705710322172102"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
-      },
-      {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
+        "file": "nx.json",
+        "hash": "10146023197190099756"
+      },
+      {
         "file": "package.json",
         "hash": "12440314922548810535"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "14079705710322172102"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
-      "backend": [
-        {
-          "file": "packages/backend/.eslintrc.json",
-          "hash": "4401581846539284694"
-        },
-        {
-          "file": "packages/backend/app.js",
-          "hash": "7166947339543678421"
-        },
-        {
-          "file": "packages/backend/controllers/authControllers.js",
-          "hash": "7752935980956329530"
-        },
-        {
-          "file": "packages/backend/controllers/cartControllers.js",
-          "hash": "16668809165764197113"
-        },
-        {
-          "file": "packages/backend/controllers/errorControllers.js",
-          "hash": "12604812669744798485"
-        },
-        {
-          "file": "packages/backend/controllers/handlerFactory.js",
-          "hash": "16473558236047727964"
-        },
-        {
-          "file": "packages/backend/controllers/orderControllers.js",
-          "hash": "9482155993943607062"
-        },
-        {
-          "file": "packages/backend/controllers/productControllers.js",
-          "hash": "18221300037933590275"
-        },
-        {
-          "file": "packages/backend/controllers/reviewControllers.js",
-          "hash": "11631247074221816665"
-        },
-        {
-          "file": "packages/backend/controllers/userControllers.js",
-          "hash": "16899406769233666223"
-        },
-        {
-          "file": "packages/backend/models/cartModel.js",
-          "hash": "15558999615403186275"
-        },
-        {
-          "file": "packages/backend/models/orderModel.js",
-          "hash": "9901349219645126615"
-        },
-        {
-          "file": "packages/backend/models/productModel.js",
-          "hash": "16011383877090657725"
-        },
-        {
-          "file": "packages/backend/models/reviewModel.js",
-          "hash": "5062196181786978968"
-        },
-        {
-          "file": "packages/backend/models/userModel.js",
-          "hash": "5697105503600857282"
-        },
-        {
-          "file": "packages/backend/package-lock.json",
-          "hash": "3413593426019901033"
-        },
-        {
-          "file": "packages/backend/package.json",
-          "hash": "9452761015386428926",
-          "deps": [
-            "npm:eslint",
-            "npm:eslint-config-airbnb",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-import",
-            "npm:eslint-plugin-jsx-a11y",
-            "npm:eslint-plugin-node",
-            "npm:eslint-plugin-prettier",
-            "npm:eslint-plugin-react",
-            "npm:prettier",
-            "npm:bcryptjs",
-            "npm:cors",
-            "npm:dotenv",
-            "npm:express",
-            "npm:express-mongo-sanitize",
-            "npm:express-rate-limit",
-            "npm:fs",
-            "npm:helmet",
-            "npm:hpp",
-            "npm:jsonwebtoken",
-            "npm:mongoose",
-            "npm:morgan",
-            "npm:nodemailer",
-            "npm:slugify",
-            "npm:validator",
-            "npm:xss-clean"
-          ]
-        },
-        {
-          "file": "packages/backend/routes/cartRoutes.js",
-          "hash": "14887199484997819770"
-        },
-        {
-          "file": "packages/backend/routes/orderRoutes.js",
-          "hash": "1788110134042127396"
-        },
-        {
-          "file": "packages/backend/routes/productRoutes.js",
-          "hash": "5555536087755935564"
-        },
-        {
-          "file": "packages/backend/routes/reviewRoutes.js",
-          "hash": "2999137719296512449"
-        },
-        {
-          "file": "packages/backend/routes/userRoutes.js",
-          "hash": "15749124202357596887"
-        },
-        {
-          "file": "packages/backend/server.js",
-          "hash": "10894133449464681587"
-        },
-        {
-          "file": "packages/backend/utils/apiFeatures.js",
-          "hash": "9515363919081116662"
-        },
-        {
-          "file": "packages/backend/utils/appError.js",
-          "hash": "1800749920025241040"
-        },
-        {
-          "file": "packages/backend/utils/catchAsync.js",
-          "hash": "17945249143726780164"
-        },
-        {
-          "file": "packages/backend/utils/email.js",
-          "hash": "15800405455870972947"
-        }
-      ],
       "client": [
         {
           "file": "packages/client/.eslintrc.json",
@@ -293,10 +156,6 @@
           "hash": "17657102603118530655"
         },
         {
-          "file": "packages/client/components/productCard/ProductCard.tsx",
-          "hash": "16288791019672710244"
-        },
-        {
           "file": "packages/client/constants/index.ts",
           "hash": "14987130906635681400"
         },
@@ -359,6 +218,151 @@
         {
           "file": "packages/client/tsconfig.json",
           "hash": "2185939425434508362"
+        },
+        {
+          "file": "packages/client/components/ProductCard.tsx",
+          "hash": "16288791019672710244"
+        },
+        {
+          "file": "packages/client/stories/ProductCard.stories.ts",
+          "hash": "3398978557712521638"
+        }
+      ],
+      "backend": [
+        {
+          "file": "packages/backend/.eslintrc.json",
+          "hash": "4401581846539284694"
+        },
+        {
+          "file": "packages/backend/app.js",
+          "hash": "7166947339543678421"
+        },
+        {
+          "file": "packages/backend/controllers/authControllers.js",
+          "hash": "7752935980956329530"
+        },
+        {
+          "file": "packages/backend/controllers/cartControllers.js",
+          "hash": "16668809165764197113"
+        },
+        {
+          "file": "packages/backend/controllers/errorControllers.js",
+          "hash": "12604812669744798485"
+        },
+        {
+          "file": "packages/backend/controllers/handlerFactory.js",
+          "hash": "16473558236047727964"
+        },
+        {
+          "file": "packages/backend/controllers/orderControllers.js",
+          "hash": "10934790973447619805"
+        },
+        {
+          "file": "packages/backend/controllers/productControllers.js",
+          "hash": "18221300037933590275"
+        },
+        {
+          "file": "packages/backend/controllers/reviewControllers.js",
+          "hash": "11631247074221816665"
+        },
+        {
+          "file": "packages/backend/controllers/userControllers.js",
+          "hash": "16899406769233666223"
+        },
+        {
+          "file": "packages/backend/models/cartModel.js",
+          "hash": "15558999615403186275"
+        },
+        {
+          "file": "packages/backend/models/orderModel.js",
+          "hash": "1432791416264386252"
+        },
+        {
+          "file": "packages/backend/models/productModel.js",
+          "hash": "16011383877090657725"
+        },
+        {
+          "file": "packages/backend/models/reviewModel.js",
+          "hash": "5062196181786978968"
+        },
+        {
+          "file": "packages/backend/models/userModel.js",
+          "hash": "5697105503600857282"
+        },
+        {
+          "file": "packages/backend/package-lock.json",
+          "hash": "3413593426019901033"
+        },
+        {
+          "file": "packages/backend/package.json",
+          "hash": "9452761015386428926",
+          "deps": [
+            "npm:eslint",
+            "npm:eslint-config-airbnb",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-node",
+            "npm:eslint-plugin-prettier",
+            "npm:eslint-plugin-react",
+            "npm:prettier",
+            "npm:bcryptjs",
+            "npm:cors",
+            "npm:dotenv",
+            "npm:express",
+            "npm:express-mongo-sanitize",
+            "npm:express-rate-limit",
+            "npm:fs",
+            "npm:helmet",
+            "npm:hpp",
+            "npm:jsonwebtoken",
+            "npm:mongoose",
+            "npm:morgan",
+            "npm:nodemailer",
+            "npm:slugify",
+            "npm:validator",
+            "npm:xss-clean"
+          ]
+        },
+        {
+          "file": "packages/backend/routes/cartRoutes.js",
+          "hash": "14887199484997819770"
+        },
+        {
+          "file": "packages/backend/routes/orderRoutes.js",
+          "hash": "15104009434573937719"
+        },
+        {
+          "file": "packages/backend/routes/productRoutes.js",
+          "hash": "5555536087755935564"
+        },
+        {
+          "file": "packages/backend/routes/reviewRoutes.js",
+          "hash": "2999137719296512449"
+        },
+        {
+          "file": "packages/backend/routes/userRoutes.js",
+          "hash": "15749124202357596887"
+        },
+        {
+          "file": "packages/backend/server.js",
+          "hash": "10894133449464681587"
+        },
+        {
+          "file": "packages/backend/utils/apiFeatures.js",
+          "hash": "9515363919081116662"
+        },
+        {
+          "file": "packages/backend/utils/appError.js",
+          "hash": "1800749920025241040"
+        },
+        {
+          "file": "packages/backend/utils/catchAsync.js",
+          "hash": "17945249143726780164"
+        },
+        {
+          "file": "packages/backend/utils/email.js",
+          "hash": "15800405455870972947"
         }
       ]
     }
