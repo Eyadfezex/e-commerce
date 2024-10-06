@@ -17,8 +17,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const navBar: Story = {
-  args: {
-    label: "NavBar",
-  },
-};
+export const primary: Story = {};
