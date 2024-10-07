@@ -11,6 +11,9 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.2",
     "@nextui-org/button": "^2.0.38",
     "@nextui-org/dropdown": "^2.1.31",
     "@storybook/addon-measure": "^8.3.3",

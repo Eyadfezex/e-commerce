@@ -11367,6 +11367,15 @@
         "hash": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg=="
       }
     },
+    "npm:react-rating-stars-component": {
+      "type": "npm",
+      "name": "npm:react-rating-stars-component",
+      "data": {
+        "version": "2.2.0",
+        "packageName": "react-rating-stars-component",
+        "hash": "sha512-A3lgLxumfFQQicKQmxacZ91fq/zRaVWlCPnVodJmJV6obvod4/yCotetN9WuyBiUfnKsEFDBo/8B85ocwmL7ng=="
+      }
+    },
     "npm:react-refresh": {
       "type": "npm",
       "name": "npm:react-refresh",
