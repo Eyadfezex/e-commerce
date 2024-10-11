@@ -16,7 +16,7 @@ const NavLinks = () => {
     <div className="lg:flex items-center gap-[2rem] hidden font-sans">
       {/* ---dropdown--- */}
       <Dropdown>
-        <DropdownTrigger>
+        <DropdownTrigger className="overflow-visible">
           <Button
             disableRipple
             className="p-0 bg-transparent data-[hover=true]:bg-transparent flex font-bold capitalize  focus:outline-none"
@@ -27,7 +27,7 @@ const NavLinks = () => {
             shops
           </Button>
         </DropdownTrigger>
-        <DropdownMenu className="focus:outline-none  bg-zinc-50 p-4 font-bold rounded-lg">
+        <DropdownMenu className="focus:outline-none  bg-zinc-50 p-4 font-bold rounded-lg ">
           {dropDownItems.map((item, id) => (
             <DropdownItem
               className="focus:outline-none py-1 flex justify-start gap-[0.1rem]"
@@ -42,7 +42,7 @@ const NavLinks = () => {
 
       {/* ---pages links--- */}
       {navLinks.map((item, id) => (
-        <Link key={id} href={item.url} className=" capitalize font-bold">
+        <Link key={id} href={item.url} className="capitalize font-bold">
           {item.name}
         </Link>
       ))}

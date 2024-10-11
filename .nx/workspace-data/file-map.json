@@ -9,36 +9,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
         "file": ".gitignore",
         "hash": "11560605376882027213"
       },
       {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
+        "file": "package.json",
+        "hash": "12440314922548810535"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "11672768717422360158"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
       },
       {
         "file": "nx.json",
         "hash": "10146023197190099756"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "17988493378834566745"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       },
       {
-        "file": "package.json",
-        "hash": "12440314922548810535"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
@@ -290,11 +290,15 @@
         },
         {
           "file": "packages/client/components/NavLinks.tsx",
-          "hash": "17524627323541915923"
+          "hash": "10262246849638624320"
         },
         {
           "file": "packages/client/components/ProductCard.tsx",
-          "hash": "15492967855736456807"
+          "hash": "15287574980997439394"
+        },
+        {
+          "file": "packages/client/components/Rating.tsx",
+          "hash": "6562083640554829306"
         },
         {
           "file": "packages/client/components/SearchBar.tsx",
@@ -310,7 +314,7 @@
         },
         {
           "file": "packages/client/package.json",
-          "hash": "12462739044871222962",
+          "hash": "14222220906535145264",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -331,6 +335,9 @@
             "npm:storybook",
             "npm:tailwindcss",
             "npm:typescript",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@mui/material",
             "npm:@nextui-org/button",
             "npm:@nextui-org/dropdown",
             "npm:@storybook/addon-measure@8.3.3",
@@ -341,8 +348,7 @@
             "npm:next",
             "npm:react",
             "npm:react-dom",
-            "npm:react-icons",
-            "npm:react-rating-stars-component"
+            "npm:react-icons"
           ]
         },
         {
