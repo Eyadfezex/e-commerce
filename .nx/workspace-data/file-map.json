@@ -9,20 +9,20 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       },
       {
-        "file": "package.json",
-        "hash": "12440314922548810535"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "11672768717422360158"
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       },
       {
         "file": "lerna-debug.log",
@@ -33,12 +33,16 @@
         "hash": "10146023197190099756"
       },
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
+        "file": "package.json",
+        "hash": "12440314922548810535"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": "pnpm-lock.yaml",
+        "hash": "11672768717422360158"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       }
     ],
     "projectFileMap": {
@@ -294,11 +298,11 @@
         },
         {
           "file": "packages/client/components/ProductCard.tsx",
-          "hash": "15287574980997439394"
+          "hash": "8981389217632238942"
         },
         {
           "file": "packages/client/components/Rating.tsx",
-          "hash": "6562083640554829306"
+          "hash": "11066072938968718242"
         },
         {
           "file": "packages/client/components/SearchBar.tsx",
@@ -360,8 +364,8 @@
           "hash": "13619088864199606854"
         },
         {
-          "file": "packages/client/stories/ProductCard.stories.ts",
-          "hash": "15948835849886209305"
+          "file": "packages/client/stories/ProductCard.stories.tsx",
+          "hash": "11867188571664099627"
         },
         {
           "file": "packages/client/stories/SearchBar.stories.ts",
