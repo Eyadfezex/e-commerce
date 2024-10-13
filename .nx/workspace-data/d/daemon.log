@@ -7872,3 +7872,4 @@ Error: EPERM: operation not permitted, rename 'G:\github\e-commerce\.nx\workspac
 [NX Daemon Server] - 2024-10-13T14:04:36.790Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2024-10-13T14:04:36.790Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2024-10-13T14:04:36.790Z - Time taken for 'total execution time for createProjectGraph()' 32.11309999972582ms
+[NX Daemon Server] - 2024-10-13T14:35:27.097Z - Closed a connection. Number of open connections: 0
