@@ -9,16 +9,20 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
+      },
+      {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
       },
       {
         "file": "nx.json",
@@ -29,205 +33,19 @@
         "hash": "12440314922548810535"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "14079705710322172102"
-      },
-      {
         "file": ".gitignore",
         "hash": "11560605376882027213"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": "pnpm-lock.yaml",
+        "hash": "14002521394520546706"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
       }
     ],
     "projectFileMap": {
-      "client": [
-        {
-          "file": "packages/client/.eslintrc.json",
-          "hash": "4614564216425289554"
-        },
-        {
-          "file": "packages/client/.gitignore",
-          "hash": "6351213542049544593"
-        },
-        {
-          "file": "packages/client/.storybook/main.ts",
-          "hash": "7582054075579059977"
-        },
-        {
-          "file": "packages/client/.storybook/preview.ts",
-          "hash": "13472062729864149085"
-        },
-        {
-          "file": "packages/client/README.md",
-          "hash": "10011398316402962549"
-        },
-        {
-          "file": "packages/client/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
-          "hash": "10648935345635237157"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
-          "hash": "9515624319395975955"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
-          "hash": "15220361477244295055"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
-          "hash": "14182897448607956662"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
-          "hash": "3977039100317460061"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
-          "hash": "345143232118275278"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
-          "hash": "4280300880547919822"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
-          "hash": "6538674733602554051"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
-          "hash": "14524909222801850226"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
-          "hash": "1386078019167196222"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
-          "hash": "996530835745513683"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
-          "hash": "4658125103796669334"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
-          "hash": "8772877621724132239"
-        },
-        {
-          "file": "packages/client/app/globals.css",
-          "hash": "2227184248507689446"
-        },
-        {
-          "file": "packages/client/app/layout.tsx",
-          "hash": "16059045733297946526"
-        },
-        {
-          "file": "packages/client/app/page.tsx",
-          "hash": "7221403389816235909"
-        },
-        {
-          "file": "packages/client/assets/svgs/dot-small-svgrepo-com.svg",
-          "hash": "14133594487879085616"
-        },
-        {
-          "file": "packages/client/assets/svgs/logo.svg",
-          "hash": "10230734186477549327"
-        },
-        {
-          "file": "packages/client/chromatic.config.json",
-          "hash": "9064107291103111533"
-        },
-        {
-          "file": "packages/client/components/NavBar.tsx",
-          "hash": "14375322780285742996"
-        },
-        {
-          "file": "packages/client/components/NavLinks.tsx",
-          "hash": "8363042277473090310"
-        },
-        {
-          "file": "packages/client/components/SearchBar.tsx",
-          "hash": "17657102603118530655"
-        },
-        {
-          "file": "packages/client/constants/index.ts",
-          "hash": "14987130906635681400"
-        },
-        {
-          "file": "packages/client/next.config.mjs",
-          "hash": "3099306030354460128"
-        },
-        {
-          "file": "packages/client/package.json",
-          "hash": "10955116672811475290",
-          "deps": [
-            "npm:@chromatic-com/storybook",
-            "npm:@storybook/addon-essentials",
-            "npm:@storybook/addon-interactions",
-            "npm:@storybook/addon-links",
-            "npm:@storybook/addon-onboarding",
-            "npm:@storybook/blocks",
-            "npm:@storybook/nextjs",
-            "npm:@storybook/react",
-            "npm:@storybook/test",
-            "npm:@types/node@20.16.5",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:eslint",
-            "npm:eslint-config-next",
-            "npm:eslint-plugin-storybook",
-            "npm:postcss@8.4.47",
-            "npm:storybook",
-            "npm:tailwindcss",
-            "npm:typescript",
-            "npm:@nextui-org/button",
-            "npm:@nextui-org/dropdown",
-            "npm:@storybook/addon-measure@8.3.3",
-            "npm:@storybook/addon-storysource",
-            "npm:@storybook/addon-viewport@8.3.3",
-            "npm:@tanstack/react-query",
-            "npm:hamburger-react",
-            "npm:next",
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-icons"
-          ]
-        },
-        {
-          "file": "packages/client/postcss.config.mjs",
-          "hash": "17882505348629598648"
-        },
-        {
-          "file": "packages/client/stories/NavBar.stories.ts",
-          "hash": "13619088864199606854"
-        },
-        {
-          "file": "packages/client/stories/SearchBar.stories.ts",
-          "hash": "9990847073748174178"
-        },
-        {
-          "file": "packages/client/tailwind.config.ts",
-          "hash": "4379770607621329311"
-        },
-        {
-          "file": "packages/client/tsconfig.json",
-          "hash": "2185939425434508362"
-        },
-        {
-          "file": "packages/client/components/ProductCard.tsx",
-          "hash": "16288791019672710244"
-        },
-        {
-          "file": "packages/client/stories/ProductCard.stories.ts",
-          "hash": "3398978557712521638"
-        }
-      ],
       "backend": [
         {
           "file": "packages/backend/.eslintrc.json",
@@ -363,6 +181,216 @@
         {
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
+        }
+      ],
+      "client": [
+        {
+          "file": "packages/client/.eslintrc.json",
+          "hash": "4614564216425289554"
+        },
+        {
+          "file": "packages/client/.gitignore",
+          "hash": "6351213542049544593"
+        },
+        {
+          "file": "packages/client/.storybook/main.ts",
+          "hash": "7582054075579059977"
+        },
+        {
+          "file": "packages/client/.storybook/preview.ts",
+          "hash": "13472062729864149085"
+        },
+        {
+          "file": "packages/client/README.md",
+          "hash": "10011398316402962549"
+        },
+        {
+          "file": "packages/client/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
+          "hash": "10648935345635237157"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
+          "hash": "9515624319395975955"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
+          "hash": "15220361477244295055"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
+          "hash": "14182897448607956662"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
+          "hash": "3977039100317460061"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
+          "hash": "345143232118275278"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
+          "hash": "4280300880547919822"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
+          "hash": "6538674733602554051"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
+          "hash": "14524909222801850226"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
+          "hash": "1386078019167196222"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
+          "hash": "996530835745513683"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
+          "hash": "4658125103796669334"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
+          "hash": "8772877621724132239"
+        },
+        {
+          "file": "packages/client/app/globals.css",
+          "hash": "2227184248507689446"
+        },
+        {
+          "file": "packages/client/app/layout.tsx",
+          "hash": "16059045733297946526"
+        },
+        {
+          "file": "packages/client/app/page.tsx",
+          "hash": "7221403389816235909"
+        },
+        {
+          "file": "packages/client/assets/img/t-shirt.webp",
+          "hash": "2748630408664558936"
+        },
+        {
+          "file": "packages/client/assets/svgs/1930264_check_complete_done_green_success_icon.svg",
+          "hash": "7211598500712738849"
+        },
+        {
+          "file": "packages/client/assets/svgs/dot-small-svgrepo-com.svg",
+          "hash": "14133594487879085616"
+        },
+        {
+          "file": "packages/client/assets/svgs/logo.svg",
+          "hash": "10230734186477549327"
+        },
+        {
+          "file": "packages/client/chromatic.config.json",
+          "hash": "9064107291103111533"
+        },
+        {
+          "file": "packages/client/components/NavBar.tsx",
+          "hash": "215278235703105792"
+        },
+        {
+          "file": "packages/client/components/NavLinks.tsx",
+          "hash": "10262246849638624320"
+        },
+        {
+          "file": "packages/client/components/ProductCard.tsx",
+          "hash": "9935768174979253245"
+        },
+        {
+          "file": "packages/client/components/Rating.tsx",
+          "hash": "11066072938968718242"
+        },
+        {
+          "file": "packages/client/components/Reviews.tsx",
+          "hash": "11992768856418365626"
+        },
+        {
+          "file": "packages/client/components/SearchBar.tsx",
+          "hash": "17657102603118530655"
+        },
+        {
+          "file": "packages/client/constants/index.ts",
+          "hash": "14987130906635681400"
+        },
+        {
+          "file": "packages/client/next.config.mjs",
+          "hash": "3099306030354460128"
+        },
+        {
+          "file": "packages/client/package.json",
+          "hash": "17935014107741182950",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/nextjs",
+            "npm:@storybook/react",
+            "npm:@storybook/test",
+            "npm:@types/node@20.16.5",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:eslint-plugin-storybook",
+            "npm:postcss@8.4.47",
+            "npm:storybook",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@mui/material",
+            "npm:@nextui-org/button",
+            "npm:@nextui-org/dropdown",
+            "npm:@storybook/addon-designs",
+            "npm:@storybook/addon-measure@8.3.3",
+            "npm:@storybook/addon-storysource",
+            "npm:@storybook/addon-viewport@8.3.3",
+            "npm:@tanstack/react-query",
+            "npm:hamburger-react",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "packages/client/postcss.config.mjs",
+          "hash": "17882505348629598648"
+        },
+        {
+          "file": "packages/client/stories/NavBar.stories.ts",
+          "hash": "13619088864199606854"
+        },
+        {
+          "file": "packages/client/stories/ProductCard.stories.tsx",
+          "hash": "9298743078784133593"
+        },
+        {
+          "file": "packages/client/stories/Review.stories.tsx",
+          "hash": "12257060587059758468"
+        },
+        {
+          "file": "packages/client/stories/SearchBar.stories.ts",
+          "hash": "9990847073748174178"
+        },
+        {
+          "file": "packages/client/tailwind.config.ts",
+          "hash": "4379770607621329311"
+        },
+        {
+          "file": "packages/client/tsconfig.json",
+          "hash": "2185939425434508362"
         }
       ]
     }
