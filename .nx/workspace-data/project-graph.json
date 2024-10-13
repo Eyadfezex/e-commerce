@@ -1660,6 +1660,24 @@
         "hash": "sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q=="
       }
     },
+    "npm:@figspec/components": {
+      "type": "npm",
+      "name": "npm:@figspec/components",
+      "data": {
+        "version": "1.0.3",
+        "packageName": "@figspec/components",
+        "hash": "sha512-fBwHzJ4ouuOUJEi+yBZIrOy+0/fAjB3AeTcIHTT1PRxLz8P63xwC7R0EsIJXhScIcc+PljGmqbbVJCjLsnaGYA=="
+      }
+    },
+    "npm:@figspec/react": {
+      "type": "npm",
+      "name": "npm:@figspec/react",
+      "data": {
+        "version": "1.0.3",
+        "packageName": "@figspec/react",
+        "hash": "sha512-r683qOko+5CbT48Ox280fMx2MNAtaFPgCNJvldOqN3YtmAzlcTT+YSxd3OahA+kjXGGrnzDbUgeTOX1cPLII+g=="
+      }
+    },
     "npm:@formatjs/ecma402-abstract": {
       "type": "npm",
       "name": "npm:@formatjs/ecma402-abstract",
@@ -2036,6 +2054,33 @@
         "version": "8.1.8",
         "packageName": "@lerna/create",
         "hash": "sha512-wi72R01tgjBjzG2kjRyTHl4yCTKDfDMIXRyKz9E/FBa9SkFvUOAE4bdyY9MhEsRZmSWL7+CYE8Flv/HScRpBbA=="
+      }
+    },
+    "npm:@lit-labs/react": {
+      "type": "npm",
+      "name": "npm:@lit-labs/react",
+      "data": {
+        "version": "1.2.1",
+        "packageName": "@lit-labs/react",
+        "hash": "sha512-DiZdJYFU0tBbdQkfwwRSwYyI/mcWkg3sWesKRsHUd4G+NekTmmeq9fzsurvcKTNVa0comNljwtg4Hvi1ds3V+A=="
+      }
+    },
+    "npm:@lit-labs/ssr-dom-shim": {
+      "type": "npm",
+      "name": "npm:@lit-labs/ssr-dom-shim",
+      "data": {
+        "version": "1.2.1",
+        "packageName": "@lit-labs/ssr-dom-shim",
+        "hash": "sha512-wx4aBmgeGvFmOKucFKY+8VFJSYZxs9poN3SDNQFF6lT6NrQUnHiPB2PWz2sc4ieEcAaYYzN+1uWahEeTq2aRIQ=="
+      }
+    },
+    "npm:@lit/reactive-element": {
+      "type": "npm",
+      "name": "npm:@lit/reactive-element",
+      "data": {
+        "version": "1.6.3",
+        "packageName": "@lit/reactive-element",
+        "hash": "sha512-QuTgnG52Poic7uM1AN5yJ09QMe0O28e10XzSvWDz02TJiiKee4stsiownEIadWm8nYzyDAyT+gKzUoZmiWQtsQ=="
       }
     },
     "npm:@mdx-js/react": {
@@ -3307,6 +3352,15 @@
         "hash": "sha512-YHoSMWSR1fItPb5S/3gOIhn9T6HcWcTxEJrjuuDk1hySmBmA+ojVJqmcI5MoNG3XtGigSXGJ/K2wmU57wZH4xw=="
       }
     },
+    "npm:@storybook/addon-designs": {
+      "type": "npm",
+      "name": "npm:@storybook/addon-designs",
+      "data": {
+        "version": "8.0.3",
+        "packageName": "@storybook/addon-designs",
+        "hash": "sha512-uArLGYDwiRDjgJHgMotOLGGYK4hq1hBb0PfTJrlBnPy6evky9khrqf4KmXrIh4ViOyZ5t01THe1DnBj52DwrEQ=="
+      }
+    },
     "npm:@storybook/addon-docs": {
       "type": "npm",
       "name": "npm:@storybook/addon-docs",
@@ -4034,6 +4088,15 @@
         "version": "1.15.7",
         "packageName": "@types/serve-static",
         "hash": "sha512-W8Ym+h8nhuRwaKPaDw34QUkwsGi6Rc4yYqvKFo5rm2FUEhCFbzVWrxXUxuKK8TASjWsysJY0nsmNCGhCOIsrOw=="
+      }
+    },
+    "npm:@types/trusted-types": {
+      "type": "npm",
+      "name": "npm:@types/trusted-types",
+      "data": {
+        "version": "2.0.7",
+        "packageName": "@types/trusted-types",
+        "hash": "sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw=="
       }
     },
     "npm:@types/unist": {
@@ -9481,6 +9544,33 @@
         "hash": "sha512-cNOjgCnLB+FnvWWtyRTzmB3POJ+cXxTA81LoW7u8JdmhfXzriropYwpjShnz1QLLWsQwY7nIxoDmcPTwphDK9w=="
       }
     },
+    "npm:lit-element": {
+      "type": "npm",
+      "name": "npm:lit-element",
+      "data": {
+        "version": "3.3.3",
+        "packageName": "lit-element",
+        "hash": "sha512-XbeRxmTHubXENkV4h8RIPyr8lXc+Ff28rkcQzw3G6up2xg5E8Zu1IgOWIwBLEQsu3cOVFqdYwiVi0hv0SlpqUA=="
+      }
+    },
+    "npm:lit-html": {
+      "type": "npm",
+      "name": "npm:lit-html",
+      "data": {
+        "version": "2.8.0",
+        "packageName": "lit-html",
+        "hash": "sha512-o9t+MQM3P4y7M7yNzqAyjp7z+mQGa4NS4CxiyLqFPyFWyc4O+nodLrkrxSaCTrla6M5YOLaT3RpbbqjszB5g3Q=="
+      }
+    },
+    "npm:lit": {
+      "type": "npm",
+      "name": "npm:lit",
+      "data": {
+        "version": "2.8.0",
+        "packageName": "lit",
+        "hash": "sha512-4Sc3OFX9QHOJaHbmTMk28SYgVxLN3ePDjg7hofEft2zWlehFL3LiAuapWc4U/kYwMYJSh2hTCPZ6/LIC7ii0MA=="
+      }
+    },
     "npm:load-json-file@4.0.0": {
       "type": "npm",
       "name": "npm:load-json-file@4.0.0",
@@ -14530,6 +14620,11 @@
       },
       {
         "source": "client",
+        "target": "npm:@storybook/addon-designs",
+        "type": "static"
+      },
+      {
+        "source": "client",
         "target": "npm:@storybook/addon-measure@8.3.3",
         "type": "static"
       },
@@ -17274,6 +17369,30 @@
         "type": "static"
       }
     ],
+    "npm:@figspec/components": [
+      {
+        "source": "npm:@figspec/components",
+        "target": "npm:lit",
+        "type": "static"
+      }
+    ],
+    "npm:@figspec/react": [
+      {
+        "source": "npm:@figspec/react",
+        "target": "npm:@figspec/components",
+        "type": "static"
+      },
+      {
+        "source": "npm:@figspec/react",
+        "target": "npm:@lit-labs/react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@figspec/react",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
     "npm:@formatjs/ecma402-abstract": [
       {
         "source": "npm:@formatjs/ecma402-abstract",
@@ -17876,6 +17995,13 @@
       {
         "source": "npm:@lerna/create",
         "target": "npm:yargs-parser@21.1.1",
+        "type": "static"
+      }
+    ],
+    "npm:@lit/reactive-element": [
+      {
+        "source": "npm:@lit/reactive-element",
+        "target": "npm:@lit-labs/ssr-dom-shim",
         "type": "static"
       }
     ],
@@ -20980,6 +21106,38 @@
       {
         "source": "npm:@storybook/addon-controls",
         "target": "npm:ts-dedent",
+        "type": "static"
+      }
+    ],
+    "npm:@storybook/addon-designs": [
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:@figspec/react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:@storybook/blocks",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:@storybook/components",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:@storybook/theming",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "npm:@storybook/addon-designs",
+        "target": "npm:react-dom",
         "type": "static"
       }
     ],
@@ -29497,6 +29655,47 @@
         "type": "static"
       }
     ],
+    "npm:lit-element": [
+      {
+        "source": "npm:lit-element",
+        "target": "npm:@lit-labs/ssr-dom-shim",
+        "type": "static"
+      },
+      {
+        "source": "npm:lit-element",
+        "target": "npm:@lit/reactive-element",
+        "type": "static"
+      },
+      {
+        "source": "npm:lit-element",
+        "target": "npm:lit-html",
+        "type": "static"
+      }
+    ],
+    "npm:lit-html": [
+      {
+        "source": "npm:lit-html",
+        "target": "npm:@types/trusted-types",
+        "type": "static"
+      }
+    ],
+    "npm:lit": [
+      {
+        "source": "npm:lit",
+        "target": "npm:@lit/reactive-element",
+        "type": "static"
+      },
+      {
+        "source": "npm:lit",
+        "target": "npm:lit-element",
+        "type": "static"
+      },
+      {
+        "source": "npm:lit",
+        "target": "npm:lit-html",
+        "type": "static"
+      }
+    ],
     "npm:load-json-file@4.0.0": [
       {
         "source": "npm:load-json-file@4.0.0",
@@ -33553,6 +33752,11 @@
         "source": "npm:styled-jsx@5.1.1",
         "target": "npm:@babel/core",
         "type": "static"
+      },
+      {
+        "source": "npm:styled-jsx@5.1.1",
+        "target": "npm:babel-plugin-macros",
+        "type": "static"
       }
     ],
     "npm:styled-jsx@5.1.6": [
@@ -33569,6 +33773,11 @@
       {
         "source": "npm:styled-jsx@5.1.6",
         "target": "npm:@babel/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:styled-jsx@5.1.6",
+        "target": "npm:babel-plugin-macros",
         "type": "static"
       }
     ],
