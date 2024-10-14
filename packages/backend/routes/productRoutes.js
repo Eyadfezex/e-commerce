@@ -15,13 +15,21 @@ router
     AC.protect,
     AC.restrictTo("admin", "seller"),
     AC.setSeller,
+    PC.uploadProductImage,
+    PC.uploadImages,
     PC.createProduct
   );
 
 router
   .route("/:id")
   .get(PC.getOneProduct)
-  .patch(AC.protect, AC.restrictTo("admin", "seller"), PC.updateProduct)
+  .patch(
+    AC.protect,
+    AC.restrictTo("admin", "seller"),
+    PC.uploadProductImage,
+    PC.uploadImages,
+    PC.updateProduct
+  )
   .delete(AC.protect, AC.restrictTo("admin", "seller"), PC.deleteProduct);
 
 module.exports = router;

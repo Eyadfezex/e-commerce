@@ -29,13 +29,20 @@ const productSchema = new mongoose.Schema(
       maxLength: [500, "Product description must be less than 500 characters"],
       minLength: [10, "Product description must be at least 10 characters"],
     },
-    price: {
+    originalPrice: {
       type: Number,
       required: [true, "Product price is required"],
     },
-    images: {
-      type: String,
+    discountPrice: {
+      type: Number,
+      validate: {
+        validator: function (val) {
+          return val < this.originalPrice;
+        },
+        message: "Discount price ({VALUE}) should be below regular price",
+      },
     },
+    images: [String],
     createdAt: {
       type: Date,
       default: Date.now,

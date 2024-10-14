@@ -16,7 +16,7 @@ const userSchema = new mongoose.Schema({
     unique: true,
     trim: true,
   },
-  photo: {
+  image: {
     type: String,
   },
   role: {
