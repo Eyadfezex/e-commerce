@@ -16,7 +16,7 @@ router.patch("/updateMyPassword", AC.updatePassword);
 
 router.get("/me", UC.getMe, UC.getUser);
 
-router.patch("/updateMe", UC.updateMe);
+router.patch("/updateMe", UC.uploadUserImage, UC.updateMe);
 router.delete("/deleteMe", UC.deleteMe);
 // All routes restricted ro admin after this middleware
 router.use(AC.restrictTo("admin"));
