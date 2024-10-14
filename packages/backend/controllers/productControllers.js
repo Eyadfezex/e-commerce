@@ -1,10 +1,19 @@
 const multer = require("multer");
+// eslint-disable-next-line import/no-extraneous-dependencies
+// const { CloudinaryStorage } = require("multer-storage-cloudinary");
+// const cloudinary = require("../utils/cloudinary");
 const Product = require("../models/productModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const HF = require("./handlerFactory");
 
-// const MS = multer.memoryStorage();
+// const MS = new CloudinaryStorage({
+//   cloudinary,
+//   params: {
+//     folder: "Home/products", // The folder in Cloudinary
+//     allowedFormats: ["jpeg", "png", "jpg", "gif"],
+//   },
+// });
 
 const MS = multer.diskStorage({
   destination: (req, file, cb) => {
