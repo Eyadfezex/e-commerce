@@ -9,24 +9,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "9234783876253679050"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
+        "file": "nx.json",
+        "hash": "10146023197190099756"
       },
       {
         "file": "package-lock.json",
@@ -37,12 +37,12 @@
         "hash": "12440314922548810535"
       },
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
+        "file": "pnpm-lock.yaml",
+        "hash": "8303944712084690450"
       },
       {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
@@ -129,11 +129,11 @@
         },
         {
           "file": "packages/client/app/layout.tsx",
-          "hash": "16059045733297946526"
+          "hash": "12574088049146866361"
         },
         {
           "file": "packages/client/app/page.tsx",
-          "hash": "7221403389816235909"
+          "hash": "7080927029839245185"
         },
         {
           "file": "packages/client/assets/img/t-shirt.webp",
@@ -156,8 +156,12 @@
           "hash": "9064107291103111533"
         },
         {
+          "file": "packages/client/components/Footer.tsx",
+          "hash": "1674547684171914430"
+        },
+        {
           "file": "packages/client/components/NavBar.tsx",
-          "hash": "14375322780285742996"
+          "hash": "11142947794595644576"
         },
         {
           "file": "packages/client/components/NavLinks.tsx",
@@ -232,6 +236,10 @@
           "hash": "17882505348629598648"
         },
         {
+          "file": "packages/client/stories/Footer.stories.tsx",
+          "hash": "8982500751116501886"
+        },
+        {
           "file": "packages/client/stories/NavBar.stories.ts",
           "hash": "2982465322323148748"
         },
@@ -254,14 +262,6 @@
         {
           "file": "packages/client/tsconfig.json",
           "hash": "2185939425434508362"
-        },
-        {
-          "file": "packages/client/components/Footer.tsx",
-          "hash": "1674547684171914430"
-        },
-        {
-          "file": "packages/client/stories/Footer.stories.tsx",
-          "hash": "8982500751116501886"
         }
       ],
       "backend": [
@@ -295,7 +295,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-          "hash": "18221300037933590275"
+          "hash": "8027299723738957550"
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -303,7 +303,75 @@
         },
         {
           "file": "packages/backend/controllers/userControllers.js",
-          "hash": "16899406769233666223"
+          "hash": "16545570206220520875"
+        },
+        {
+          "file": "packages/backend/images/products/product-670ccf7e9c988bee499248bf-1728896651268.jpeg",
+          "hash": "6005741844549085807"
+        },
+        {
+          "file": "packages/backend/images/products/product-670ccfa79c988bee499248c2-1728896626193.jpeg",
+          "hash": "8180277472994395607"
+        },
+        {
+          "file": "packages/backend/images/products/product-670ccfe09c988bee499248c7-1728896599414.jpeg",
+          "hash": "12112614521034583554"
+        },
+        {
+          "file": "packages/backend/images/products/product-670ccfec9c988bee499248ca-1728896581582.jpeg",
+          "hash": "15346959917561150778"
+        },
+        {
+          "file": "packages/backend/images/products/product-670ccffa9c988bee499248cd-1728896554116.jpeg",
+          "hash": "7468383252782579797"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0049c988bee499248d0-1728896527463.jpeg",
+          "hash": "10408059050537820496"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd00d9c988bee499248d3-1728896506579.jpeg",
+          "hash": "14120155812080023387"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd00d9c988bee499248d3-1728896506580.jpeg",
+          "hash": "5439869762658155979"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0159c988bee499248d6-1728896476447.jpeg",
+          "hash": "4332301813186924596"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0159c988bee499248d6-1728896476449.jpeg",
+          "hash": "3588370246876351044"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0209c988bee499248d9-1728896445560.jpeg",
+          "hash": "9209881143590077967"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0209c988bee499248d9-1728896445561.jpeg",
+          "hash": "11241050703595772897"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd02c9c988bee499248dc-1728896424809.jpeg",
+          "hash": "14937290378776353973"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0539c988bee499248df-1728896396417.jpeg",
+          "hash": "3791263960959566863"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cd0539c988bee499248df-1728896396418.jpeg",
+          "hash": "4545380364726798220"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cdb137f33dcfc8a8ac899-1728896334147.jpeg",
+          "hash": "17161526968932726589"
+        },
+        {
+          "file": "packages/backend/images/products/product-670cdb137f33dcfc8a8ac899-1728896334148.jpeg",
+          "hash": "13464220783090333038"
         },
         {
           "file": "packages/backend/models/cartModel.js",
@@ -315,7 +383,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-          "hash": "16011383877090657725"
+          "hash": "8892204050224459211"
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -323,7 +391,7 @@
         },
         {
           "file": "packages/backend/models/userModel.js",
-          "hash": "5697105503600857282"
+          "hash": "10297300342448859296"
         },
         {
           "file": "packages/backend/package-lock.json",
@@ -331,7 +399,7 @@
         },
         {
           "file": "packages/backend/package.json",
-          "hash": "9452761015386428926",
+          "hash": "17867011108150312159",
           "deps": [
             "npm:eslint",
             "npm:eslint-config-airbnb",
@@ -343,6 +411,7 @@
             "npm:eslint-plugin-react",
             "npm:prettier",
             "npm:bcryptjs",
+            "npm:cloudinary",
             "npm:cors",
             "npm:dotenv",
             "npm:express",
@@ -354,7 +423,10 @@
             "npm:jsonwebtoken",
             "npm:mongoose",
             "npm:morgan",
+            "npm:multer",
+            "npm:multer-storage-cloudinary",
             "npm:nodemailer",
+            "npm:sharp",
             "npm:slugify",
             "npm:validator",
             "npm:xss-clean"
@@ -370,7 +442,7 @@
         },
         {
           "file": "packages/backend/routes/productRoutes.js",
-          "hash": "5555536087755935564"
+          "hash": "14462939346916315206"
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
@@ -378,7 +450,7 @@
         },
         {
           "file": "packages/backend/routes/userRoutes.js",
-          "hash": "15749124202357596887"
+          "hash": "12607851082858880275"
         },
         {
           "file": "packages/backend/server.js",
@@ -395,6 +467,10 @@
         {
           "file": "packages/backend/utils/catchAsync.js",
           "hash": "17945249143726780164"
+        },
+        {
+          "file": "packages/backend/utils/cloudinary.js",
+          "hash": "13771137151666004492"
         },
         {
           "file": "packages/backend/utils/email.js",
