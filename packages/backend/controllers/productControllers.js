@@ -49,7 +49,6 @@ const uploadImages = catchAsync(async (req, res, next) => {
       product.images.push(file.filename);
     });
 
-    // Save the updated product with the new images
     await product.save();
 
     res.status(200).json({
