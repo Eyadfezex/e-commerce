@@ -4,28 +4,6 @@ const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const HF = require("./handlerFactory");
 
-// const createOrder = catchAsync(async (req, res, next) => {
-//   const { orderItems, shippingAddress, paymentMethod } = req.body;
-
-//   if (!orderItems || orderItems.length === 0) {
-//     return next(new AppError("No order items found", 400));
-//   }
-
-//   const order = await Order.create({
-//     orderItems,
-//     shippingAddress,
-//     paymentMethod,
-//     customer: req.user._id,
-//   });
-//   res.status(201).json({
-//     status: "success",
-//     message: "Order created successfully",
-//     data: {
-//       order,
-//     },
-//   });
-// });
-
 const createOrderFromCart = catchAsync(async (req, res, next) => {
   const { shippingAddress, paymentMethod } = req.body;
   const cart = await Cart.findOne({ userId: req.user.id }).populate(

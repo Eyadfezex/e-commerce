@@ -14708,7 +14708,7 @@
       },
       {
         "source": "client",
-        "target": "npm:@storybook/addon-measure@8.3.3",
+        "target": "npm:@storybook/addon-measure@8.3.2",
         "type": "static"
       },
       {
@@ -14718,7 +14718,7 @@
       },
       {
         "source": "client",
-        "target": "npm:@storybook/addon-viewport@8.3.3",
+        "target": "npm:@storybook/addon-viewport@8.3.2",
         "type": "static"
       },
       {

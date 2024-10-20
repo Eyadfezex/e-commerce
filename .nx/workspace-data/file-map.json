@@ -9,12 +9,18 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+<<<<<<< HEAD
         "file": ".gitignore",
         "hash": "11560605376882027213"
+=======
+        "file": "pnpm-lock.yaml",
+        "hash": "8303944712084690450"
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
       },
       {
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
+<<<<<<< HEAD
       },
       {
         "file": "lerna-debug.log",
@@ -27,20 +33,41 @@
       {
         "file": "nx.json",
         "hash": "10146023197190099756"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
+=======
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
       },
       {
         "file": "package.json",
         "hash": "12440314922548810535"
       },
       {
+<<<<<<< HEAD
         "file": "pnpm-lock.yaml",
         "hash": "8303944712084690450"
       },
       {
+=======
+        "file": "nx.json",
+        "hash": "7800299079214245219"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14753864772816161294"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
         "file": "pnpm-workspace.yaml",
         "hash": "9928973617214098819"
       }
@@ -153,7 +180,11 @@
         },
         {
           "file": "packages/client/chromatic.config.json",
-          "hash": "9064107291103111533"
+          "hash": "15592892256944903047"
+        },
+        {
+          "file": "packages/client/components/Footer.tsx",
+          "hash": "1674547684171914430"
         },
         {
           "file": "packages/client/components/Footer.tsx",
@@ -220,9 +251,9 @@
             "npm:@nextui-org/button",
             "npm:@nextui-org/dropdown",
             "npm:@storybook/addon-designs",
-            "npm:@storybook/addon-measure@8.3.3",
+            "npm:@storybook/addon-measure@8.3.2",
             "npm:@storybook/addon-storysource",
-            "npm:@storybook/addon-viewport@8.3.3",
+            "npm:@storybook/addon-viewport@8.3.2",
             "npm:@tanstack/react-query",
             "npm:hamburger-react",
             "npm:next",
@@ -291,11 +322,15 @@
         },
         {
           "file": "packages/backend/controllers/orderControllers.js",
-          "hash": "10934790973447619805"
+          "hash": "10183249089542798604"
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
+<<<<<<< HEAD
           "hash": "8027299723738957550"
+=======
+          "hash": "1851085182196137151"
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -306,6 +341,7 @@
           "hash": "16545570206220520875"
         },
         {
+<<<<<<< HEAD
           "file": "packages/backend/images/products/product-670ccf7e9c988bee499248bf-1728896651268.jpeg",
           "hash": "6005741844549085807"
         },
@@ -371,6 +407,73 @@
         },
         {
           "file": "packages/backend/images/products/product-670cdb137f33dcfc8a8ac899-1728896334148.jpeg",
+=======
+          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1729445801974.jpeg",
+          "hash": "8180277472994395607"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b8b9a0b90091f5106cd-1729445720249.jpeg",
+          "hash": "15346959917561150778"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b939a0b90091f5106d1-1729445693581.jpeg",
+          "hash": "7468383252782579797"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1729445587007.jpeg",
+          "hash": "6679878928496801260"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1729445587008.jpeg",
+          "hash": "10850419976003178382"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1729445549982.jpeg",
+          "hash": "14120155812080023387"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1729445549983.jpeg",
+          "hash": "5439869762658155979"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1729438497407.jpeg",
+          "hash": "4332301813186924596"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1729438497408.jpeg",
+          "hash": "3588370246876351044"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1729438469562.jpeg",
+          "hash": "9209881143590077967"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1729438469563.jpeg",
+          "hash": "11241050703595772897"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1729438443348.jpeg",
+          "hash": "5074189226323147594"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1729438443349.jpeg",
+          "hash": "14937290378776353973"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1729438611140.jpeg",
+          "hash": "4545380364726798220"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1729438632641.jpeg",
+          "hash": "3791263960959566863"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729438367900.jpeg",
+          "hash": "17161526968932726589"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729438367901.jpeg",
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
           "hash": "13464220783090333038"
         },
         {
@@ -383,7 +486,11 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
+<<<<<<< HEAD
           "hash": "8892204050224459211"
+=======
+          "hash": "16471916246949893861"
+>>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -475,6 +582,22 @@
         {
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446899491.jpeg",
+          "hash": "12112614521034583554"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446908018.jpeg",
+          "hash": "3842568232393291858"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447041942.jpeg",
+          "hash": "16657280399342764707"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447049801.jpeg",
+          "hash": "6005741844549085807"
         }
       ]
     }
