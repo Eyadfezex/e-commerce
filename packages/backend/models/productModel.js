@@ -32,6 +32,7 @@ const productSchema = new mongoose.Schema(
     originalPrice: {
       type: Number,
       required: [true, "Product price is required"],
+      default: 0,
     },
     discountPrice: {
       type: Number,
@@ -41,6 +42,8 @@ const productSchema = new mongoose.Schema(
         },
         message: "Discount price ({VALUE}) should be below regular price",
       },
+      required: true,
+      default: 0,
     },
     images: [String],
     createdAt: {
@@ -77,6 +80,10 @@ productSchema.pre(/^find/, function (next) {
     select: "name -_id",
   });
   next();
+});
+
+productSchema.virtual("currentPrice").get(function () {
+  return this.originalPrice - this.discountPrice;
 });
 
 const Product = mongoose.model("Product", productSchema);
