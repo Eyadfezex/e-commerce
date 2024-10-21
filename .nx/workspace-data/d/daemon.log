@@ -8302,3 +8302,7 @@ Error: EPERM: operation not permitted, rename 'G:\github\e-commerce\.nx\workspac
 [NX Daemon Server] - 2024-10-20T17:57:33.125Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX Daemon Server] - 2024-10-20T17:57:33.126Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX Daemon Server] - 2024-10-20T17:57:33.126Z - Time taken for 'total execution time for createProjectGraph()' 31.018600000010338ms
+[NX Daemon Server] - 2024-10-20T18:00:04.364Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-10-20T20:57:29.923Z - [WATCHER]: Stopping the watcher for D:\VS Language\js\e-commerce (sources)
+[NX Daemon Server] - 2024-10-20T20:57:29.930Z - [WATCHER]: Stopping the watcher for D:\VS Language\js\e-commerce (outputs)
+[NX Daemon Server] - 2024-10-20T20:57:29.945Z - Server stopped because: "10800000ms of inactivity"
