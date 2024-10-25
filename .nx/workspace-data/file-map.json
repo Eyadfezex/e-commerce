@@ -9,36 +9,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "8303944712084690450"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
+        "file": "pnpm-lock.yaml",
+        "hash": "8303944712084690450"
       },
       {
         "file": "package.json",
         "hash": "12440314922548810535"
       },
       {
-        "file": "nx.json",
-        "hash": "7800299079214245219"
+        "file": ".gitignore",
+        "hash": "14753864772816161294"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7800299079214245219"
+      },
+      {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14753864772816161294"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
       },
       {
         "file": "pnpm-workspace.yaml",
@@ -294,10 +294,6 @@
           "hash": "10183249089542798604"
         },
         {
-          "file": "packages/backend/controllers/productControllers.js",
-          "hash": "1851085182196137151"
-        },
-        {
           "file": "packages/backend/controllers/reviewControllers.js",
           "hash": "11631247074221816665"
         },
@@ -306,8 +302,24 @@
           "hash": "16545570206220520875"
         },
         {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447041942.jpeg",
+          "hash": "16657280399342764707"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447049801.jpeg",
+          "hash": "6005741844549085807"
+        },
+        {
           "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1729445801974.jpeg",
           "hash": "8180277472994395607"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446899491.jpeg",
+          "hash": "12112614521034583554"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446908018.jpeg",
+          "hash": "3842568232393291858"
         },
         {
           "file": "packages/backend/images/products/product-67151b8b9a0b90091f5106cd-1729445720249.jpeg",
@@ -374,6 +386,14 @@
           "hash": "13464220783090333038"
         },
         {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729518298621.jpeg",
+          "hash": "17161526968932726589"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729518312877.jpeg",
+          "hash": "13464220783090333038"
+        },
+        {
           "file": "packages/backend/models/cartModel.js",
           "hash": "15558999615403186275"
         },
@@ -383,7 +403,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-          "hash": "16471916246949893861"
+          "hash": "11849530713528251980"
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -442,7 +462,7 @@
         },
         {
           "file": "packages/backend/routes/productRoutes.js",
-          "hash": "14462939346916315206"
+          "hash": "6381344522880488202"
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
@@ -477,20 +497,8 @@
           "hash": "15800405455870972947"
         },
         {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446899491.jpeg",
-          "hash": "12112614521034583554"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446908018.jpeg",
-          "hash": "3842568232393291858"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447041942.jpeg",
-          "hash": "16657280399342764707"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447049801.jpeg",
-          "hash": "6005741844549085807"
+          "file": "packages/backend/controllers/productControllers.js",
+          "hash": "1935875446902719423"
         }
       ]
     }

@@ -36,14 +36,6 @@ const productSchema = new mongoose.Schema(
     },
     discountPrice: {
       type: Number,
-      validate: {
-        validator: function (val) {
-          return val < this.originalPrice;
-        },
-        message: "Discount price ({VALUE}) should be below regular price",
-      },
-      required: true,
-      default: 0,
     },
     images: [String],
     createdAt: {
@@ -63,6 +55,14 @@ const productSchema = new mongoose.Schema(
   }
 );
 
+productSchema.virtual("currentPrice").get(function () {
+  return this.originalPrice - this.discountPrice;
+});
+
+productSchema.virtual("discountPercentage").get(function () {
+  return (this.discountPrice / this.originalPrice) * 100;
+});
+
 productSchema.virtual("reviews", {
   ref: "Review",
   foreignField: "product",
@@ -70,6 +70,11 @@ productSchema.virtual("reviews", {
 });
 
 productSchema.pre("save", function (next) {
+  if (this.discountPrice >= this.originalPrice) {
+    return next(
+      new Error("Discount price must be lower than the original price")
+    );
+  }
   this.slug = slugify(this.name, { upper: true });
   next();
 });
@@ -80,10 +85,6 @@ productSchema.pre(/^find/, function (next) {
     select: "name -_id",
   });
   next();
-});
-
-productSchema.virtual("currentPrice").get(function () {
-  return this.originalPrice - this.discountPrice;
 });
 
 const Product = mongoose.model("Product", productSchema);
