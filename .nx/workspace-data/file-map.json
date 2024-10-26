@@ -9,40 +9,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "17789832370859779127"
-      },
-      {
-        "file": "package.json",
-        "hash": "12440314922548810535"
-      },
-      {
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
-      },
-      {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
+      },
+      {
         "file": ".gitignore",
         "hash": "11560605376882027213"
+      },
+      {
+        "file": "package.json",
+        "hash": "467188710342882370"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10146023197190099756"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "4648855309724282629"
       }
     ],
     "projectFileMap": {
@@ -293,6 +293,10 @@
           "hash": "13472062729864149085"
         },
         {
+          "file": "packages/client/LoadingUI/HeroImage.tsx",
+          "hash": "577032279869562158"
+        },
+        {
           "file": "packages/client/README.md",
           "hash": "10011398316402962549"
         },
@@ -362,11 +366,35 @@
         },
         {
           "file": "packages/client/app/page.tsx",
-          "hash": "8747984811871896850"
+          "hash": "906055620711224685"
+        },
+        {
+          "file": "packages/client/assets/img/calvin-klein.png",
+          "hash": "13649087062275541062"
+        },
+        {
+          "file": "packages/client/assets/img/gucci.png",
+          "hash": "15307340203634454894"
+        },
+        {
+          "file": "packages/client/assets/img/pexels-marleneleppanen-1183266.png",
+          "hash": "6004246487757281459"
+        },
+        {
+          "file": "packages/client/assets/img/prada.png",
+          "hash": "6261132541343520193"
         },
         {
           "file": "packages/client/assets/img/t-shirt.webp",
           "hash": "2748630408664558936"
+        },
+        {
+          "file": "packages/client/assets/img/versace.png",
+          "hash": "2489397909420880828"
+        },
+        {
+          "file": "packages/client/assets/img/zara.png",
+          "hash": "9342189707271163601"
         },
         {
           "file": "packages/client/assets/svgs/1930264_check_complete_done_green_success_icon.svg",
@@ -379,6 +407,10 @@
         {
           "file": "packages/client/assets/svgs/logo.svg",
           "hash": "10230734186477549327"
+        },
+        {
+          "file": "packages/client/assets/svgs/star.svg",
+          "hash": "7905142404099204335"
         },
         {
           "file": "packages/client/axios/Axios.ts",
@@ -394,7 +426,11 @@
         },
         {
           "file": "packages/client/components/Hero.tsx",
-          "hash": "7650470391323189002"
+          "hash": "12106388318817698573"
+        },
+        {
+          "file": "packages/client/components/HeroContent.tsx",
+          "hash": "926581349690450917"
         },
         {
           "file": "packages/client/components/NavBar.tsx",
@@ -414,7 +450,7 @@
         },
         {
           "file": "packages/client/components/Reviews.tsx",
-          "hash": "11992768856418365626"
+          "hash": "11358605895712203364"
         },
         {
           "file": "packages/client/components/SearchBar.tsx",
@@ -430,7 +466,7 @@
         },
         {
           "file": "packages/client/package.json",
-          "hash": "9331703699646260081",
+          "hash": "13657881178071806197",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -453,9 +489,11 @@
             "npm:typescript",
             "npm:@emotion/react",
             "npm:@emotion/styled",
+            "npm:@gsap/react",
             "npm:@mui/material",
             "npm:@nextui-org/button",
             "npm:@nextui-org/dropdown",
+            "npm:@nextui-org/skeleton",
             "npm:@storybook/addon-designs",
             "npm:@storybook/addon-measure@8.3.3",
             "npm:@storybook/addon-storysource",
@@ -463,6 +501,7 @@
             "npm:@tanstack/react-query",
             "npm:@tanstack/react-query-devtools",
             "npm:axios",
+            "npm:gsap",
             "npm:hamburger-react",
             "npm:next",
             "npm:react",
@@ -505,34 +544,6 @@
         {
           "file": "packages/client/util/Providers.tsx",
           "hash": "9803927410838999909"
-        },
-        {
-          "file": "packages/client/assets/img/pexels-marleneleppanen-1183266.png",
-          "hash": "6004246487757281459"
-        },
-        {
-          "file": "packages/client/assets/svgs/star.svg",
-          "hash": "7905142404099204335"
-        },
-        {
-          "file": "packages/client/assets/img/versace.png",
-          "hash": "2489397909420880828"
-        },
-        {
-          "file": "packages/client/assets/img/zara.png",
-          "hash": "9342189707271163601"
-        },
-        {
-          "file": "packages/client/assets/img/gucci.png",
-          "hash": "15307340203634454894"
-        },
-        {
-          "file": "packages/client/assets/img/prada.png",
-          "hash": "6261132541343520193"
-        },
-        {
-          "file": "packages/client/assets/img/calvin-klein.png",
-          "hash": "13649087062275541062"
         }
       ]
     }

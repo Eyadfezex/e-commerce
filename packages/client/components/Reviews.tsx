@@ -26,7 +26,7 @@ export const Review = ({
         <Image src={check} width={19} height={19} alt="check" />
       </div>
       <p className="text-sm opacity-80 mt-2" id="review">
-        "{review}"
+        &quot;{review}&quot;
       </p>
       <span
         className="text-zinc-500 font-mono font-medium mt-4 block"

@@ -1557,6 +1557,15 @@
         "hash": "sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g=="
       }
     },
+    "npm:@gsap/react": {
+      "type": "npm",
+      "name": "npm:@gsap/react",
+      "data": {
+        "version": "2.1.1",
+        "packageName": "@gsap/react",
+        "hash": "sha512-apGPRrmpqxvl1T6Io1KgT8tFU+IuACI6z4zmT7t8+PASserJeLVRFJdSNUFA2Xb/eVkZI1noE8LIrY/w/oJECw=="
+      }
+    },
     "npm:@humanwhocodes/config-array": {
       "type": "npm",
       "name": "npm:@humanwhocodes/config-array",
@@ -2194,6 +2203,15 @@
         "version": "2.0.8",
         "packageName": "@nextui-org/shared-utils",
         "hash": "sha512-ZEtoMPXS+IjT8GvpJTS9IWDnT1JNCKV+NDqqgysAf1niJmOFLyJgl6dh/9n4ufcGf1GbSEQN+VhJasEw7ajYGQ=="
+      }
+    },
+    "npm:@nextui-org/skeleton": {
+      "type": "npm",
+      "name": "npm:@nextui-org/skeleton",
+      "data": {
+        "version": "2.0.32",
+        "packageName": "@nextui-org/skeleton",
+        "hash": "sha512-dS0vuRrc4oWktW3wa/KFhcBNnV0oiDqKXP4BqRj7wgS01fOAqj3cJiqwUDLKO8GbEnxLkbqLBFcUoLgktpRszQ=="
       }
     },
     "npm:@nextui-org/spinner": {
@@ -7990,6 +8008,15 @@
         "version": "1.4.0",
         "packageName": "graphemer",
         "hash": "sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag=="
+      }
+    },
+    "npm:gsap": {
+      "type": "npm",
+      "name": "npm:gsap",
+      "data": {
+        "version": "3.12.5",
+        "packageName": "gsap",
+        "hash": "sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ=="
       }
     },
     "npm:hamburger-react": {
@@ -16792,6 +16819,16 @@
       "type": "static"
     },
     {
+      "source": "npm:@gsap/react",
+      "target": "npm:gsap",
+      "type": "static"
+    },
+    {
+      "source": "npm:@gsap/react",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
       "source": "npm:@humanwhocodes/config-array",
       "target": "npm:@humanwhocodes/object-schema",
       "type": "static"
@@ -18118,6 +18155,36 @@
     },
     {
       "source": "npm:@nextui-org/ripple",
+      "target": "npm:react-dom",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
+      "target": "npm:@nextui-org/react-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
+      "target": "npm:@nextui-org/shared-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
+      "target": "npm:@nextui-org/system",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
+      "target": "npm:@nextui-org/theme",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/skeleton",
       "target": "npm:react-dom",
       "type": "static"
     },
