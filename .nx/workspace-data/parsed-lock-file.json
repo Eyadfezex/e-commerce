@@ -2011,9 +2011,9 @@
       "type": "npm",
       "name": "npm:@next/env",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/env",
-        "hash": "sha512-s3lh6K8cbW1h5Nga7NNeXrbe0+2jIIYK9YaA9T7IufDWnZpozdFUp6Hf0d5rNWUKu4fEuSX2rCKlGjCrtylfDw=="
+        "hash": "sha512-OG1EdVLNIJ7fcFbupbsgZkovG9KYKyUWAH0SAPE2Xv3pxqZOxHeSg0vnb3suemt+Nb5V5T27nDMpxe/50DDNaA=="
       }
     },
     "npm:@next/eslint-plugin-next": {
@@ -2029,81 +2029,72 @@
       "type": "npm",
       "name": "npm:@next/swc-darwin-arm64",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-darwin-arm64",
-        "hash": "sha512-IkAmQEa2Htq+wHACBxOsslt+jMoV3msvxCn0WFSfJSkv/scy+i/EukBKNad36grRxywaXUYJc9mxEGkeIs8Bzg=="
+        "hash": "sha512-/FlDaVZfT7Ds8HgSmTTMb3HJ0xVuIEzcWnV8TXmQTZmD/r6GXz05Lu2r2r22TVKn3uPyoAvpXXzxs7Bb/KPWxw=="
       }
     },
     "npm:@next/swc-darwin-x64": {
       "type": "npm",
       "name": "npm:@next/swc-darwin-x64",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-darwin-x64",
-        "hash": "sha512-Dv1RBGs2TTjkwEnFMVL5XIfJEavnLqqwYSD6LXgTPdEy/u6FlSrLBSSfe1pcfqhFEXRAgVL3Wpjibe5wXJzWog=="
+        "hash": "sha512-dxPFygS6UHb36uvMgf1Y7QS/8tMani9s59uz/QgugSOOPQ7yDnOllQBtPJntxIfLFUc3MkB2QJ783/YBA4IGNQ=="
       }
     },
     "npm:@next/swc-linux-arm64-gnu": {
       "type": "npm",
       "name": "npm:@next/swc-linux-arm64-gnu",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-linux-arm64-gnu",
-        "hash": "sha512-yB1tYEFFqo4ZNWkwrJultbsw7NPAAxlPXURXioRl9SdW6aIefOLS+0TEsKrWBtbJ9moTDgU3HRILL6QBQnMevg=="
+        "hash": "sha512-FurVSrGYRSYWLo60W0rpKT5Ro55bT1zK4sj+kt47hJuSJibvN0GYiF10r9ymy+frY/wOPBPCJ1PAA+NgHU98uA=="
       }
     },
     "npm:@next/swc-linux-arm64-musl": {
       "type": "npm",
       "name": "npm:@next/swc-linux-arm64-musl",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-linux-arm64-musl",
-        "hash": "sha512-v5jZ/FV/eHGoWhMKYrsAweQ7CWb8xsWGM/8m1mwwZQ/sutJjoFaXchwK4pX8NqwImILEvQmZWyb8pPTcP7htWg=="
+        "hash": "sha512-UyPluKzzWNUGzalxzdq+fAXV02i4M0221XbYW/pM2EjVL/ys/VwshSKLP9gIlZPMWcsQRuVhzh2MyUAs71dPNg=="
       }
     },
     "npm:@next/swc-linux-x64-gnu": {
       "type": "npm",
       "name": "npm:@next/swc-linux-x64-gnu",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-linux-x64-gnu",
-        "hash": "sha512-aVc7m4YL7ViiRv7SOXK3RplXzOEe/qQzRA5R2vpXboHABs3w8vtFslGTz+5tKiQzWUmTmBNVW0UQdhkKRORmGA=="
+        "hash": "sha512-Gsx3YUNGu84CBz7BjpAkaJYrQyKn/ws6LEzqp77/9QnAd/cTNifqwmpOUCZFgT1KLQt9DLwbNv3tM41ulZih2Q=="
       }
     },
     "npm:@next/swc-linux-x64-musl": {
       "type": "npm",
       "name": "npm:@next/swc-linux-x64-musl",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-linux-x64-musl",
-        "hash": "sha512-4wWY7/OsSaJOOKvMsu1Teylku7vKyTuocvDLTZQq0TYv9OjiYYWt63PiE1nTuZnqQ4RPvME7Xai+9enoiN0Wrg=="
+        "hash": "sha512-V4DMy49IaHMX2N7BwaD0qLWG6LaSVGBknFcI0fmrSQcS9fHHbO62mYVD6hEQ2pPAn4DTbRbRXc8xF8ntM+GQmw=="
       }
     },
     "npm:@next/swc-win32-arm64-msvc": {
       "type": "npm",
       "name": "npm:@next/swc-win32-arm64-msvc",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-win32-arm64-msvc",
-        "hash": "sha512-uP1XkqCqV2NVH9+g2sC7qIw+w2tRbcMiXFEbMihkQ8B1+V6m28sshBwAB0SDmOe0u44ne1vFU66+gx/28RsBVQ=="
-      }
-    },
-    "npm:@next/swc-win32-ia32-msvc": {
-      "type": "npm",
-      "name": "npm:@next/swc-win32-ia32-msvc",
-      "data": {
-        "version": "14.2.13",
-        "packageName": "@next/swc-win32-ia32-msvc",
-        "hash": "sha512-V26ezyjPqQpDBV4lcWIh8B/QICQ4v+M5Bo9ykLN+sqeKKBxJVDpEc6biDVyluTXTC40f5IqCU0ttth7Es2ZuMw=="
+        "hash": "sha512-tlYXaAmz9bDlc3164q1pMZk69Imctd5EFsMaWmbKpIPkLuUI5RqggEv9FPTfUm9O42qq1uk75lWDGcpkU70jiw=="
       }
     },
     "npm:@next/swc-win32-x64-msvc": {
       "type": "npm",
       "name": "npm:@next/swc-win32-x64-msvc",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "@next/swc-win32-x64-msvc",
-        "hash": "sha512-WwzOEAFBGhlDHE5Z73mNU8CO8mqMNLqaG+AO9ETmzdCQlJhVtWZnOl2+rqgVQS+YHunjOWptdFmNfbpwcUuEsw=="
+        "hash": "sha512-mNPPz2MQLfrPn6YRxkIGkEk/ptPqzfgJl89kn/o7nz+Kf004z9L4334cbYeKpZejhHhVzalUT0OKKTQqFQOCkQ=="
       }
     },
     "npm:@nextui-org/aria-utils": {
@@ -3510,9 +3501,18 @@
         "hash": "sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ=="
       }
     },
-    "npm:@swc/helpers": {
+    "npm:@swc/helpers@0.5.13": {
       "type": "npm",
-      "name": "npm:@swc/helpers",
+      "name": "npm:@swc/helpers@0.5.13",
+      "data": {
+        "version": "0.5.13",
+        "packageName": "@swc/helpers",
+        "hash": "sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w=="
+      }
+    },
+    "npm:@swc/helpers@0.5.5": {
+      "type": "npm",
+      "name": "npm:@swc/helpers@0.5.5",
       "data": {
         "version": "0.5.5",
         "packageName": "@swc/helpers",
@@ -3526,6 +3526,24 @@
         "version": "5.56.2",
         "packageName": "@tanstack/query-core",
         "hash": "sha512-gor0RI3/R5rVV3gXfddh1MM+hgl0Z4G7tj6Xxpq6p2I03NGPaJ8dITY9Gz05zYYb/EJq9vPas/T4wn9EaDPd4Q=="
+      }
+    },
+    "npm:@tanstack/query-devtools": {
+      "type": "npm",
+      "name": "npm:@tanstack/query-devtools",
+      "data": {
+        "version": "5.58.0",
+        "packageName": "@tanstack/query-devtools",
+        "hash": "sha512-iFdQEFXaYYxqgrv63ots+65FGI+tNp5ZS5PdMU1DWisxk3fez5HG3FyVlbUva+RdYS5hSLbxZ9aw3yEs97GNTw=="
+      }
+    },
+    "npm:@tanstack/react-query-devtools": {
+      "type": "npm",
+      "name": "npm:@tanstack/react-query-devtools",
+      "data": {
+        "version": "5.59.15",
+        "packageName": "@tanstack/react-query-devtools",
+        "hash": "sha512-rX28KTivkA2XEn3Fj9ckDtnTPY8giWYgssySSAperpVol4+th+NCij/MhLylfB+Mfg2JfCxOcwnM/fwzS8iSog=="
       }
     },
     "npm:@tanstack/react-query": {
@@ -10336,9 +10354,9 @@
       "type": "npm",
       "name": "npm:next",
       "data": {
-        "version": "14.2.13",
+        "version": "15.0.0-canary.202",
         "packageName": "next",
-        "hash": "sha512-BseY9YNw8QJSwLYD7hlZzl6QVDoSFHL/URN5K64kVEVpCsSOWeyjbIGK+dZUaRViHTaMQX8aqmnn0PHBbGZezg=="
+        "hash": "sha512-loKX/vwbYVB1qREyUOHVRJnb1M4OaOIeWX+HVGd+zy5SkQwxgd1x56bK7rYE0OaRMBABuxReyUYanwKHo0M7VQ=="
       }
     },
     "npm:no-case": {
@@ -12969,18 +12987,9 @@
         "hash": "sha512-0WqXzrsMTyb8yjZJHDqwmnwRJvhALK9LfRtRc6B4UTWe8AijYLZYZ9thuJTZc2VfQWINADW/j+LiJnfy2RoC1w=="
       }
     },
-    "npm:styled-jsx@5.1.1": {
+    "npm:styled-jsx": {
       "type": "npm",
-      "name": "npm:styled-jsx@5.1.1",
-      "data": {
-        "version": "5.1.1",
-        "packageName": "styled-jsx",
-        "hash": "sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw=="
-      }
-    },
-    "npm:styled-jsx@5.1.6": {
-      "type": "npm",
-      "name": "npm:styled-jsx@5.1.6",
+      "name": "npm:styled-jsx",
       "data": {
         "version": "5.1.6",
         "packageName": "styled-jsx",
@@ -16844,12 +16853,12 @@
     },
     {
       "source": "npm:@internationalized/date",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
       "source": "npm:@internationalized/message",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -16859,12 +16868,12 @@
     },
     {
       "source": "npm:@internationalized/number",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
       "source": "npm:@internationalized/string",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19104,7 +19113,7 @@
     },
     {
       "source": "npm:@react-aria/button",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19139,7 +19148,7 @@
     },
     {
       "source": "npm:@react-aria/dialog",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19169,7 +19178,7 @@
     },
     {
       "source": "npm:@react-aria/focus@3.17.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19199,7 +19208,7 @@
     },
     {
       "source": "npm:@react-aria/focus@3.18.2",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19249,7 +19258,7 @@
     },
     {
       "source": "npm:@react-aria/i18n@3.11.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19294,7 +19303,7 @@
     },
     {
       "source": "npm:@react-aria/i18n@3.12.2",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19319,7 +19328,7 @@
     },
     {
       "source": "npm:@react-aria/interactions@3.21.3",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19344,7 +19353,7 @@
     },
     {
       "source": "npm:@react-aria/interactions@3.22.2",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19414,7 +19423,7 @@
     },
     {
       "source": "npm:@react-aria/menu",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19479,7 +19488,7 @@
     },
     {
       "source": "npm:@react-aria/overlays@3.22.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19544,7 +19553,7 @@
     },
     {
       "source": "npm:@react-aria/overlays@3.23.2",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19589,7 +19598,7 @@
     },
     {
       "source": "npm:@react-aria/selection@3.18.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19634,7 +19643,7 @@
     },
     {
       "source": "npm:@react-aria/selection@3.19.3",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19649,7 +19658,7 @@
     },
     {
       "source": "npm:@react-aria/ssr@3.9.4",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19659,7 +19668,7 @@
     },
     {
       "source": "npm:@react-aria/ssr@3.9.5",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19684,7 +19693,7 @@
     },
     {
       "source": "npm:@react-aria/utils@3.24.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19714,7 +19723,7 @@
     },
     {
       "source": "npm:@react-aria/utils@3.25.2",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19744,7 +19753,7 @@
     },
     {
       "source": "npm:@react-aria/visually-hidden",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19759,7 +19768,7 @@
     },
     {
       "source": "npm:@react-stately/collections@3.10.7",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19774,7 +19783,7 @@
     },
     {
       "source": "npm:@react-stately/collections@3.10.9",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19799,7 +19808,7 @@
     },
     {
       "source": "npm:@react-stately/menu",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19819,7 +19828,7 @@
     },
     {
       "source": "npm:@react-stately/overlays@3.6.10",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19839,7 +19848,7 @@
     },
     {
       "source": "npm:@react-stately/overlays@3.6.7",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19864,7 +19873,7 @@
     },
     {
       "source": "npm:@react-stately/selection",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19884,7 +19893,7 @@
     },
     {
       "source": "npm:@react-stately/toggle",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19914,7 +19923,7 @@
     },
     {
       "source": "npm:@react-stately/tree@3.8.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19944,7 +19953,7 @@
     },
     {
       "source": "npm:@react-stately/tree@3.8.4",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19954,7 +19963,7 @@
     },
     {
       "source": "npm:@react-stately/utils@3.10.1",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -19964,7 +19973,7 @@
     },
     {
       "source": "npm:@react-stately/utils@3.10.3",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/helpers@0.5.5",
       "type": "static"
     },
     {
@@ -21079,7 +21088,7 @@
     },
     {
       "source": "npm:@storybook/nextjs",
-      "target": "npm:styled-jsx@5.1.6",
+      "target": "npm:styled-jsx",
       "type": "static"
     },
     {
@@ -21468,13 +21477,33 @@
       "type": "static"
     },
     {
-      "source": "npm:@swc/helpers",
+      "source": "npm:@swc/helpers@0.5.13",
+      "target": "npm:tslib@2.7.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@swc/helpers@0.5.5",
       "target": "npm:@swc/counter",
       "type": "static"
     },
     {
-      "source": "npm:@swc/helpers",
+      "source": "npm:@swc/helpers@0.5.5",
       "target": "npm:tslib@2.7.0",
+      "type": "static"
+    },
+    {
+      "source": "npm:@tanstack/react-query-devtools",
+      "target": "npm:@tanstack/query-devtools",
+      "type": "static"
+    },
+    {
+      "source": "npm:@tanstack/react-query-devtools",
+      "target": "npm:@tanstack/react-query",
+      "type": "static"
+    },
+    {
+      "source": "npm:@tanstack/react-query-devtools",
+      "target": "npm:react",
       "type": "static"
     },
     {
@@ -28724,7 +28753,12 @@
     },
     {
       "source": "npm:next",
-      "target": "npm:@swc/helpers",
+      "target": "npm:@swc/counter",
+      "type": "static"
+    },
+    {
+      "source": "npm:next",
+      "target": "npm:@swc/helpers@0.5.13",
       "type": "static"
     },
     {
@@ -28735,11 +28769,6 @@
     {
       "source": "npm:next",
       "target": "npm:caniuse-lite",
-      "type": "static"
-    },
-    {
-      "source": "npm:next",
-      "target": "npm:graceful-fs",
       "type": "static"
     },
     {
@@ -28759,7 +28788,7 @@
     },
     {
       "source": "npm:next",
-      "target": "npm:styled-jsx@5.1.1",
+      "target": "npm:styled-jsx",
       "type": "static"
     },
     {
@@ -28799,12 +28828,12 @@
     },
     {
       "source": "npm:next",
-      "target": "npm:@next/swc-win32-ia32-msvc",
+      "target": "npm:@next/swc-win32-x64-msvc",
       "type": "static"
     },
     {
       "source": "npm:next",
-      "target": "npm:@next/swc-win32-x64-msvc",
+      "target": "npm:sharp",
       "type": "static"
     },
     {
@@ -31758,42 +31787,22 @@
       "type": "static"
     },
     {
-      "source": "npm:styled-jsx@5.1.1",
+      "source": "npm:styled-jsx",
       "target": "npm:client-only",
       "type": "static"
     },
     {
-      "source": "npm:styled-jsx@5.1.1",
+      "source": "npm:styled-jsx",
       "target": "npm:react",
       "type": "static"
     },
     {
-      "source": "npm:styled-jsx@5.1.1",
+      "source": "npm:styled-jsx",
       "target": "npm:@babel/core",
       "type": "static"
     },
     {
-      "source": "npm:styled-jsx@5.1.1",
-      "target": "npm:babel-plugin-macros",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx@5.1.6",
-      "target": "npm:client-only",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx@5.1.6",
-      "target": "npm:react",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx@5.1.6",
-      "target": "npm:@babel/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx@5.1.6",
+      "source": "npm:styled-jsx",
       "target": "npm:babel-plugin-macros",
       "type": "static"
     },

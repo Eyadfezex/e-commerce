@@ -9,292 +9,43 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-<<<<<<< HEAD
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
-=======
-        "file": "pnpm-lock.yaml",
-        "hash": "8303944712084690450"
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
-<<<<<<< HEAD
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-=======
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "17789832370859779127"
       },
       {
         "file": "package.json",
         "hash": "12440314922548810535"
       },
       {
-<<<<<<< HEAD
-        "file": "pnpm-lock.yaml",
-        "hash": "8303944712084690450"
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
-=======
         "file": "nx.json",
-        "hash": "7800299079214245219"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
+        "hash": "10146023197190099756"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": ".gitignore",
-        "hash": "14753864772816161294"
-      },
-      {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       }
     ],
     "projectFileMap": {
-      "client": [
-        {
-          "file": "packages/client/.eslintrc.json",
-          "hash": "4614564216425289554"
-        },
-        {
-          "file": "packages/client/.gitignore",
-          "hash": "6351213542049544593"
-        },
-        {
-          "file": "packages/client/.storybook/main.ts",
-          "hash": "7582054075579059977"
-        },
-        {
-          "file": "packages/client/.storybook/preview.ts",
-          "hash": "13472062729864149085"
-        },
-        {
-          "file": "packages/client/README.md",
-          "hash": "10011398316402962549"
-        },
-        {
-          "file": "packages/client/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
-          "hash": "10648935345635237157"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
-          "hash": "9515624319395975955"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
-          "hash": "15220361477244295055"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
-          "hash": "14182897448607956662"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
-          "hash": "3977039100317460061"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
-          "hash": "345143232118275278"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
-          "hash": "4280300880547919822"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
-          "hash": "6538674733602554051"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
-          "hash": "14524909222801850226"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
-          "hash": "1386078019167196222"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
-          "hash": "996530835745513683"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
-          "hash": "4658125103796669334"
-        },
-        {
-          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
-          "hash": "8772877621724132239"
-        },
-        {
-          "file": "packages/client/app/globals.css",
-          "hash": "2227184248507689446"
-        },
-        {
-          "file": "packages/client/app/layout.tsx",
-          "hash": "12574088049146866361"
-        },
-        {
-          "file": "packages/client/app/page.tsx",
-          "hash": "7080927029839245185"
-        },
-        {
-          "file": "packages/client/assets/img/t-shirt.webp",
-          "hash": "2748630408664558936"
-        },
-        {
-          "file": "packages/client/assets/svgs/1930264_check_complete_done_green_success_icon.svg",
-          "hash": "15538040644529668375"
-        },
-        {
-          "file": "packages/client/assets/svgs/dot-small-svgrepo-com.svg",
-          "hash": "14133594487879085616"
-        },
-        {
-          "file": "packages/client/assets/svgs/logo.svg",
-          "hash": "10230734186477549327"
-        },
-        {
-          "file": "packages/client/chromatic.config.json",
-          "hash": "15592892256944903047"
-        },
-        {
-          "file": "packages/client/components/Footer.tsx",
-          "hash": "1674547684171914430"
-        },
-        {
-          "file": "packages/client/components/Footer.tsx",
-          "hash": "1674547684171914430"
-        },
-        {
-          "file": "packages/client/components/NavBar.tsx",
-          "hash": "11142947794595644576"
-        },
-        {
-          "file": "packages/client/components/NavLinks.tsx",
-          "hash": "9613067847549607929"
-        },
-        {
-          "file": "packages/client/components/ProductCard.tsx",
-          "hash": "9935768174979253245"
-        },
-        {
-          "file": "packages/client/components/Rating.tsx",
-          "hash": "11066072938968718242"
-        },
-        {
-          "file": "packages/client/components/Reviews.tsx",
-          "hash": "11992768856418365626"
-        },
-        {
-          "file": "packages/client/components/SearchBar.tsx",
-          "hash": "17657102603118530655"
-        },
-        {
-          "file": "packages/client/constants/index.ts",
-          "hash": "14987130906635681400"
-        },
-        {
-          "file": "packages/client/next.config.mjs",
-          "hash": "3099306030354460128"
-        },
-        {
-          "file": "packages/client/package.json",
-          "hash": "16635790978408240724",
-          "deps": [
-            "npm:@chromatic-com/storybook",
-            "npm:@storybook/addon-essentials",
-            "npm:@storybook/addon-interactions",
-            "npm:@storybook/addon-links",
-            "npm:@storybook/addon-onboarding",
-            "npm:@storybook/blocks",
-            "npm:@storybook/nextjs",
-            "npm:@storybook/react",
-            "npm:@storybook/test",
-            "npm:@types/node@20.16.5",
-            "npm:@types/react",
-            "npm:@types/react-dom",
-            "npm:eslint",
-            "npm:eslint-config-next",
-            "npm:eslint-plugin-storybook",
-            "npm:postcss@8.4.47",
-            "npm:storybook",
-            "npm:tailwindcss",
-            "npm:typescript",
-            "npm:@emotion/react",
-            "npm:@emotion/styled",
-            "npm:@mui/material",
-            "npm:@nextui-org/button",
-            "npm:@nextui-org/dropdown",
-            "npm:@storybook/addon-designs",
-            "npm:@storybook/addon-measure@8.3.2",
-            "npm:@storybook/addon-storysource",
-            "npm:@storybook/addon-viewport@8.3.2",
-            "npm:@tanstack/react-query",
-            "npm:hamburger-react",
-            "npm:next",
-            "npm:react",
-            "npm:react-dom",
-            "npm:react-icons"
-          ]
-        },
-        {
-          "file": "packages/client/postcss.config.mjs",
-          "hash": "17882505348629598648"
-        },
-        {
-          "file": "packages/client/stories/Footer.stories.tsx",
-          "hash": "8982500751116501886"
-        },
-        {
-          "file": "packages/client/stories/NavBar.stories.ts",
-          "hash": "2982465322323148748"
-        },
-        {
-          "file": "packages/client/stories/ProductCard.stories.tsx",
-          "hash": "9298743078784133593"
-        },
-        {
-          "file": "packages/client/stories/Review.stories.tsx",
-          "hash": "12257060587059758468"
-        },
-        {
-          "file": "packages/client/stories/SearchBar.stories.ts",
-          "hash": "16957675096084899724"
-        },
-        {
-          "file": "packages/client/tailwind.config.ts",
-          "hash": "4379770607621329311"
-        },
-        {
-          "file": "packages/client/tsconfig.json",
-          "hash": "2185939425434508362"
-        }
-      ],
       "backend": [
         {
           "file": "packages/backend/.eslintrc.json",
@@ -326,11 +77,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-<<<<<<< HEAD
-          "hash": "8027299723738957550"
-=======
           "hash": "1851085182196137151"
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -341,75 +88,24 @@
           "hash": "16545570206220520875"
         },
         {
-<<<<<<< HEAD
-          "file": "packages/backend/images/products/product-670ccf7e9c988bee499248bf-1728896651268.jpeg",
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447041942.jpeg",
+          "hash": "16657280399342764707"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447049801.jpeg",
           "hash": "6005741844549085807"
         },
         {
-          "file": "packages/backend/images/products/product-670ccfa79c988bee499248c2-1728896626193.jpeg",
+          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1729445801974.jpeg",
           "hash": "8180277472994395607"
         },
         {
-          "file": "packages/backend/images/products/product-670ccfe09c988bee499248c7-1728896599414.jpeg",
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446899491.jpeg",
           "hash": "12112614521034583554"
         },
         {
-          "file": "packages/backend/images/products/product-670ccfec9c988bee499248ca-1728896581582.jpeg",
-          "hash": "15346959917561150778"
-        },
-        {
-          "file": "packages/backend/images/products/product-670ccffa9c988bee499248cd-1728896554116.jpeg",
-          "hash": "7468383252782579797"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0049c988bee499248d0-1728896527463.jpeg",
-          "hash": "10408059050537820496"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd00d9c988bee499248d3-1728896506579.jpeg",
-          "hash": "14120155812080023387"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd00d9c988bee499248d3-1728896506580.jpeg",
-          "hash": "5439869762658155979"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0159c988bee499248d6-1728896476447.jpeg",
-          "hash": "4332301813186924596"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0159c988bee499248d6-1728896476449.jpeg",
-          "hash": "3588370246876351044"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0209c988bee499248d9-1728896445560.jpeg",
-          "hash": "9209881143590077967"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0209c988bee499248d9-1728896445561.jpeg",
-          "hash": "11241050703595772897"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd02c9c988bee499248dc-1728896424809.jpeg",
-          "hash": "14937290378776353973"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0539c988bee499248df-1728896396417.jpeg",
-          "hash": "3791263960959566863"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cd0539c988bee499248df-1728896396418.jpeg",
-          "hash": "4545380364726798220"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cdb137f33dcfc8a8ac899-1728896334147.jpeg",
-          "hash": "17161526968932726589"
-        },
-        {
-          "file": "packages/backend/images/products/product-670cdb137f33dcfc8a8ac899-1728896334148.jpeg",
-=======
-          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1729445801974.jpeg",
-          "hash": "8180277472994395607"
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446908018.jpeg",
+          "hash": "3842568232393291858"
         },
         {
           "file": "packages/backend/images/products/product-67151b8b9a0b90091f5106cd-1729445720249.jpeg",
@@ -473,7 +169,6 @@
         },
         {
           "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729438367901.jpeg",
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
           "hash": "13464220783090333038"
         },
         {
@@ -486,11 +181,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-<<<<<<< HEAD
-          "hash": "8892204050224459211"
-=======
           "hash": "16471916246949893861"
->>>>>>> 4cf7ff06617ef9d1e2ad642df681bcb943c90c0b
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -582,22 +273,266 @@
         {
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
+        }
+      ],
+      "client": [
+        {
+          "file": "packages/client/.eslintrc.json",
+          "hash": "4614564216425289554"
         },
         {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446899491.jpeg",
-          "hash": "12112614521034583554"
+          "file": "packages/client/.gitignore",
+          "hash": "6351213542049544593"
         },
         {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1729446908018.jpeg",
-          "hash": "3842568232393291858"
+          "file": "packages/client/.storybook/main.ts",
+          "hash": "7582054075579059977"
         },
         {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447041942.jpeg",
-          "hash": "16657280399342764707"
+          "file": "packages/client/.storybook/preview.ts",
+          "hash": "13472062729864149085"
         },
         {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1729447049801.jpeg",
-          "hash": "6005741844549085807"
+          "file": "packages/client/README.md",
+          "hash": "10011398316402962549"
+        },
+        {
+          "file": "packages/client/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
+          "hash": "10648935345635237157"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
+          "hash": "9515624319395975955"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
+          "hash": "15220361477244295055"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
+          "hash": "14182897448607956662"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
+          "hash": "3977039100317460061"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
+          "hash": "345143232118275278"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
+          "hash": "4280300880547919822"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
+          "hash": "6538674733602554051"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
+          "hash": "14524909222801850226"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
+          "hash": "1386078019167196222"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
+          "hash": "996530835745513683"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
+          "hash": "4658125103796669334"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
+          "hash": "8772877621724132239"
+        },
+        {
+          "file": "packages/client/app/globals.css",
+          "hash": "2227184248507689446"
+        },
+        {
+          "file": "packages/client/app/layout.tsx",
+          "hash": "2260381355137755861"
+        },
+        {
+          "file": "packages/client/app/page.tsx",
+          "hash": "8747984811871896850"
+        },
+        {
+          "file": "packages/client/assets/img/t-shirt.webp",
+          "hash": "2748630408664558936"
+        },
+        {
+          "file": "packages/client/assets/svgs/1930264_check_complete_done_green_success_icon.svg",
+          "hash": "15538040644529668375"
+        },
+        {
+          "file": "packages/client/assets/svgs/dot-small-svgrepo-com.svg",
+          "hash": "14133594487879085616"
+        },
+        {
+          "file": "packages/client/assets/svgs/logo.svg",
+          "hash": "10230734186477549327"
+        },
+        {
+          "file": "packages/client/axios/Axios.ts",
+          "hash": "12277815757720876147"
+        },
+        {
+          "file": "packages/client/chromatic.config.json",
+          "hash": "9064107291103111533"
+        },
+        {
+          "file": "packages/client/components/Footer.tsx",
+          "hash": "1674547684171914430"
+        },
+        {
+          "file": "packages/client/components/Hero.tsx",
+          "hash": "7650470391323189002"
+        },
+        {
+          "file": "packages/client/components/NavBar.tsx",
+          "hash": "11142947794595644576"
+        },
+        {
+          "file": "packages/client/components/NavLinks.tsx",
+          "hash": "9613067847549607929"
+        },
+        {
+          "file": "packages/client/components/ProductCard.tsx",
+          "hash": "9935768174979253245"
+        },
+        {
+          "file": "packages/client/components/Rating.tsx",
+          "hash": "11066072938968718242"
+        },
+        {
+          "file": "packages/client/components/Reviews.tsx",
+          "hash": "11992768856418365626"
+        },
+        {
+          "file": "packages/client/components/SearchBar.tsx",
+          "hash": "17657102603118530655"
+        },
+        {
+          "file": "packages/client/constants/index.ts",
+          "hash": "14987130906635681400"
+        },
+        {
+          "file": "packages/client/next.config.mjs",
+          "hash": "3099306030354460128"
+        },
+        {
+          "file": "packages/client/package.json",
+          "hash": "9331703699646260081",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/nextjs",
+            "npm:@storybook/react",
+            "npm:@storybook/test",
+            "npm:@types/node@20.16.5",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:eslint-plugin-storybook",
+            "npm:postcss@8.4.47",
+            "npm:storybook",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@mui/material",
+            "npm:@nextui-org/button",
+            "npm:@nextui-org/dropdown",
+            "npm:@storybook/addon-designs",
+            "npm:@storybook/addon-measure@8.3.3",
+            "npm:@storybook/addon-storysource",
+            "npm:@storybook/addon-viewport@8.3.3",
+            "npm:@tanstack/react-query",
+            "npm:@tanstack/react-query-devtools",
+            "npm:axios",
+            "npm:hamburger-react",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-icons"
+          ]
+        },
+        {
+          "file": "packages/client/postcss.config.mjs",
+          "hash": "17882505348629598648"
+        },
+        {
+          "file": "packages/client/stories/Footer.stories.tsx",
+          "hash": "8982500751116501886"
+        },
+        {
+          "file": "packages/client/stories/NavBar.stories.ts",
+          "hash": "2982465322323148748"
+        },
+        {
+          "file": "packages/client/stories/ProductCard.stories.tsx",
+          "hash": "9298743078784133593"
+        },
+        {
+          "file": "packages/client/stories/Review.stories.tsx",
+          "hash": "12257060587059758468"
+        },
+        {
+          "file": "packages/client/stories/SearchBar.stories.ts",
+          "hash": "16957675096084899724"
+        },
+        {
+          "file": "packages/client/tailwind.config.ts",
+          "hash": "4379770607621329311"
+        },
+        {
+          "file": "packages/client/tsconfig.json",
+          "hash": "9056717956064384102"
+        },
+        {
+          "file": "packages/client/util/Providers.tsx",
+          "hash": "9803927410838999909"
+        },
+        {
+          "file": "packages/client/assets/img/pexels-marleneleppanen-1183266.png",
+          "hash": "6004246487757281459"
+        },
+        {
+          "file": "packages/client/assets/svgs/star.svg",
+          "hash": "7905142404099204335"
+        },
+        {
+          "file": "packages/client/assets/img/versace.png",
+          "hash": "2489397909420880828"
+        },
+        {
+          "file": "packages/client/assets/img/zara.png",
+          "hash": "9342189707271163601"
+        },
+        {
+          "file": "packages/client/assets/img/gucci.png",
+          "hash": "15307340203634454894"
+        },
+        {
+          "file": "packages/client/assets/img/prada.png",
+          "hash": "6261132541343520193"
+        },
+        {
+          "file": "packages/client/assets/img/calvin-klein.png",
+          "hash": "13649087062275541062"
         }
       ]
     }
