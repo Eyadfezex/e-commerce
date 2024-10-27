@@ -2124,6 +2124,15 @@
         "hash": "sha512-XbgyqBv+X7QirXeriGwkqkMOENpAxXRo+jzfMyBMvfsM3kwrFj92OSF1F7/dWDvcW7imVZB9o2Ci7LIppq9ZZQ=="
       }
     },
+    "npm:@nextui-org/card": {
+      "type": "npm",
+      "name": "npm:@nextui-org/card",
+      "data": {
+        "version": "2.0.34",
+        "packageName": "@nextui-org/card",
+        "hash": "sha512-2RYNPsQkM0FOifGCKmRBR3AuYgYCNmPV7dyA5M3D9Lf0APsHHtsXRA/GeIJ/AuPnglZrYBX8wpM5kLt3dnlQjQ=="
+      }
+    },
     "npm:@nextui-org/divider": {
       "type": "npm",
       "name": "npm:@nextui-org/divider",
@@ -3519,22 +3528,13 @@
         "hash": "sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ=="
       }
     },
-    "npm:@swc/helpers@0.5.13": {
+    "npm:@swc/helpers": {
       "type": "npm",
-      "name": "npm:@swc/helpers@0.5.13",
+      "name": "npm:@swc/helpers",
       "data": {
         "version": "0.5.13",
         "packageName": "@swc/helpers",
         "hash": "sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w=="
-      }
-    },
-    "npm:@swc/helpers@0.5.5": {
-      "type": "npm",
-      "name": "npm:@swc/helpers@0.5.5",
-      "data": {
-        "version": "0.5.5",
-        "packageName": "@swc/helpers",
-        "hash": "sha512-KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A=="
       }
     },
     "npm:@tanstack/query-core": {
@@ -7600,9 +7600,9 @@
       "type": "npm",
       "name": "npm:framer-motion",
       "data": {
-        "version": "11.9.0",
+        "version": "11.11.10",
         "packageName": "framer-motion",
-        "hash": "sha512-nCfGxvsQecVLjjYDu35G2F5ls+ArE3FBfhxV0RSiisMaUKqteq5DMBFNRKwMyVj+VqKTNhawt+BV480YCHKFlQ=="
+        "hash": "sha512-061Bt1jL/vIm+diYIiA4dP/Yld7vD47ROextS7ESBW5hr4wQFhxB5D5T5zAc3c/5me3cOa+iO5LqhA38WDln/A=="
       }
     },
     "npm:fresh": {
@@ -16890,12 +16890,12 @@
     },
     {
       "source": "npm:@internationalized/date",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
       "source": "npm:@internationalized/message",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -16905,12 +16905,12 @@
     },
     {
       "source": "npm:@internationalized/number",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
       "source": "npm:@internationalized/string",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -17765,6 +17765,76 @@
     },
     {
       "source": "npm:@nextui-org/button",
+      "target": "npm:react-dom",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/react-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/ripple",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/shared-utils",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/system",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/theme",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@nextui-org/use-aria-button",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@react-aria/button",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@react-aria/focus@3.17.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@react-aria/interactions@3.21.3",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@react-aria/utils@3.24.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:@react-types/shared@3.23.1",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:framer-motion",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
+      "source": "npm:@nextui-org/card",
       "target": "npm:react-dom",
       "type": "static"
     },
@@ -19180,7 +19250,7 @@
     },
     {
       "source": "npm:@react-aria/button",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19215,7 +19285,7 @@
     },
     {
       "source": "npm:@react-aria/dialog",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19245,7 +19315,7 @@
     },
     {
       "source": "npm:@react-aria/focus@3.17.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19275,7 +19345,7 @@
     },
     {
       "source": "npm:@react-aria/focus@3.18.2",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19325,7 +19395,7 @@
     },
     {
       "source": "npm:@react-aria/i18n@3.11.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19370,7 +19440,7 @@
     },
     {
       "source": "npm:@react-aria/i18n@3.12.2",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19395,7 +19465,7 @@
     },
     {
       "source": "npm:@react-aria/interactions@3.21.3",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19420,7 +19490,7 @@
     },
     {
       "source": "npm:@react-aria/interactions@3.22.2",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19490,7 +19560,7 @@
     },
     {
       "source": "npm:@react-aria/menu",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19555,7 +19625,7 @@
     },
     {
       "source": "npm:@react-aria/overlays@3.22.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19620,7 +19690,7 @@
     },
     {
       "source": "npm:@react-aria/overlays@3.23.2",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19640,7 +19710,7 @@
     },
     {
       "source": "npm:@react-aria/selection@3.18.1",
-      "target": "npm:@react-aria/i18n@3.11.1",
+      "target": "npm:@react-aria/i18n@3.12.2",
       "type": "static"
     },
     {
@@ -19665,7 +19735,7 @@
     },
     {
       "source": "npm:@react-aria/selection@3.18.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19710,7 +19780,7 @@
     },
     {
       "source": "npm:@react-aria/selection@3.19.3",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19725,7 +19795,7 @@
     },
     {
       "source": "npm:@react-aria/ssr@3.9.4",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19735,7 +19805,7 @@
     },
     {
       "source": "npm:@react-aria/ssr@3.9.5",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19760,7 +19830,7 @@
     },
     {
       "source": "npm:@react-aria/utils@3.24.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19790,7 +19860,7 @@
     },
     {
       "source": "npm:@react-aria/utils@3.25.2",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19820,7 +19890,7 @@
     },
     {
       "source": "npm:@react-aria/visually-hidden",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19835,7 +19905,7 @@
     },
     {
       "source": "npm:@react-stately/collections@3.10.7",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19850,7 +19920,7 @@
     },
     {
       "source": "npm:@react-stately/collections@3.10.9",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19875,7 +19945,7 @@
     },
     {
       "source": "npm:@react-stately/menu",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19895,7 +19965,7 @@
     },
     {
       "source": "npm:@react-stately/overlays@3.6.10",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19915,7 +19985,7 @@
     },
     {
       "source": "npm:@react-stately/overlays@3.6.7",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19940,7 +20010,7 @@
     },
     {
       "source": "npm:@react-stately/selection",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19960,7 +20030,7 @@
     },
     {
       "source": "npm:@react-stately/toggle",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -19990,7 +20060,7 @@
     },
     {
       "source": "npm:@react-stately/tree@3.8.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -20020,7 +20090,7 @@
     },
     {
       "source": "npm:@react-stately/tree@3.8.4",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -20030,7 +20100,7 @@
     },
     {
       "source": "npm:@react-stately/utils@3.10.1",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -20040,7 +20110,7 @@
     },
     {
       "source": "npm:@react-stately/utils@3.10.3",
-      "target": "npm:@swc/helpers@0.5.5",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -21544,17 +21614,7 @@
       "type": "static"
     },
     {
-      "source": "npm:@swc/helpers@0.5.13",
-      "target": "npm:tslib@2.7.0",
-      "type": "static"
-    },
-    {
-      "source": "npm:@swc/helpers@0.5.5",
-      "target": "npm:@swc/counter",
-      "type": "static"
-    },
-    {
-      "source": "npm:@swc/helpers@0.5.5",
+      "source": "npm:@swc/helpers",
       "target": "npm:tslib@2.7.0",
       "type": "static"
     },
@@ -28825,7 +28885,7 @@
     },
     {
       "source": "npm:next",
-      "target": "npm:@swc/helpers@0.5.13",
+      "target": "npm:@swc/helpers",
       "type": "static"
     },
     {
@@ -31866,11 +31926,6 @@
     {
       "source": "npm:styled-jsx",
       "target": "npm:@babel/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx",
-      "target": "npm:babel-plugin-macros",
       "type": "static"
     },
     {

@@ -3,34 +3,28 @@ import model from "@/assets/img/pexels-marleneleppanen-1183266.png";
 import gucci from "@/assets/img/gucci.png";
 import prada from "@/assets/img/prada.png";
 import zara from "@/assets/img/zara.png";
+
 import versace from "@/assets/img/versace.png";
 import calvin_klein from "@/assets/img/calvin-klein.png";
-import star from "@/assets/svgs/star.svg";
+
 import React from "react";
 import HeroContent from "./HeroContent";
+import StarParallax from "./StarParallax";
 
 const Hero = () => {
   return (
     <section className="bg-[#F2F0F1] font-sans">
       <div className="flex justify-center pt-[3rem]">
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-end xl:items-center w-full lg:w-[90%] px-[16px] max-w-[1920px] gap-4 md:gap-10 ">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-end xl:items-center w-full lg:w-[90%] px-4 max-w-[1920px] gap-4 md:gap-10 ">
           <HeroContent />
           <div className="relative">
             <Image
               src={model}
               alt="model"
               className="w-full max-w-[500px] lg:max-w-[800px] xl:max-w-[600px]"
+              priority
             />
-            <Image
-              src={star}
-              alt="star"
-              className="absolute top-40 w-[50px] left-[10%]"
-            />
-            <Image
-              src={star}
-              alt="star"
-              className="absolute top-0 right-[0%]"
-            />
+            <StarParallax />
           </div>
         </div>
       </div>
