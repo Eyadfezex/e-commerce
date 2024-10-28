@@ -8,17 +8,15 @@ const router = express();
 
 router.use("/:productId/reviews", reviewRouter);
 
-router
-  .route("/")
-  .get(PC.getAllProducts)
-  .post(
-    AC.protect,
-    AC.restrictTo("admin", "seller"),
-    AC.setSeller,
-    PC.uploadProductImage,
-    PC.uploadImages,
-    PC.createProduct
-  );
+router.route("/").get(PC.getAllProducts).post(
+  AC.protect,
+  AC.restrictTo("admin", "seller"),
+  AC.setSeller,
+  PC.uploadProductImage,
+  PC.uploadImages,
+  // PC.updateProductWithImages,
+  PC.createProduct
+);
 
 router
   .route("/:id")
@@ -27,6 +25,7 @@ router
     AC.protect,
     AC.restrictTo("admin", "seller"),
     PC.uploadProductImage,
+    // PC.updateProductWithImages,
     PC.uploadImages,
     PC.updateProduct
   )

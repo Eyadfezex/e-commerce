@@ -21,8 +21,11 @@ const MS = multer.diskStorage({
   },
   filename: (req, file, cb) => {
     const ext = file.mimetype.split("/")[1];
-    const productId = req.params.id;
-    cb(null, `product-${productId}-${Date.now()}.${ext}`);
+    const productId = req.params.id || 'new';
+    const filename = `product-${productId}-${Date.now()}-${Math.random()
+      .toString(36)
+      .substring(7)}.${ext}`;
+    cb(null, filename);
   },
 });
 
@@ -42,25 +45,62 @@ const upload = multer({
 const uploadProductImage = upload.array("images", 4);
 
 const uploadImages = catchAsync(async (req, res, next) => {
+
+  if (!req.files || req.files.length === 0) {
+    return next(); 
+  }
+
   const product = await Product.findById(req.params.id);
 
-  if (product) {
-    req.files.forEach((file) => {
-      product.images.push(file.filename);
-    });
-
-    await product.save();
-
-    res.status(200).json({
-      status: "success",
-      data: {
-        product,
-      },
-    });
-  } else {
-    return next();
+  if (!product) {
+    return next(new AppError("No product found with that ID", 404));
   }
+
+
+  req.files.forEach((file) => {
+    product.images.push(file.filename); 
+  });
+
+  await product.save();
+
+  res.status(200).json({
+    status: "success",
+    data: {
+      product,
+    },
+  });
+  return next(); 
 });
+
+// const updateProductWithImages = catchAsync(async (req, res, next) => {
+
+//   const product = await Product.findById(req.params.id);
+
+//   if (!product) {
+//     return next(new AppError("No product found with that ID", 404));
+//   }
+
+//   if (req.body) {
+//     Object.keys(req.body).forEach((key) => {
+//       product[key] = req.body[key];
+//     });
+//   }
+
+//   if (req.files && req.files.length > 0) {
+//     for (let i = 0; i < req.files.length; i++) {
+//       product.images.push(req.files[i].filename);
+//     }
+//   }
+
+//   await product.save();
+
+//   res.status(200).json({
+//     status: "success",
+//     data: {
+//       product,
+//     },
+//   });
+// });
 
 const getAllProducts = HF.getAll(Product);
 const getOneProduct = HF.getOne(Product, { path: "reviews" });
@@ -75,5 +115,6 @@ module.exports = {
   updateProduct,
   deleteProduct,
   uploadProductImage,
+  // updateProductWithImages,
   uploadImages,
 };
