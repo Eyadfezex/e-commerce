@@ -6,33 +6,36 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const HeroContent = () => {
   const container = useRef<HTMLDivElement>(null);
-  useGSAP(() => {
-    gsap.registerPlugin(TextPlugin);
-    const tl = gsap.timeline({ delay: 1 });
-    tl.to("#a", { x: 0, duration: 1, ease: "power2.out" });
-    tl.to("#b", { x: 0, duration: 1, ease: "power2.out", delay: -0.5 });
-    tl.to("#c", { x: 0, duration: 1, ease: "power2.out" });
-    tl.to("#num", {
-      duration: 1,
-      text: "200",
-      ease: "power1.in",
-      delay: -1,
-    });
+  useGSAP(
+    () => {
+      gsap.registerPlugin(TextPlugin);
+      const tl = gsap.timeline();
+      tl.to("#a", { x: 0, duration: 1, ease: "power1.out" });
+      tl.to("#b", { x: 0, duration: 1, ease: "power1.out", delay: -0.5 });
+      tl.to("#c", { x: 0, duration: 1, ease: "power1.out", delay: -0.5 });
+      tl.to("#num", {
+        duration: 1,
+        text: "200",
+        ease: "power1.in",
+        delay: -1,
+      });
 
-    tl.to("#num_1", {
-      duration: 1,
+      tl.to("#num_1", {
+        duration: 1,
 
-      text: "2,000",
-      ease: "power1.in",
-      delay: -0.5,
-    });
-    tl.to("#num_2", {
-      duration: 1,
-      text: "30,000",
-      ease: "power1.in",
-      delay: -0.5,
-    });
-  });
+        text: "2,000",
+        ease: "power1.in",
+        delay: -0.5,
+      });
+      tl.to("#num_2", {
+        duration: 1,
+        text: "30,000",
+        ease: "power1.in",
+        delay: -0.5,
+      });
+    },
+    { scope: container }
+  );
   return (
     <div
       className="flex flex-col gap-4 md:gap-6 xl:max-w-[40%] lg:pb-12 xl:gap-13"

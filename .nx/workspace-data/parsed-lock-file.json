@@ -7605,6 +7605,15 @@
         "hash": "sha512-061Bt1jL/vIm+diYIiA4dP/Yld7vD47ROextS7ESBW5hr4wQFhxB5D5T5zAc3c/5me3cOa+iO5LqhA38WDln/A=="
       }
     },
+    "npm:framesync": {
+      "type": "npm",
+      "name": "npm:framesync",
+      "data": {
+        "version": "6.1.0",
+        "packageName": "framesync",
+        "hash": "sha512-aBX+hdWAvwiJYeQlFLY2533VxeL6OEu71CAgV4GGKksrj6+dE6i7K86WSSiRBEARCoJn5bFqffhg4l07eA27tg=="
+      }
+    },
     "npm:fresh": {
       "type": "npm",
       "name": "npm:fresh",
@@ -11412,6 +11421,15 @@
         "hash": "sha512-56rxCq7G/XfB4EkXq9Egn5GCqugWvDFjafDOThIdMBsI15iqPqR5r15TfSr1YPYeEI19YeaXMCbY6u88Y76GLQ=="
       }
     },
+    "npm:prefix": {
+      "type": "npm",
+      "name": "npm:prefix",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "prefix",
+        "hash": "sha512-KtGt8TV4nQkYgO6wJ5phkBGAECZW5cs5vQhqnz1LlxGGd8y4LwpW3Bq5pofULjdiMXACDCxisDUhwtFXb7vHfQ=="
+      }
+    },
     "npm:prelude-ls": {
       "type": "npm",
       "name": "npm:prelude-ls",
@@ -11797,6 +11815,15 @@
         "version": "18.3.1",
         "packageName": "react-is",
         "hash": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg=="
+      }
+    },
+    "npm:react-just-parallax": {
+      "type": "npm",
+      "name": "npm:react-just-parallax",
+      "data": {
+        "version": "3.1.16",
+        "packageName": "react-just-parallax",
+        "hash": "sha512-rbk49D/WEe/s9WPvtyO1+SUCyQ5SOvWXeg2udvVtE4cRgVAokzaS/iEdC7tz91lRSsqsSmjQj89Iwm+DtecrIQ=="
       }
     },
     "npm:react-refresh": {
@@ -26554,6 +26581,11 @@
       "type": "static"
     },
     {
+      "source": "npm:framesync",
+      "target": "npm:tslib@2.7.0",
+      "type": "static"
+    },
+    {
       "source": "npm:front-matter",
       "target": "npm:js-yaml@3.14.1",
       "type": "static"
@@ -30560,6 +30592,26 @@
     },
     {
       "source": "npm:react-icons",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-just-parallax",
+      "target": "npm:framesync",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-just-parallax",
+      "target": "npm:lodash.debounce",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-just-parallax",
+      "target": "npm:prefix",
+      "type": "static"
+    },
+    {
+      "source": "npm:react-just-parallax",
       "target": "npm:react",
       "type": "static"
     },
