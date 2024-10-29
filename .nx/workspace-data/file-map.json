@@ -2,6 +2,7 @@
   "version": "6.0",
   "nxVersion": "19.8.0",
   "deps": {
+    "concurrently": "^9.0.1",
     "lerna": "^8.1.8"
   },
   "pathMappings": {},
@@ -9,40 +10,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
-      },
-      {
         "file": "pnpm-workspace.yaml",
         "hash": "9928973617214098819"
+      },
+      {
+        "file": "package.json",
+        "hash": "2698097095309809703"
       },
       {
         "file": "nx.json",
         "hash": "10146023197190099756"
       },
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
         "file": ".gitignore",
         "hash": "11560605376882027213"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "1834432244864417596"
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
       },
       {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": "package.json",
-        "hash": "467188710342882370"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "1077928991712410404"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       }
     ],
     "projectFileMap": {
@@ -77,7 +78,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-          "hash": "1851085182196137151"
+          "hash": "1935875446902719423"
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -172,6 +173,14 @@
           "hash": "13464220783090333038"
         },
         {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729518298621.jpeg",
+          "hash": "17161526968932726589"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1729518312877.jpeg",
+          "hash": "13464220783090333038"
+        },
+        {
           "file": "packages/backend/models/cartModel.js",
           "hash": "15558999615403186275"
         },
@@ -181,7 +190,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-          "hash": "16471916246949893861"
+          "hash": "11849530713528251980"
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -240,7 +249,7 @@
         },
         {
           "file": "packages/backend/routes/productRoutes.js",
-          "hash": "14462939346916315206"
+          "hash": "6381344522880488202"
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
@@ -361,12 +370,8 @@
           "hash": "6804931232541341072"
         },
         {
-          "file": "packages/client/app/loading.tsx",
-          "hash": "17825315514873116551"
-        },
-        {
           "file": "packages/client/app/page.tsx",
-          "hash": "12760304193062030729"
+          "hash": "7308861509494998942"
         },
         {
           "file": "packages/client/assets/img/calvin-klein.png",
@@ -414,7 +419,7 @@
         },
         {
           "file": "packages/client/axios/Axios.ts",
-          "hash": "3968913288827455620"
+          "hash": "7726835047828362157"
         },
         {
           "file": "packages/client/chromatic.config.json",
@@ -426,7 +431,7 @@
         },
         {
           "file": "packages/client/components/Hero.tsx",
-          "hash": "5005894866138258143"
+          "hash": "8156812150627036865"
         },
         {
           "file": "packages/client/components/HeroContent.tsx",
@@ -442,15 +447,15 @@
         },
         {
           "file": "packages/client/components/NewArrival.tsx",
-          "hash": "1469226843726483337"
+          "hash": "669986039008193236"
         },
         {
           "file": "packages/client/components/NewArrivalCards.tsx",
-          "hash": "10827927364180550507"
+          "hash": "17438626435891903190"
         },
         {
           "file": "packages/client/components/ProductCard.tsx",
-          "hash": "810131334250188349"
+          "hash": "16942769561134835988"
         },
         {
           "file": "packages/client/components/Rating.tsx",
@@ -466,7 +471,7 @@
         },
         {
           "file": "packages/client/components/StarParallax.tsx",
-          "hash": "13091984131122664896"
+          "hash": "12965357683824750354"
         },
         {
           "file": "packages/client/constants/index.ts",
@@ -474,11 +479,11 @@
         },
         {
           "file": "packages/client/next.config.mjs",
-          "hash": "3099306030354460128"
+          "hash": "7225752870031151217"
         },
         {
           "file": "packages/client/package.json",
-          "hash": "1105484098745105199",
+          "hash": "11177823429366828442",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -506,7 +511,6 @@
             "npm:@nextui-org/button",
             "npm:@nextui-org/card",
             "npm:@nextui-org/dropdown",
-            "npm:@nextui-org/skeleton",
             "npm:@storybook/addon-designs",
             "npm:@storybook/addon-measure@8.3.3",
             "npm:@storybook/addon-storysource",
@@ -537,7 +541,7 @@
         },
         {
           "file": "packages/client/stories/ProductCard.stories.tsx",
-          "hash": "7172834699992112368"
+          "hash": "10082684231765162327"
         },
         {
           "file": "packages/client/stories/Review.stories.tsx",
@@ -557,7 +561,7 @@
         },
         {
           "file": "packages/client/util/Providers.tsx",
-          "hash": "8113748481413190666"
+          "hash": "8954031306171608163"
         }
       ]
     }

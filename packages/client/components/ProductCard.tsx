@@ -1,5 +1,5 @@
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Rating from "./Rating";
 
 interface PROPS {
@@ -7,8 +7,8 @@ interface PROPS {
   price: number;
   rate: number;
   Mprice: number;
-  discountPerc: number;
-  PImage: StaticImageData;
+  discountPerc: string;
+  PImage: string;
 }
 
 export const ProductCard = ({
@@ -16,7 +16,7 @@ export const ProductCard = ({
   Pname = "Eyad Ahmed",
   price = 130,
   Mprice = 160,
-  discountPerc = 30,
+  discountPerc = "30",
   PImage,
 }: PROPS) => {
   return (
@@ -25,6 +25,8 @@ export const ProductCard = ({
         <Image
           src={PImage}
           alt="shirt"
+          width={300}
+          height={300}
           className=" absolute w-full h-full object-cover "
         />
       </div>
@@ -35,10 +37,17 @@ export const ProductCard = ({
         <Rating value={rate} />
       </div>
       <div className="flex items-center gap-2 font-bold text-2xl">
-        ${price} <del className="opacity-40">${Mprice}</del>
-        <div className=" bg-red-200 text-sm px-2 py-1 text-red-600 rounded-full">
-          -{discountPerc}%
-        </div>
+        ${price}{" "}
+        {Mprice == 0 ? (
+          ""
+        ) : (
+          <>
+            <del className="opacity-40">${Mprice}</del>
+            <div className=" bg-red-200 text-sm px-2 py-1 text-red-600 rounded-full">
+              -{discountPerc}%
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ProductCard as OriginProductCard } from "../components/ProductCard";
-import shirt from "../assets/img/t-shirt.webp";
+// import shirt from "../assets/img/t-shirt.webp";
 const meta: Meta<typeof OriginProductCard> = {
   title: "ProductCard",
   component: OriginProductCard,
@@ -33,7 +33,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const ProductCard: Story = {
-  render: ({ rate, price, Pname, Mprice, discountPerc, PImage = shirt }) => {
+  render: ({ rate, price, Pname, Mprice, discountPerc, PImage }) => {
     return (
       <OriginProductCard
         rate={rate}

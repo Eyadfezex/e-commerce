@@ -1,7 +1,9 @@
 {
   "name": "root",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  },
   "devDependencies": {
     "lerna": "^8.1.8"
   },
@@ -10,6 +12,7 @@
   ],
   "scripts": {
     "dev_server": "lerna run start --scope=backend",
+    "dev": "concurrently \"lerna run start --scope=backend\"  \"lerna run dev --scope=client\"",
     "dev_client": "lerna run dev --scope=client",
     "dev_build": "lerna run build --scope=client",
     "dev_start": "lerna run start --scope=client",

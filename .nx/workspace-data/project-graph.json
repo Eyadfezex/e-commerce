@@ -2380,15 +2380,6 @@
         "hash": "sha512-ZEtoMPXS+IjT8GvpJTS9IWDnT1JNCKV+NDqqgysAf1niJmOFLyJgl6dh/9n4ufcGf1GbSEQN+VhJasEw7ajYGQ=="
       }
     },
-    "npm:@nextui-org/skeleton": {
-      "type": "npm",
-      "name": "npm:@nextui-org/skeleton",
-      "data": {
-        "version": "2.0.32",
-        "packageName": "@nextui-org/skeleton",
-        "hash": "sha512-dS0vuRrc4oWktW3wa/KFhcBNnV0oiDqKXP4BqRj7wgS01fOAqj3cJiqwUDLKO8GbEnxLkbqLBFcUoLgktpRszQ=="
-      }
-    },
     "npm:@nextui-org/spinner": {
       "type": "npm",
       "name": "npm:@nextui-org/spinner",
@@ -5996,6 +5987,15 @@
         "version": "2.0.0",
         "packageName": "concat-stream",
         "hash": "sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A=="
+      }
+    },
+    "npm:concurrently": {
+      "type": "npm",
+      "name": "npm:concurrently",
+      "data": {
+        "version": "9.0.1",
+        "packageName": "concurrently",
+        "hash": "sha512-wYKvCd/f54sTXJMSfV6Ln/B8UrfLBKOYa+lzc6CHay3Qek+LorVSBdMVfyewFhRbH0Rbabsk4D+3PL/VjQ5gzg=="
       }
     },
     "npm:confusing-browser-globals": {
@@ -12694,6 +12694,15 @@
         "hash": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="
       }
     },
+    "npm:shell-quote": {
+      "type": "npm",
+      "name": "npm:shell-quote",
+      "data": {
+        "version": "1.8.1",
+        "packageName": "shell-quote",
+        "hash": "sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA=="
+      }
+    },
     "npm:side-channel": {
       "type": "npm",
       "name": "npm:side-channel",
@@ -13520,6 +13529,15 @@
         "version": "4.1.1",
         "packageName": "tr46",
         "hash": "sha512-2lv/66T7e5yNyhAAC4NaKe5nVavzuGJQVVtRYLyQ2OI8tsJ61PMLlelehb0wi2Hx6+hT/OJUWZcw8MjlSRnxvw=="
+      }
+    },
+    "npm:tree-kill": {
+      "type": "npm",
+      "name": "npm:tree-kill",
+      "data": {
+        "version": "1.2.2",
+        "packageName": "tree-kill",
+        "hash": "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A=="
       }
     },
     "npm:treeverse": {
@@ -14772,11 +14790,6 @@
       {
         "source": "client",
         "target": "npm:@nextui-org/dropdown",
-        "type": "static"
-      },
-      {
-        "source": "client",
-        "target": "npm:@nextui-org/skeleton",
         "type": "static"
       },
       {
@@ -19121,38 +19134,6 @@
       },
       {
         "source": "npm:@nextui-org/ripple",
-        "target": "npm:react-dom",
-        "type": "static"
-      }
-    ],
-    "npm:@nextui-org/skeleton": [
-      {
-        "source": "npm:@nextui-org/skeleton",
-        "target": "npm:@nextui-org/react-utils",
-        "type": "static"
-      },
-      {
-        "source": "npm:@nextui-org/skeleton",
-        "target": "npm:@nextui-org/shared-utils",
-        "type": "static"
-      },
-      {
-        "source": "npm:@nextui-org/skeleton",
-        "target": "npm:@nextui-org/system",
-        "type": "static"
-      },
-      {
-        "source": "npm:@nextui-org/skeleton",
-        "target": "npm:@nextui-org/theme",
-        "type": "static"
-      },
-      {
-        "source": "npm:@nextui-org/skeleton",
-        "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "npm:@nextui-org/skeleton",
         "target": "npm:react-dom",
         "type": "static"
       }
@@ -25091,6 +25072,43 @@
         "type": "static"
       }
     ],
+    "npm:concurrently": [
+      {
+        "source": "npm:concurrently",
+        "target": "npm:chalk@4.1.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:lodash",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:shell-quote",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:supports-color@8.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:tree-kill",
+        "type": "static"
+      },
+      {
+        "source": "npm:concurrently",
+        "target": "npm:yargs@17.7.2",
+        "type": "static"
+      }
+    ],
     "npm:content-disposition": [
       {
         "source": "npm:content-disposition",
@@ -29341,7 +29359,7 @@
     "npm:jest-diff": [
       {
         "source": "npm:jest-diff",
-        "target": "npm:chalk@4.1.0",
+        "target": "npm:chalk@4.1.2",
         "type": "static"
       },
       {
@@ -30715,7 +30733,7 @@
       },
       {
         "source": "npm:multimatch",
-        "target": "npm:minimatch@3.0.5",
+        "target": "npm:minimatch@3.1.2",
         "type": "static"
       }
     ],
@@ -31258,7 +31276,7 @@
       },
       {
         "source": "npm:nx",
-        "target": "npm:chalk@4.1.0",
+        "target": "npm:chalk@4.1.2",
         "type": "static"
       },
       {
@@ -31654,7 +31672,7 @@
       },
       {
         "source": "npm:ora@5.3.0",
-        "target": "npm:cli-spinners@2.6.1",
+        "target": "npm:cli-spinners@2.9.2",
         "type": "static"
       },
       {
