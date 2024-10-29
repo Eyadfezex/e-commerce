@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-
 import NewArrivalCards from "./NewArrivalCards";
 import { Button } from "@nextui-org/button";
 const NewArrival = () => {
