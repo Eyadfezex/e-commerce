@@ -10,40 +10,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "10146023197190099756"
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
+        "file": ".gitignore",
+        "hash": "11560605376882027213"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "1077928991712410404"
       },
       {
-        "file": ".gitignore",
-        "hash": "11560605376882027213"
-      },
-      {
         "file": "package.json",
         "hash": "16491698336229510288"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
       },
       {
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
       },
       {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
+      },
+      {
         "file": "lerna.json",
         "hash": "13184516379351911297"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10146023197190099756"
       }
     ],
     "projectFileMap": {
@@ -367,7 +367,7 @@
         },
         {
           "file": "packages/client/app/layout.tsx",
-          "hash": "6804931232541341072"
+          "hash": "7163525360795440607"
         },
         {
           "file": "packages/client/app/page.tsx",
@@ -561,7 +561,11 @@
         },
         {
           "file": "packages/client/util/Providers.tsx",
-          "hash": "17021068803924289795"
+          "hash": "13323319251189160911"
+        },
+        {
+          "file": "packages/client/pages/_app.tsx",
+          "hash": "3244421341483603138"
         }
       ]
     }

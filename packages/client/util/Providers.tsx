@@ -17,7 +17,9 @@ export const Provider = ({ children }: { children: ReactNode }) => {
   );
   return (
     <QueryClientProvider client={queryClient}>
-      <ReactQueryDevtools initialIsOpen={false} />
+      {process.env.NODE_ENV !== "production" && (
+        <ReactQueryDevtools initialIsOpen={false} />
+      )}
       {children}
     </QueryClientProvider>
   );
