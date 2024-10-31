@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const slugify = require("slugify");
-// const validator = require("validator");
 
 const productSchema = new mongoose.Schema(
   {
@@ -43,11 +42,20 @@ const productSchema = new mongoose.Schema(
       default: Date.now,
     },
     slug: String,
-
     seller: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    colors: {
+      type: Array,
+      default: [],
+    },
+    sizes: [
+      {
+        type: String,
+        default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+      },
+    ],
   },
   {
     toJSON: { virtuals: true },
@@ -75,7 +83,7 @@ productSchema.pre("save", function (next) {
       new Error("Discount price must be lower than the original price")
     );
   }
-  this.slug = slugify(this.name, { upper: true });
+  this.slug = slugify(this.name, { lower: true });
   next();
 });
 
