@@ -18,7 +18,7 @@ export const getNewArrivalProducts = async () => {
   const products = res.data.data.doc;
   const currentDate = new Date();
   const filterDate = new Date();
-  filterDate.setDate(currentDate.getDate() - 10);
+  filterDate.setDate(currentDate.getDate() - 20);
 
   const newArrivalProducts = products.filter((product: any) => {
     const productDate = new Date(product.createdAt);
