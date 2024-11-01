@@ -11,10 +11,6 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "package.json",
-        "hash": "1374092950496593140"
-      },
-      {
         "file": ".gitignore",
         "hash": "11560605376882027213"
       },
@@ -23,28 +19,32 @@
         "hash": "4514381337508238599"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "5132335150178312010"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
         "file": "nx.json",
         "hash": "10146023197190099756"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+        "file": "package.json",
+        "hash": "1374092950496593140"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "14201879229753809313"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
@@ -187,7 +187,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-          "hash": "11849530713528251980"
+          "hash": "15866210531403075837"
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -203,7 +203,7 @@
         },
         {
           "file": "packages/backend/package.json",
-          "hash": "17867011108150312159",
+          "hash": "16506387617507946925",
           "deps": [
             "npm:eslint",
             "npm:eslint-config-airbnb",
@@ -420,7 +420,7 @@
         },
         {
           "file": "packages/client/axios/Axios.ts",
-          "hash": "1702490314187131010"
+          "hash": "11927165422512864892"
         },
         {
           "file": "packages/client/chromatic.config.json",
@@ -432,7 +432,7 @@
         },
         {
           "file": "packages/client/components/Filter.tsx",
-          "hash": "13124116827198658382"
+          "hash": "11347532274241901306"
         },
         {
           "file": "packages/client/components/Footer.tsx",
@@ -472,7 +472,7 @@
         },
         {
           "file": "packages/client/components/Rating.tsx",
-          "hash": "11066072938968718242"
+          "hash": "9293714065857441923"
         },
         {
           "file": "packages/client/components/Reviews.tsx",
@@ -491,8 +491,12 @@
           "hash": "17016493816874795905"
         },
         {
+          "file": "packages/client/components/colorCheckBox/CheckBox.tsx",
+          "hash": "17907773509567504288"
+        },
+        {
           "file": "packages/client/constants/index.ts",
-          "hash": "14120594248461358751"
+          "hash": "17497227615384492428"
         },
         {
           "file": "packages/client/next.config.mjs",
@@ -567,7 +571,7 @@
         },
         {
           "file": "packages/client/stories/ProductCard.stories.tsx",
-          "hash": "10082684231765162327"
+          "hash": "13372058761692596991"
         },
         {
           "file": "packages/client/stories/Review.stories.tsx",
@@ -588,10 +592,6 @@
         {
           "file": "packages/client/util/Providers.tsx",
           "hash": "13323319251189160911"
-        },
-        {
-          "file": "packages/client/util/CustomVariants.tsx",
-          "hash": "2108375454620429319"
         }
       ]
     }
