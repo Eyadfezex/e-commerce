@@ -14,36 +14,36 @@
         "hash": "8265667529379852321"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "package.json",
-        "hash": "10077796640764609808"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "3880652096678613156"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       },
       {
         "file": ".gitignore",
         "hash": "14753864772816161294"
       },
       {
+        "file": "pnpm-lock.yaml",
+        "hash": "3880652096678613156"
+      },
+      {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
+        "file": "package.json",
+        "hash": "10077796640764609808"
       },
       {
         "file": "nx.json",
         "hash": "7800299079214245219"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       }
     ],
     "projectFileMap": {
@@ -358,7 +358,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-          "hash": "1913239053102759200"
+          "hash": "12620827448383631857"
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -466,7 +466,7 @@
         },
         {
           "file": "packages/backend/models/productModel.js",
-          "hash": "3061942333467528428"
+          "hash": "12480786970534334918"
         },
         {
           "file": "packages/backend/models/reviewModel.js",
@@ -525,7 +525,7 @@
         },
         {
           "file": "packages/backend/routes/productRoutes.js",
-          "hash": "5691178863671865388"
+          "hash": "937180443403362182"
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
@@ -558,14 +558,6 @@
         {
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
-        },
-        {
-          "file": "packages/backend/images/products/product-672343db32b7877472614297-1730364416841-zq4235p.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-672343db32b7877472614297-1730364476508-fj7dhm.jpeg",
-          "hash": "13569577199571629002"
         }
       ]
     }

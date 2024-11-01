@@ -80,6 +80,17 @@ const uploadImages = catchAsync(async (req, res, next) => {
   }
 });
 
+const getNewArrivalProducts = catchAsync(async (req, res, next) => {
+  const product = await Product.find().sort({ createdAt: -1 }).limit(10);
+  res.status(200).json({
+    status: "success",
+    results: product.length,
+    data: {
+      product,
+    },
+  });
+});
+
 const getAllProducts = HF.getAll(Product);
 const getOneProduct = HF.getOne(Product, { path: "reviews" });
 const createProduct = HF.createOne(Product);
@@ -94,4 +105,5 @@ module.exports = {
   deleteProduct,
   uploadProductImage,
   uploadImages,
+  getNewArrivalProducts,
 };
