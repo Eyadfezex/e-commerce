@@ -19,7 +19,7 @@ const NavLinks = () => {
         <DropdownTrigger className="overflow-visible">
           <Button
             disableRipple
-            className="p-0 bg-transparent data-[hover=true]:bg-transparent flex font-bold capitalize  focus:outline-none"
+            className="p-0 bg-transparent data-[hover=true]:bg-transparent flex font-bold capitalize   focus:outline-none"
             endContent={<FaAngleDown size={16} />}
             radius="sm"
             variant="light"

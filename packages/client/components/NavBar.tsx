@@ -26,7 +26,7 @@ const NavBar = () => {
                 className="w-[80%] md:w-[90%] lg:w-full"
               />
             </Link>
-            <div className="lg:w-[65%] xl:w-full max-w-[300px]">
+            <div className="lg:w-[65%] xl:w-full max-w-[315px]">
               <NavLinks />
             </div>
             <SearchBar />
