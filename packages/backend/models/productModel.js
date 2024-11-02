@@ -50,12 +50,10 @@ const productSchema = new mongoose.Schema(
       type: Array,
       default: [],
     },
-    sizes: [
-      {
-        type: String,
-        default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
-      },
-    ],
+    sizes: {
+      type: Array,
+      default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+    },
   },
   {
     toJSON: { virtuals: true },
