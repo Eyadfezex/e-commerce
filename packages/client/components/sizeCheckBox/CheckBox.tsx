@@ -40,7 +40,7 @@ export const CheckBox = ({ ...props }: Props) => {
   const styles = checkbox({ isSelected, isFocusVisible });
 
   return (
-    <label {...getBaseProps()}>
+    <label {...getBaseProps()} role="checkbox" aria-checked="mixed">
       <VisuallyHidden>
         <input {...getInputProps()} />
       </VisuallyHidden>
