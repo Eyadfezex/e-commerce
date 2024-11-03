@@ -40226,6 +40226,11 @@
       "type": "static"
     },
     {
+      "source": "npm:styled-jsx",
+      "target": "npm:babel-plugin-macros",
+      "type": "static"
+    },
+    {
       "source": "npm:sucrase",
       "target": "npm:@jridgewell/gen-mapping",
       "type": "static"

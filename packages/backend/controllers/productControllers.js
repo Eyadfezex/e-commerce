@@ -49,35 +49,75 @@ const uploadImages = catchAsync(async (req, res, next) => {
   const imageFiles = req.files.filter((file) =>
     file.mimetype.startsWith("image/")
   );
-
   if (imageFiles.length === 0) {
     return next(
-      new AppError("Only image files are allowed please try again", 400)
+      new AppError("Only image files are allowed. Please try again.", 400)
     );
   }
 
-  const uploadPromises = imageFiles.map((file) =>
-    cloudinary.uploader.upload(file.path, { folder: "Home/products/" })
-  );
-  console.log(uploadPromises);
+  try {
+    const uploadPromises = imageFiles.map((file) =>
+      cloudinary.uploader.upload(file.path, { folder: "Home/products/" })
+    );
 
-  const uploadResults = await Promise.all(uploadPromises);
-  uploadResults.forEach((result) => {
-    product.images.push({
-      url: result.secure_url,
-      public_id: result.public_id,
+    const uploadResults = await Promise.all(uploadPromises);
+
+    uploadResults.forEach((result) => {
+      product.images.push({
+        url: result.secure_url,
+        public_id: result.public_id,
+      });
     });
-  });
 
-  await product.save();
+    await product.save();
 
-  res.status(200).json({
-    status: "success",
-    message: "Images uploaded and saved successfully.",
-    data: {
-      product,
-    },
-  });
+    res.status(200).json({
+      status: "success",
+      message: "Images uploaded and saved successfully.",
+      data: {
+        product,
+      },
+    });
+  } catch (error) {
+    return next(
+      new AppError("Failed to upload images. Please try again.", 500)
+    );
+  }
+});
+
+const removeImage = catchAsync(async (req, res, next) => {
+  const publicId = req.body.public_id;
+
+  const product = await Product.findById(req.params.id);
+  if (!product) {
+    return next(new AppError("No product found with that ID", 404));
+  }
+  const imageIndex = product.images.findIndex(
+    (image) => image.public_id === publicId
+  );
+  if (imageIndex === -1) {
+    return next(new AppError("Image not found in product", 404));
+  }
+
+  try {
+    await cloudinary.uploader.destroy(publicId);
+
+    product.images.splice(imageIndex, 1);
+    await product.save();
+
+    res.status(200).json({
+      status: "success",
+      message: "Image removed successfully from Cloudinary and database.",
+      data: { product },
+    });
+  } catch (error) {
+    return next(
+      new AppError(
+        "Failed to remove image from Cloudinary. Please try again.",
+        500
+      )
+    );
+  }
 });
 
 const getNewArrivalProducts = catchAsync(async (req, res, next) => {
@@ -106,4 +146,5 @@ module.exports = {
   uploadProductImage,
   uploadImages,
   getNewArrivalProducts,
+  removeImage,
 };

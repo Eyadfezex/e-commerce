@@ -34,4 +34,8 @@ router
   )
   .delete(AC.protect, AC.restrictTo("admin", "seller"), PC.deleteProduct);
 
+router
+  .route("/:id/removeImage")
+  .patch(AC.protect, AC.restrictTo("admin", "seller"), PC.removeImage);
+
 module.exports = router;

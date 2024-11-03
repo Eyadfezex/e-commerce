@@ -44,6 +44,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           },
           "nx-release-publish": {
@@ -93,6 +94,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           },
           "build": {
@@ -106,6 +108,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           },
           "start": {
@@ -119,6 +122,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           },
           "lint": {
@@ -145,6 +149,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           },
           "build-storybook": {
@@ -158,6 +163,7 @@
             },
             "configurations": {},
             "parallelism": true,
+            "cache": false,
             "dependsOn": []
           }
         },
@@ -16736,7 +16742,7 @@
       },
       {
         "source": "client",
-        "target": "npm:@storybook/addon-measure@8.3.3",
+        "target": "npm:@storybook/addon-measure@8.3.2",
         "type": "static"
       },
       {
@@ -16746,7 +16752,7 @@
       },
       {
         "source": "client",
-        "target": "npm:@storybook/addon-viewport@8.3.3",
+        "target": "npm:@storybook/addon-viewport@8.3.2",
         "type": "static"
       },
       {
@@ -42781,6 +42787,11 @@
       {
         "source": "npm:styled-jsx",
         "target": "npm:@babel/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:styled-jsx",
+        "target": "npm:babel-plugin-macros",
         "type": "static"
       }
     ],

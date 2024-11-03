@@ -11,40 +11,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14753864772816161294"
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15788019843541253973"
       },
       {
-        "file": "nx.json",
-        "hash": "7800299079214245219"
+        "file": ".gitignore",
+        "hash": "14753864772816161294"
       },
       {
-        "file": "package.json",
-        "hash": "5004711239184249415"
+        "file": "nx.json",
+        "hash": "14365157803961030502"
       },
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
       },
       {
-        "file": "pnpm-lock.yaml",
-        "hash": "7092619748945020191"
+        "file": "package.json",
+        "hash": "5004711239184249415"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "184926464717476458"
       }
     ],
     "projectFileMap": {
@@ -79,7 +79,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-          "hash": "3860463576881139914"
+          "hash": "16568710646362572653"
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",
@@ -88,6 +88,114 @@
         {
           "file": "packages/backend/controllers/userControllers.js",
           "hash": "16545570206220520875"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1730628406955-yho4vn.jpeg",
+          "hash": "6005741844549085807"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1730628406955-yl6mzd.jpeg",
+          "hash": "16657280399342764707"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1730628385473-7kvnss.jpeg",
+          "hash": "8180277472994395607"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1730628385473-xf9n9k.jpeg",
+          "hash": "13024739163521062508"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1730628359523-2kv0hk.jpeg",
+          "hash": "3842568232393291858"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1730628359523-2mh4vr.jpeg",
+          "hash": "12112614521034583554"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b8b9a0b90091f5106cd-1730628339399-4h6dt.jpeg",
+          "hash": "15346959917561150778"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b939a0b90091f5106d1-1730628313005-tmawk.jpeg",
+          "hash": "7468383252782579797"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1730628261691-mj4fge.jpeg",
+          "hash": "6679878928496801260"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1730628261691-nam45.jpeg",
+          "hash": "10850419976003178382"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1730628237967-i3qpg5.jpeg",
+          "hash": "14120155812080023387"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1730628237967-m9i81k.jpeg",
+          "hash": "5439869762658155979"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1730628218014-xgds09.jpeg",
+          "hash": "4332301813186924596"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1730628218015-6c2czr.jpeg",
+          "hash": "3588370246876351044"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1730628196890-ccurhk.jpeg",
+          "hash": "9209881143590077967"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1730628196891-egeqmo.jpeg",
+          "hash": "11241050703595772897"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1730628169701-o2501x.jpeg",
+          "hash": "5074189226323147594"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1730628169702-6ejezq.jpeg",
+          "hash": "14937290378776353973"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1730628110031-fnwd1.jpeg",
+          "hash": "3791263960959566863"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1730628110032-gwtiku.jpeg",
+          "hash": "4545380364726798220"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1730628040984-ggf52e.jpeg",
+          "hash": "17161526968932726589"
+        },
+        {
+          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1730628040984-zke15p.jpeg",
+          "hash": "13464220783090333038"
+        },
+        {
+          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730626765743-1taf2.jpeg",
+          "hash": "13569577199571629002"
+        },
+        {
+          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730626826112-53x1xq.jpeg",
+          "hash": "13569577199571629002"
+        },
+        {
+          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730627604113-jdxeon.jpeg",
+          "hash": "13569577199571629002"
+        },
+        {
+          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730627663969-qdh1fn.jpeg",
+          "hash": "13569577199571629002"
+        },
+        {
+          "file": "packages/backend/images/products/product-672748812af4f3584b20f874-1730627727420-9cn05l.jpeg",
+          "hash": "13569577199571629002"
         },
         {
           "file": "packages/backend/models/cartModel.js",
@@ -158,7 +266,7 @@
         },
         {
           "file": "packages/backend/routes/productRoutes.js",
-          "hash": "937180443403362182"
+          "hash": "9480939267961570108"
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
@@ -191,114 +299,6 @@
         {
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
-        },
-        {
-          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730626765743-1taf2.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730626826112-53x1xq.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730627604113-jdxeon.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-6727448fef70e152e548a5c7-1730627663969-qdh1fn.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-672748812af4f3584b20f874-1730627727420-9cn05l.jpeg",
-          "hash": "13569577199571629002"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1730628040984-ggf52e.jpeg",
-          "hash": "17161526968932726589"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bcd9a0b90091f5106ed-1730628040984-zke15p.jpeg",
-          "hash": "13464220783090333038"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1730628110032-gwtiku.jpeg",
-          "hash": "4545380364726798220"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bc69a0b90091f5106e9-1730628110031-fnwd1.jpeg",
-          "hash": "3791263960959566863"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1730628169701-o2501x.jpeg",
-          "hash": "5074189226323147594"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bbf9a0b90091f5106e5-1730628169702-6ejezq.jpeg",
-          "hash": "14937290378776353973"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1730628196890-ccurhk.jpeg",
-          "hash": "9209881143590077967"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bb89a0b90091f5106e1-1730628196891-egeqmo.jpeg",
-          "hash": "11241050703595772897"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1730628218015-6c2czr.jpeg",
-          "hash": "3588370246876351044"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151bb09a0b90091f5106dd-1730628218014-xgds09.jpeg",
-          "hash": "4332301813186924596"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1730628237967-m9i81k.jpeg",
-          "hash": "5439869762658155979"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151ba49a0b90091f5106d9-1730628237967-i3qpg5.jpeg",
-          "hash": "14120155812080023387"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1730628261691-nam45.jpeg",
-          "hash": "10850419976003178382"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b9b9a0b90091f5106d5-1730628261691-mj4fge.jpeg",
-          "hash": "6679878928496801260"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b939a0b90091f5106d1-1730628313005-tmawk.jpeg",
-          "hash": "7468383252782579797"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b8b9a0b90091f5106cd-1730628339399-4h6dt.jpeg",
-          "hash": "15346959917561150778"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1730628359523-2kv0hk.jpeg",
-          "hash": "3842568232393291858"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b7f9a0b90091f5106c9-1730628359523-2mh4vr.jpeg",
-          "hash": "12112614521034583554"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1730628385473-7kvnss.jpeg",
-          "hash": "8180277472994395607"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b749a0b90091f5106c5-1730628385473-xf9n9k.jpeg",
-          "hash": "13024739163521062508"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1730628406955-yho4vn.jpeg",
-          "hash": "6005741844549085807"
-        },
-        {
-          "file": "packages/backend/images/products/product-67151b679a0b90091f5106c1-1730628406955-yl6mzd.jpeg",
-          "hash": "16657280399342764707"
         }
       ],
       "client": [
@@ -384,11 +384,23 @@
         },
         {
           "file": "packages/client/app/layout.tsx",
-          "hash": "16947834728724712750"
+          "hash": "933310106485574430"
         },
         {
           "file": "packages/client/app/page.tsx",
-          "hash": "7308861509494998942"
+          "hash": "10801745308827974582"
+        },
+        {
+          "file": "packages/client/assets/img/Casual.png",
+          "hash": "1230901795821083253"
+        },
+        {
+          "file": "packages/client/assets/img/Formal.png",
+          "hash": "17743621597321367578"
+        },
+        {
+          "file": "packages/client/assets/img/Gym.png",
+          "hash": "17753726437915799348"
         },
         {
           "file": "packages/client/assets/img/calvin-klein.png",
@@ -397,6 +409,10 @@
         {
           "file": "packages/client/assets/img/gucci.png",
           "hash": "15307340203634454894"
+        },
+        {
+          "file": "packages/client/assets/img/party.jpg",
+          "hash": "9547421575637680015"
         },
         {
           "file": "packages/client/assets/img/pexels-marleneleppanen-1183266.png",
@@ -436,47 +452,59 @@
         },
         {
           "file": "packages/client/axios/Axios.ts",
-          "hash": "1702490314187131010"
+          "hash": "4696575551422145690"
         },
         {
           "file": "packages/client/chromatic.config.json",
           "hash": "15592892256944903047"
         },
         {
+          "file": "packages/client/components/Accordion.tsx",
+          "hash": "1118399463280433372"
+        },
+        {
+          "file": "packages/client/components/BrowseDressStyle.tsx",
+          "hash": "3787707666239134188"
+        },
+        {
+          "file": "packages/client/components/Filter.tsx",
+          "hash": "8967919448038287017"
+        },
+        {
           "file": "packages/client/components/Footer.tsx",
-          "hash": "1674547684171914430"
+          "hash": "1969872990093400472"
         },
         {
           "file": "packages/client/components/Hero.tsx",
-          "hash": "8156812150627036865"
+          "hash": "15688308375739449349"
         },
         {
           "file": "packages/client/components/HeroContent.tsx",
-          "hash": "15157498792079728352"
+          "hash": "18433107541191148477"
         },
         {
           "file": "packages/client/components/NavBar.tsx",
-          "hash": "11142947794595644576"
+          "hash": "18028974703505451272"
         },
         {
           "file": "packages/client/components/NavLinks.tsx",
-          "hash": "9613067847549607929"
+          "hash": "11141600364038198184"
         },
         {
           "file": "packages/client/components/NewArrival.tsx",
-          "hash": "7402788670919100983"
-        },
-        {
-          "file": "packages/client/components/NewArrivalCards.tsx",
-          "hash": "17547887232260400025"
+          "hash": "6393213677017147771"
         },
         {
           "file": "packages/client/components/ProductCard.tsx",
           "hash": "16942769561134835988"
         },
         {
+          "file": "packages/client/components/ProductCards.tsx",
+          "hash": "10555051926256598002"
+        },
+        {
           "file": "packages/client/components/Rating.tsx",
-          "hash": "11066072938968718242"
+          "hash": "9293714065857441923"
         },
         {
           "file": "packages/client/components/Reviews.tsx",
@@ -484,15 +512,27 @@
         },
         {
           "file": "packages/client/components/SearchBar.tsx",
-          "hash": "17657102603118530655"
+          "hash": "3205573107357792902"
         },
         {
           "file": "packages/client/components/StarParallax.tsx",
           "hash": "12965357683824750354"
         },
         {
+          "file": "packages/client/components/TopSelling.tsx",
+          "hash": "15267239831530298340"
+        },
+        {
+          "file": "packages/client/components/colorCheckBox/CheckBox.tsx",
+          "hash": "3023441292598196153"
+        },
+        {
+          "file": "packages/client/components/sizeCheckBox/CheckBox.tsx",
+          "hash": "10239623126531936651"
+        },
+        {
           "file": "packages/client/constants/index.ts",
-          "hash": "14987130906635681400"
+          "hash": "17497227615384492428"
         },
         {
           "file": "packages/client/next.config.mjs",
@@ -500,7 +540,7 @@
         },
         {
           "file": "packages/client/package.json",
-          "hash": "3877006707356158981",
+          "hash": "10915012968352803755",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -554,6 +594,10 @@
           "hash": "17882505348629598648"
         },
         {
+          "file": "packages/client/stories/Filter.stories.tsx",
+          "hash": "2746137815517159193"
+        },
+        {
           "file": "packages/client/stories/Footer.stories.tsx",
           "hash": "8982500751116501886"
         },
@@ -563,7 +607,7 @@
         },
         {
           "file": "packages/client/stories/ProductCard.stories.tsx",
-          "hash": "10082684231765162327"
+          "hash": "13372058761692596991"
         },
         {
           "file": "packages/client/stories/Review.stories.tsx",
@@ -575,7 +619,7 @@
         },
         {
           "file": "packages/client/tailwind.config.ts",
-          "hash": "14235791081991352342"
+          "hash": "18271966592131581828"
         },
         {
           "file": "packages/client/tsconfig.json",
