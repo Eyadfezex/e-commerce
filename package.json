@@ -16,6 +16,7 @@
     "dev": "concurrently \"lerna run start --scope=backend\"  \"lerna run dev --scope=client\"",
     "dev_client": "lerna run dev --scope=client",
     "build": "lerna run build --scope=client",
+    "lint": "lerna run lint --scope=client",
     "start": "lerna run start --scope=client",
     "story": "lerna run storybook --scope=client"
   }

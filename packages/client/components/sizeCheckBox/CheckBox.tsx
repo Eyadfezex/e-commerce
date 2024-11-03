@@ -3,7 +3,7 @@ import { useCheckbox, Chip, VisuallyHidden, tv } from "@nextui-org/react";
 interface Props {
   children?: React.ReactNode;
   defaultSelected?: boolean;
-  value: any;
+  value: string;
 }
 const checkbox = tv({
   slots: {
