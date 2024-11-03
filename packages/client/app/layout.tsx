@@ -20,7 +20,7 @@ export default function RootLayout({
       <head></head>
       <body>
         <Provider>
-          <main className="overflow-x-hidden ">
+          <main className="overflow-x-hidden font-sans ">
             <NavBar />
             <NextBreadcrumb
               homeElement={"Home"}
