@@ -12,7 +12,7 @@ const BrowseDressStyle = () => {
             <div className="flex flex-col lg:grid grid-cols-3 grid-rows-2 font-Bold gap-4  lg:h-[40rem] w-full">
               <Link
                 href="/"
-                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] lg:pb-4 overflow-hidden col-span-1 bg-[url('../assets/img/Casual.png')] bg-cover bg-center row-span-1"
+                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] lg:pb-4 overflow-hidden col-span-1 casual bg-cover bg-center row-span-1"
               >
                 <h3 className="text-3xl lg:text-4xl font-black capitalize">
                   Casual
@@ -21,7 +21,7 @@ const BrowseDressStyle = () => {
 
               <Link
                 href="/"
-                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] relative overflow-hidden bg-[url('../assets/img/formal.png')] bg-cover bg-center  col-span-2 row-span-1 "
+                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] relative overflow-hidden formal bg-cover bg-center  col-span-2 row-span-1 "
               >
                 <h3 className="text-3xl lg:text-4xl font-black capitalize">
                   formal
@@ -29,7 +29,7 @@ const BrowseDressStyle = () => {
               </Link>
               <Link
                 href="/"
-                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] overflow-hidden relative bg-[url('../assets/img/party.jpg')] bg-cover bg-center   col-span-2 row-span-1"
+                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] overflow-hidden relative party bg-cover bg-center   col-span-2 row-span-1"
               >
                 <h3 className="text-3xl lg:text-4xl font-black capitalize">
                   party
@@ -37,7 +37,7 @@ const BrowseDressStyle = () => {
               </Link>
               <Link
                 href="/"
-                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] bg-[url('../assets/img/gym.png')] bg-cover bg-center   overflow-hidden relative col-span-1 row-span-1"
+                className="rounded-3xl p-4 pb-[10rem] md:pb-[20rem] gym bg-cover bg-center   overflow-hidden relative col-span-1 row-span-1"
               >
                 <h3 className="text-3xl lg:text-4xl font-black capitalize">
                   gym
