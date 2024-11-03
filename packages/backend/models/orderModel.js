@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema(
   {
-    customer: {
+    userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: [true, "Customer is required"],
@@ -12,11 +12,9 @@ const orderSchema = new mongoose.Schema(
         product: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "Product",
-          required: [true, "Product is required"],
         },
         quantity: {
           type: Number,
-          required: [true, "Quantity is required"],
           min: [1, "Quantity must be at least 1"],
         },
         price: {
@@ -24,14 +22,16 @@ const orderSchema = new mongoose.Schema(
         },
       },
     ],
+    shippingAddress: {
+      address: { type: String, required: true },
+      city: { type: String, required: true },
+      postalCode: { type: String, required: true },
+      country: { type: String, required: true },
+    },
     paymentMethod: {
       type: String,
+      enum: ["credit card", "paypal", "cash on delivery"],
       required: true,
-    },
-    shippingAddress: {
-      street: String,
-      city: String,
-      postalCode: String,
     },
     paymentResult: {
       id: String,
@@ -67,30 +67,37 @@ const orderSchema = new mongoose.Schema(
 
 orderSchema.pre(/^find/, function (next) {
   this.populate({
-    path: "customer",
+    path: "userId",
     select: "name photo",
   });
   next();
 });
-orderSchema.pre("validate", async function (next) {
-  const order = this;
-
-  // Populate the product field in orderItems
-  await order.populate({
+orderSchema.pre(/^find/, function (next) {
+  this.populate({
     path: "orderItems.product",
     select: "name photo price",
   });
-
-  // Iterate over each order item to set the price based on the product's price and quantity
-  order.orderItems.forEach((item) => {
-    if (item.product && item.product.price) {
-      item.price = item.product.price * item.quantity; // Set the price as product price * quantity
-    } else {
-      return next(new Error("Product not found or does not have a price"));
-    }
-  });
   next();
 });
+// orderSchema.pre("validate", async function (next) {
+//   const order = this;
+
+//   // Populate the product field in orderItems
+//   await order.populate({
+//     path: "orderItems.product",
+//     select: "name photo price",
+//   });
+
+//   // Iterate over each order item to set the price based on the product's price and quantity
+//   order.orderItems.forEach((item) => {
+//     if (item.product && item.product.price) {
+//       item.price = item.product.price * item.quantity; // Set the price as product price * quantity
+//     } else {
+//       return next(new Error("Product not found or does not have a price"));
+//     }
+//   });
+//   next();
+// });
 
 orderSchema.pre("save", async function (next) {
   const order = this;

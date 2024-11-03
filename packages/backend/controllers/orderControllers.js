@@ -1,33 +1,43 @@
 const Order = require("../models/orderModel");
+const Cart = require("../models/cartModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const HF = require("./handlerFactory");
 
-const createOrder = catchAsync(async (req, res, next) => {
-  const { orderItems, shippingAddress, paymentMethod } = req.body;
-
-  if (!orderItems || orderItems.length === 0) {
-    return next(new AppError("No order items found", 400));
+const createOrderFromCart = catchAsync(async (req, res, next) => {
+  const { shippingAddress, paymentMethod } = req.body;
+  const cart = await Cart.findOne({ userId: req.user.id }).populate(
+    "products.productId"
+  );
+  if (!cart || cart.products.length === 0) {
+    return next(new AppError("Cart is empty", 400));
   }
+  const orderItems = cart.products.map((item) => ({
+    product: item.productId._id,
+    quantity: item.quantity,
+    price: item.totalPrice,
+  }));
 
   const order = await Order.create({
+    userId: req.user.id,
     orderItems,
     shippingAddress,
     paymentMethod,
-    customer: req.user._id,
   });
+
+  cart.products = [];
+  await cart.save();
+
   res.status(201).json({
     status: "success",
-    message: "Order created successfully",
-    data: {
-      order,
-    },
+    message: "Order placed successfully",
+    data: order,
   });
 });
 
 const getOneOrder = catchAsync(async (req, res, next) => {
   const order = await Order.findById(req.params.id)
-    .populate("customer", "name email")
+    .populate("userId", "name email")
     .populate({
       path: "orderItems",
       populate: {
@@ -46,7 +56,7 @@ const getOneOrder = catchAsync(async (req, res, next) => {
 
 const getMyOrders = catchAsync(async (req, res, next) => {
   const orders = await Order.find({
-    customer: req.user._id,
+    userId: req.user._id,
   }).sort("-createdAt");
   res.status(200).json({
     status: "success",
@@ -103,7 +113,7 @@ const updateOrderToDelivered = catchAsync(async (req, res, next) => {
 });
 // Admin controllers
 const getAllOrders = HF.getAll(Order, {
-  path: "customer",
+  path: "userId",
   select: "name email",
 });
 
@@ -111,7 +121,8 @@ const deleteOrder = HF.deleteOne(Order);
 const updateOrder = HF.updateOne(Order);
 
 module.exports = {
-  createOrder,
+  // createOrder,
+  createOrderFromCart,
   getOneOrder,
   getMyOrders,
   updateOrderToPaid,

@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const slugify = require("slugify");
-// const validator = require("validator");
 
 const productSchema = new mongoose.Schema(
   {
@@ -29,22 +28,36 @@ const productSchema = new mongoose.Schema(
       maxLength: [500, "Product description must be less than 500 characters"],
       minLength: [10, "Product description must be at least 10 characters"],
     },
-    price: {
+    originalPrice: {
       type: Number,
       required: [true, "Product price is required"],
+      default: 0,
     },
-    images: {
-      type: String,
+    discountPrice: {
+      type: Number,
     },
+    images: [
+      {
+        public_id: String,
+        url: String,
+      },
+    ],
     createdAt: {
       type: Date,
       default: Date.now,
     },
     slug: String,
-
     seller: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+    },
+    colors: {
+      type: Array,
+      default: [],
+    },
+    sizes: {
+      type: Array,
+      default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
     },
   },
   {
@@ -53,6 +66,14 @@ const productSchema = new mongoose.Schema(
   }
 );
 
+productSchema.virtual("currentPrice").get(function () {
+  return this.originalPrice - this.discountPrice;
+});
+
+productSchema.virtual("discountPercentage").get(function () {
+  return (this.discountPrice / this.originalPrice) * 100;
+});
+
 productSchema.virtual("reviews", {
   ref: "Review",
   foreignField: "product",
@@ -60,7 +81,12 @@ productSchema.virtual("reviews", {
 });
 
 productSchema.pre("save", function (next) {
-  this.slug = slugify(this.name, { upper: true });
+  if (this.discountPrice >= this.originalPrice) {
+    return next(
+      new Error("Discount price must be lower than the original price")
+    );
+  }
+  this.slug = slugify(this.name, { lower: true });
   next();
 });
 

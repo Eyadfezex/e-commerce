@@ -6,7 +6,6 @@
 0 silly argv   script: 'start'
 0 silly argv }
 1 notice cli v8.1.8
-2 verbose packageConfigs Package manager "pnpm" detected. Resolving packages using `pnpm-workspace.yaml`.
 3 verbose rootPath D:\VS Language\js\e-commerce
 4 error Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
 4 error       An error occurred while processing files for the nx/core/package-json plugin.
