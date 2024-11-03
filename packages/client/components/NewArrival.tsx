@@ -1,3 +1,24 @@
+/**
+ * NewArrival Component
+ *
+ * This component fetches and displays a list of new arrival products.
+ * It utilizes the `useQuery` hook from React Query to manage data fetching
+ * and loading states. The fetched products are displayed using the
+ * `ProductCards` component. If the data is still loading or an error occurs,
+ * appropriate loading indicators or error messages are shown.
+ *
+ * The component also includes a button that links to a detailed page
+ * where all new arrival products can be viewed.
+ *
+ * @component
+ * @example
+ * return (
+ *   <NewArrival />
+ * )
+ *
+ * @returns {JSX.Element} The rendered NewArrival component.
+ */
+
 "use client";
 import React from "react";
 import { ProductCards } from "./ProductCards";
@@ -5,6 +26,7 @@ import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { getNewArrivalProducts } from "@/axios/Axios";
+
 const NewArrival = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ["new-arrival-products"],
