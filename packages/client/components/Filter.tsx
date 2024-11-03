@@ -83,7 +83,9 @@ export const Filter = () => {
             <CheckboxGroup>
               <div className="flex flex-row flex-wrap gap-1">
                 {sizes.map((item) => (
-                  <SizeCheckBox value={item.size}>{item.size}</SizeCheckBox>
+                  <SizeCheckBox value={item.size} key={item.id}>
+                    {item.size}
+                  </SizeCheckBox>
                 ))}
               </div>
             </CheckboxGroup>
