@@ -17,7 +17,7 @@ export const Footer = () => {
   return (
     <footer className="bg-zinc-200 font-sans">
       <div className="flex justify-center py-20">
-        <div className="flex flex-col px-4 w-full xl:w-[95%] gap-16 max-w-[1920px]">
+        <div className="flex flex-col px-4 w-full lg:w-[95%] xl:w-[80%] gap-16 max-w-[1920px]">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-16">
             <div className="lg:max-w-[248px]">
               <Image src={logo} alt="logo" className="w-[144px]" />
