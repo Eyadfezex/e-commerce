@@ -36,7 +36,12 @@ const productSchema = new mongoose.Schema(
     discountPrice: {
       type: Number,
     },
-    images: [String],
+    images: [
+      {
+        public_id: String,
+        url: String,
+      },
+    ],
     createdAt: {
       type: Date,
       default: Date.now,
