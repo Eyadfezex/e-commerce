@@ -11853,9 +11853,9 @@
         "hash": "sha512-zD1ZvkfxECrd9QnvUyAUVLESmjl0bpIhB1gLcYN2BqsCkB1vkngbxIvXDorI98keOVEfHzeuwNSkufQNls1hug=="
       }
     },
-    "npm:nx": {
+    "npm:nx@20.0.6": {
       "type": "npm",
-      "name": "npm:nx",
+      "name": "npm:nx@20.0.6",
       "data": {
         "version": "20.0.6",
         "packageName": "nx",
@@ -35898,212 +35898,212 @@
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@napi-rs/wasm-runtime",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@yarnpkg/lockfile",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@yarnpkg/parsers",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@zkochan/js-yaml",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:axios",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:chalk@4.1.2",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:cli-cursor",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:cli-spinners@2.6.1",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:cliui@8.0.1",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:dotenv",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:dotenv-expand",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:enquirer",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:figures",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:flat",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:front-matter",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:ignore",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:jest-diff",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:jsonc-parser",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:lines-and-columns@2.0.3",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:minimatch@9.0.3",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:node-machine-id",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:npm-run-path",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:open",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:ora@5.3.0",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:semver@7.6.3",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:string-width@4.2.3",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:tar-stream",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:tmp@0.2.3",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:tsconfig-paths@4.2.0",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:tslib@2.7.0",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:yargs@17.7.2",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:yargs-parser@21.1.1",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-darwin-arm64@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-darwin-x64@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-freebsd-x64@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-linux-arm-gnueabihf@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-linux-arm64-gnu@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-linux-arm64-musl@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-linux-x64-gnu@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-linux-x64-musl@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-win32-arm64-msvc@20.0.6",
       "type": "static"
     },
     {
-      "source": "npm:nx",
+      "source": "npm:nx@20.0.6",
       "target": "npm:@nx/nx-win32-x64-msvc@20.0.6",
       "type": "static"
     },
@@ -38525,11 +38525,6 @@
     {
       "source": "npm:styled-jsx",
       "target": "npm:@babel/core",
-      "type": "static"
-    },
-    {
-      "source": "npm:styled-jsx",
-      "target": "npm:babel-plugin-macros",
       "type": "static"
     },
     {

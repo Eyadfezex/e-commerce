@@ -46,38 +46,38 @@ const uploadImages = catchAsync(async (req, res, next) => {
     return next(new AppError("No product found with that ID", 404));
   }
 
-  try {
-    const imageFiles = req.files.filter((file) =>
-      file.mimetype.startsWith("image/")
+  const imageFiles = req.files.filter((file) =>
+    file.mimetype.startsWith("image/")
+  );
+
+  if (imageFiles.length === 0) {
+    return next(
+      new AppError("Only image files are allowed please try again", 400)
     );
-
-    if (imageFiles.length === 0) {
-      return next(
-        new AppError("Only image files are allowed please try again", 400)
-      );
-    }
-
-    const uploadPromises = imageFiles.map((file) =>
-      cloudinary.uploader.upload(file.path, { folder: "Home/products/" })
-    );
-
-    const uploadResults = await Promise.all(uploadPromises);
-    uploadResults.forEach((result) => {
-      product.images.push(result.secure_url);
-    });
-
-    await product.save();
-
-    res.status(200).json({
-      status: "success",
-      message: "Images uploaded and saved successfully.",
-      data: {
-        product,
-      },
-    });
-  } catch (error) {
-    return next(new AppError("Error uploading images", 500));
   }
+
+  const uploadPromises = imageFiles.map((file) =>
+    cloudinary.uploader.upload(file.path, { folder: "Home/products/" })
+  );
+  console.log(uploadPromises);
+
+  const uploadResults = await Promise.all(uploadPromises);
+  uploadResults.forEach((result) => {
+    product.images.push({
+      url: result.secure_url,
+      public_id: result.public_id,
+    });
+  });
+
+  await product.save();
+
+  res.status(200).json({
+    status: "success",
+    message: "Images uploaded and saved successfully.",
+    data: {
+      product,
+    },
+  });
 });
 
 const getNewArrivalProducts = catchAsync(async (req, res, next) => {
