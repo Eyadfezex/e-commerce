@@ -5,15 +5,10 @@ import { FaCheck } from "react-icons/fa6";
 
 interface Props {
   color: string;
-  children?: React.ReactNode;
   defaultSelected?: boolean;
 }
 
-export const CheckBox = ({
-  color,
-  children,
-  defaultSelected = false,
-}: Props) => {
+export const CheckBox = ({ color, defaultSelected = false }: Props) => {
   const {
     isSelected,
     isFocusVisible,
@@ -45,7 +40,7 @@ export const CheckBox = ({
   const styles = checkbox({ isSelected, isFocusVisible });
 
   return (
-    <label {...getBaseProps()} role="checkbox">
+    <label {...getBaseProps()} role="checkbox" aria-checked="mixed">
       <VisuallyHidden>
         <input {...getInputProps()} />
       </VisuallyHidden>
@@ -63,7 +58,7 @@ export const CheckBox = ({
       >
         {isSelected && (
           <FaCheck color={color === "FFFFFF" ? "black" : "white"} />
-        )}{" "}
+        )}
       </Chip>
     </label>
   );

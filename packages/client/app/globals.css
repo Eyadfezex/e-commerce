@@ -36,3 +36,19 @@
     font-style: normal;
   }
 }
+
+.party {
+  background-image: url("../public/assets/img/party.jpg");
+}
+
+.casual {
+  background-image: url(../public/assets/img/Casual.png);
+}
+
+.formal {
+  background-image: url(../public/assets/img/formal.png);
+}
+
+.gym {
+  background-image: url(../public/assets/img/gym.png);
+}

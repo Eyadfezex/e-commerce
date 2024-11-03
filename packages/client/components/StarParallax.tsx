@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { ScrollParallax } from "react-just-parallax";
-import star from "@/assets/svgs/star.svg";
+import star from "@/public/assets/svgs/star.svg";
 import Image from "next/image";
 
 const StarParallax = () => {

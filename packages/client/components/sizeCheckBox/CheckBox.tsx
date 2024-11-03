@@ -3,7 +3,7 @@ import { useCheckbox, Chip, VisuallyHidden, tv } from "@nextui-org/react";
 interface Props {
   children?: React.ReactNode;
   defaultSelected?: boolean;
-  value: any;
+  value: string;
 }
 const checkbox = tv({
   slots: {
@@ -40,7 +40,7 @@ export const CheckBox = ({ ...props }: Props) => {
   const styles = checkbox({ isSelected, isFocusVisible });
 
   return (
-    <label {...getBaseProps()}>
+    <label {...getBaseProps()} role="checkbox" aria-checked="mixed">
       <VisuallyHidden>
         <input {...getInputProps()} />
       </VisuallyHidden>

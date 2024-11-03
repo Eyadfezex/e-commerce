@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { ProductCard as OriginProductCard } from "../components/ProductCard";
-// import shirt from "../assets/img/t-shirt.webp";
 const meta: Meta<typeof OriginProductCard> = {
   title: "ProductCard",
   component: OriginProductCard,

@@ -28,14 +28,18 @@ import React from "react";
 import { ProductCard } from "./ProductCard";
 import { Skeleton } from "@nextui-org/react";
 import Stack from "@mui/material/Stack";
-
+interface Image {
+  url: string; // Assuming the image object contains a 'url' property
+  // Add any other properties that the image object may have
+}
 interface Product {
   id: React.Key | null | undefined;
   name: string;
   currentPrice: number;
   ratingsAverage: number;
-  images: Array<string>;
+  images: Array<Image>;
   discountPercentage: string;
+  url: string;
   discountPrice: number;
 }
 
@@ -45,8 +49,8 @@ export const ProductCards = ({
   isLoading,
 }: {
   data: Product[];
-  error: any;
-  isLoading: any;
+  error: Error | null;
+  isLoading: boolean;
 }) => {
   if (error) {
     return <div>Error loading products</div>;
@@ -68,7 +72,7 @@ export const ProductCards = ({
           Pname={item.name}
           price={item.currentPrice}
           rate={item.ratingsAverage}
-          PImage={item.images[0]}
+          PImage={item.images[0]?.url}
           discountPerc={item.discountPercentage}
           Mprice={item.discountPrice}
         />
