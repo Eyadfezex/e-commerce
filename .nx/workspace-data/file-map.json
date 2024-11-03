@@ -11,28 +11,12 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15788019843541253973"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "14753864772816161294"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14365157803961030502"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
         "file": "package.json",
         "hash": "5004711239184249415"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
         "file": "package-lock.json",
@@ -45,6 +29,22 @@
       {
         "file": "pnpm-lock.yaml",
         "hash": "184926464717476458"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15788019843541253973"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14365157803961030502"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14753864772816161294"
       }
     ],
     "projectFileMap": {

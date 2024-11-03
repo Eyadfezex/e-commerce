@@ -4,12 +4,17 @@ const AC = require("../controllers/authControllers");
 
 const router = express.Router({ mergeParams: true });
 
-router.use(AC.protect);
-
 router
   .route("/")
   .get(RC.getAllReviews)
-  .post(AC.restrictTo("customer"), RC.setProductUserIds, RC.createReview);
+  .post(
+    AC.protect,
+    AC.restrictTo("customer"),
+    RC.setProductUserIds,
+    RC.createReview
+  );
+
+router.use(AC.protect);
 
 router
   .route("/:id")
