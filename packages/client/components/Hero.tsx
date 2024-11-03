@@ -1,11 +1,10 @@
 import Image from "next/image";
-import model from "@/assets/img/pexels-marleneleppanen-1183266.png";
-import gucci from "@/assets/img/gucci.png";
-import prada from "@/assets/img/prada.png";
-import zara from "@/assets/img/zara.png";
-
-import versace from "@/assets/img/versace.png";
-import calvin_klein from "@/assets/img/calvin-klein.png";
+import model from "@/public/assets/img/pexels-marleneleppanen-1183266.png";
+import gucci from "@/public/assets/img/gucci.png";
+import prada from "@/public/assets/img/prada.png";
+import zara from "@/public/assets/img/zara.png";
+import versace from "@/public/assets/img/versace.png";
+import calvin_klein from "@/public/assets/img/calvin-klein.png";
 
 import React from "react";
 import HeroContent from "./HeroContent";

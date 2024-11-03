@@ -7,7 +7,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { MdAccountCircle } from "react-icons/md";
 import SearchBar from "./SearchBar";
 import Image from "next/image";
-import logo from "../assets/svgs/logo.svg";
+import logo from "@/public/assets/svgs/logo.svg";
 import NavLinks from "./NavLinks";
 
 const NavBar = () => {

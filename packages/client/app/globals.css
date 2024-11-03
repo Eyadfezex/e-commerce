@@ -38,17 +38,17 @@
 }
 
 .party {
-  background-image: url("../assets/img/party.jpg");
+  background-image: url("../public/assets/img/party.jpg");
 }
 
 .casual {
-  background-image: url(../assets/img/Casual.png);
+  background-image: url(../public/assets/img/Casual.png);
 }
 
 .formal {
-  background-image: url(../assets/img/formal.png);
+  background-image: url(../public/assets/img/formal.png);
 }
 
 .gym {
-  background-image: url(../assets/img/gym.png);
+  background-image: url(../public/assets/img/gym.png);
 }

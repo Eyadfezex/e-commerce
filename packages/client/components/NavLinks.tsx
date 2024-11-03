@@ -10,7 +10,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { dropDownItems, navLinks } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import dot from "../assets/svgs/dot-small-svgrepo-com.svg";
+import dot from "@/public/assets/svgs/dot-small-svgrepo-com.svg";
 const NavLinks = () => {
   return (
     <div className="lg:flex items-center gap-[2rem] lg:gap-[1rem] hidden font-sans">

@@ -1,6 +1,6 @@
 import React from "react";
 import Rating from "./Rating";
-import check from "../assets/svgs/1930264_check_complete_done_green_success_icon.svg";
+import check from "../public/assets/svgs/1930264_check_complete_done_green_success_icon.svg";
 import Image from "next/image";
 interface PROPS {
   rating: number;

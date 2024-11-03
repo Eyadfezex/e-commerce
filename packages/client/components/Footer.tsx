@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/svgs/logo.svg";
+import logo from "@/public/assets/svgs/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { TiSocialTwitter } from "react-icons/ti";
