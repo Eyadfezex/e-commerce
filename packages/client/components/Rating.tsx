@@ -7,7 +7,7 @@ interface PROPS {
 export default function BasicRating({ value }: PROPS) {
   return (
     <Box sx={{ display: "flex", gap: "0.5rem" }}>
-      <Rating name="simple-controlled" value={value} readOnly />
+      <Rating name="simple-controlled" value={value} precision={0.5} readOnly />
       <p>
         {value}
         <span className="opacity-70">/5</span>

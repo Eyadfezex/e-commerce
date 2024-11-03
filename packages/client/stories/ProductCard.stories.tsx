@@ -9,7 +9,7 @@ const meta: Meta<typeof OriginProductCard> = {
   },
   tags: ["autodocs"],
   argTypes: {
-    rate: { control: { type: "range", min: 0, max: 5 } },
+    rate: { control: { type: "range", min: 0, max: 5, step: 0.5 } },
     price: {
       control: "number",
     },
