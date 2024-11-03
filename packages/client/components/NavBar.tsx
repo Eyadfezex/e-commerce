@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <nav className="w-full">
       <div className="flex justify-center py-[0.5rem] md:py-[1rem]">
-        <div className="flex justify-between items-center px-[16px] md:gap-[10rem] xl:w-[95%] lg:gap-[2rem]  w-full max-w-[1920px]">
+        <div className="flex justify-between items-center px-[16px] md:gap-[10rem] lg:w-[95%] xl:w-[80%] lg:gap-[2rem]  w-full max-w-[1920px]">
           <div className="flex items-center gap-[0.5rem] md:gap-[1rem] xl:gap-[2rem] w-full">
             <div className="lg:hidden">
               <Hamburger size={24} rounded />
