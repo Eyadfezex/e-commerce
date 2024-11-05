@@ -1,12 +1,13 @@
-import React from "react";
+import React, { Key } from "react";
 import Rating from "./Rating";
-import check from "../public/assets/svgs/1930264_check_complete_done_green_success_icon.svg";
+import check from "@/public/assets/svgs/1930264_check_complete_done_green_success_icon.svg";
 import Image from "next/image";
-interface PROPS {
+export interface REVIEW_PROPS {
+  id: Key | null | undefined;
   rating: number;
   name: string;
   review: string;
-  date: string;
+  createdAt: string;
 }
 export const Review = ({
   rating = 3,
@@ -14,10 +15,10 @@ export const Review = ({
   review = `I absolutely love this t-shirt! The design is unique and the fabric
         feels so comfortable. As a fellow designer, I appreciate the attention
         to detail. It's become my favorite go-to shirt.`,
-  date = "August 17, 2023",
-}: PROPS) => {
+  createdAt = "August 17, 2023",
+}: REVIEW_PROPS) => {
   return (
-    <div className="border rounded-xl p-6  font-sans w-full max-w-[610px]">
+    <div className="border rounded-xl p-6 font-sans w-full max-w-[400px]">
       <Rating value={rating} />
       <div className="flex items-center gap-1 mt-3">
         <h3 className="font-bold" id="name">
@@ -32,7 +33,7 @@ export const Review = ({
         className="text-zinc-500 font-mono font-medium mt-4 block"
         id="date"
       >
-        Posted on <span className=" capitalize">{date}</span>
+        Posted on <span className=" capitalize">{createdAt}</span>
       </span>
     </div>
   );
