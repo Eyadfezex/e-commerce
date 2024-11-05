@@ -16,10 +16,10 @@ const instance = axios.create({
 export const getAllProducts = async () => {
   try {
     const res = await instance.get("/products");
-    return res.data.data.doc;
+    return res.data.data.doc; // Assuming the structure of the response contains the products in this path.
   } catch (error) {
     console.error("Error fetching all products:", error);
-    throw error;
+    throw error; // Propagate the error for further handling.
   }
 };
 
@@ -34,10 +34,10 @@ export const getAllProducts = async () => {
 export const getProducts = async (limit = 10, page = 1) => {
   try {
     const res = await instance.get(`/products?limit=${limit}&page=${page}`);
-    return res.data.data;
+    return res.data.data; // Assuming the structure of the response contains the products and pagination info.
   } catch (error) {
     console.error("Error fetching products:", error);
-    throw error;
+    throw error; // Propagate the error for further handling.
   }
 };
 
@@ -45,22 +45,23 @@ export const getProducts = async (limit = 10, page = 1) => {
  * Fetches new arrival products from the API.
  * If there are no new arrivals, it falls back to fetching the default products.
  *
- * @returns {Promise<Array>} A promise that resolves to an array of new arrival products or default products if none are available.
+ * @returns {Promise<Array>} A promise that resolves to an array of new arrival products
+ *                          or default products if none are available.
  * @throws Will throw an error if the fetch operation fails.
  */
 export const getNewArrivalProducts = async () => {
   try {
     const res = await instance.get("/products/new");
-    const products = res.data.data.product;
+    const products = res.data.data.product; // Assuming the structure of the response contains the new products in this path.
 
     if (!products || products.length === 0) {
-      return getProducts();
+      return getProducts(); // Fallback to fetching default products if none are new.
     } else {
-      return products;
+      return products; // Return the new arrival products.
     }
   } catch (error) {
     console.error("Error fetching new arrival products:", error);
-    throw error;
+    throw error; // Propagate the error for further handling.
   }
 };
 
@@ -75,10 +76,27 @@ export const getTopSelling = async () => {
     const res = await instance.get(
       "/products?sort=ratingsQuantity,ratingsAverage"
     );
-    const products = res.data.data.doc;
-    return products;
+    const products = res.data.data.doc; // Assuming the structure of the response contains the top-selling products in this path.
+    return products; // Return the top-selling products.
   } catch (error) {
     console.error("Error fetching top selling products:", error);
-    throw error;
+    throw error; // Propagate the error for further handling.
+  }
+};
+
+/**
+ * Fetches reviews from the API.
+ *
+ * @returns {Promise<Array>} A promise that resolves to an array of reviews.
+ * @throws Will throw an error if the fetch operation fails.
+ */
+export const getReviews = async () => {
+  try {
+    const res = await instance.get("/reviews");
+    const reviews = res.data.data.doc; // Assuming the structure of the response contains the reviews in this path.
+    return reviews; // Return the fetched reviews.
+  } catch (error) {
+    console.error("Error fetching reviews:", error);
+    throw error; // Propagate the error for further handling.
   }
 };
