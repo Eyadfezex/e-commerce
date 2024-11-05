@@ -14,12 +14,12 @@ router
     RC.createReview
   );
 
-router.use(AC.protect);
+
 
 router
   .route("/:id")
   .get(RC.getReview)
-  .patch(AC.restrictTo("customer", "admin"), RC.updateReview)
-  .delete(AC.restrictTo("customer", "admin"), RC.deleteReview);
+  .patch(AC.protect, AC.restrictTo("customer", "admin"), RC.updateReview)
+  .delete(AC.protect, AC.restrictTo("customer", "admin"), RC.deleteReview);
 
 module.exports = router;
