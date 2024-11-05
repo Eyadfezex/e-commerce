@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Review as OriginReview } from "../components/Reviews";
+import { Review as OriginReview } from "../components/Reviews/Reviews";
 
 const meta: Meta<typeof OriginReview> = {
   title: "Review",
@@ -22,7 +22,7 @@ const meta: Meta<typeof OriginReview> = {
     review: {
       control: "text",
     },
-    date: {
+    createdAt: {
       control: "text",
     },
   },
@@ -33,9 +33,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Review: Story = {
-  render: ({ rating, name, review, date }) => {
+  render: ({ rating, name, review, createdAt }) => {
     return (
-      <OriginReview rating={rating} date={date} review={review} name={name} />
+      <OriginReview
+        rating={rating}
+        createdAt={createdAt}
+        review={review}
+        name={name}
+        id={undefined}
+      />
     );
   },
 };

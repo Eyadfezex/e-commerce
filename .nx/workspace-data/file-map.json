@@ -11,14 +11,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+<<<<<<< HEAD
         "file": ".gitignore",
         "hash": "2546355447798887798"
       },
       {
+=======
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
       },
       {
+<<<<<<< HEAD
+=======
+        "file": "package.json",
+        "hash": "9299775695803580315"
+      },
+      {
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
         "file": "lerna-debug.log",
         "hash": "15319855167597361204"
       },
@@ -27,14 +37,29 @@
         "hash": "13184516379351911297"
       },
       {
+<<<<<<< HEAD
+=======
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
         "file": "nx.json",
         "hash": "14365157803961030502"
       },
       {
+<<<<<<< HEAD
+=======
+        "file": ".gitignore",
+        "hash": "2546355447798887798"
+      },
+      {
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
+<<<<<<< HEAD
         "file": "package.json",
         "hash": "7475657239625410702"
       },
@@ -45,6 +70,10 @@
       {
         "file": "pnpm-workspace.yaml",
         "hash": "9928973617214098819"
+=======
+        "file": "pnpm-lock.yaml",
+        "hash": "15708253992190604589"
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
       }
     ],
     "projectFileMap": {
@@ -604,7 +633,11 @@
         },
         {
           "file": "packages/backend/routes/reviewRoutes.js",
+<<<<<<< HEAD
           "hash": "15771568854399867896"
+=======
+          "hash": "1455228723295638879"
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
         },
         {
           "file": "packages/backend/routes/userRoutes.js",
@@ -634,6 +667,350 @@
           "file": "packages/backend/utils/email.js",
           "hash": "15800405455870972947"
         }
+<<<<<<< HEAD
+=======
+      ],
+      "client": [
+        {
+          "file": "packages/client/.eslintrc.json",
+          "hash": "18007095537853016433"
+        },
+        {
+          "file": "packages/client/.gitignore",
+          "hash": "6351213542049544593"
+        },
+        {
+          "file": "packages/client/.storybook/main.ts",
+          "hash": "7582054075579059977"
+        },
+        {
+          "file": "packages/client/.storybook/preview.ts",
+          "hash": "13472062729864149085"
+        },
+        {
+          "file": "packages/client/README.md",
+          "hash": "10011398316402962549"
+        },
+        {
+          "file": "packages/client/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "packages/client/app/fonts/Fontspring-DEMO-integralcf-bold.otf",
+          "hash": "10648935345635237157"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.eot",
+          "hash": "9515624319395975955"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.ttf",
+          "hash": "15220361477244295055"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff",
+          "hash": "14182897448607956662"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Bold.woff2",
+          "hash": "3977039100317460061"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.eot",
+          "hash": "345143232118275278"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.ttf",
+          "hash": "4280300880547919822"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff",
+          "hash": "6538674733602554051"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Medium.woff2",
+          "hash": "14524909222801850226"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.eot",
+          "hash": "1386078019167196222"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.ttf",
+          "hash": "996530835745513683"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff",
+          "hash": "4658125103796669334"
+        },
+        {
+          "file": "packages/client/app/fonts/Satoshi-Regular.woff2",
+          "hash": "8772877621724132239"
+        },
+        {
+          "file": "packages/client/app/globals.css",
+          "hash": "13376905776498909387"
+        },
+        {
+          "file": "packages/client/app/layout.tsx",
+          "hash": "8134195716841946513"
+        },
+        {
+          "file": "packages/client/app/newarrival/page.tsx",
+          "hash": "2585948023208037560"
+        },
+        {
+          "file": "packages/client/app/page.tsx",
+          "hash": "11517995624514461820"
+        },
+        {
+          "file": "packages/client/axios/Axios.ts",
+          "hash": "4427126373204099654"
+        },
+        {
+          "file": "packages/client/chromatic.config.json",
+          "hash": "9064107291103111533"
+        },
+        {
+          "file": "packages/client/components/Accordion.tsx",
+          "hash": "1118399463280433372"
+        },
+        {
+          "file": "packages/client/components/BrowseDressStyle.tsx",
+          "hash": "18083010436314243596"
+        },
+        {
+          "file": "packages/client/components/Filter.tsx",
+          "hash": "18211868763425821295"
+        },
+        {
+          "file": "packages/client/components/Footer.tsx",
+          "hash": "13711831210385352673"
+        },
+        {
+          "file": "packages/client/components/Hero.tsx",
+          "hash": "11101244488694047444"
+        },
+        {
+          "file": "packages/client/components/HeroContent.tsx",
+          "hash": "18433107541191148477"
+        },
+        {
+          "file": "packages/client/components/NavBar.tsx",
+          "hash": "8857606975461227197"
+        },
+        {
+          "file": "packages/client/components/NavLinks.tsx",
+          "hash": "3656059759479620006"
+        },
+        {
+          "file": "packages/client/components/NewArrival.tsx",
+          "hash": "6393213677017147771"
+        },
+        {
+          "file": "packages/client/components/NextBreadcrumb.tsx",
+          "hash": "8800455038870880609"
+        },
+        {
+          "file": "packages/client/components/ProductCard.tsx",
+          "hash": "14424823782764501640"
+        },
+        {
+          "file": "packages/client/components/ProductCards.tsx",
+          "hash": "11988440460012175567"
+        },
+        {
+          "file": "packages/client/components/Reviews/Rating.tsx",
+          "hash": "9293714065857441923"
+        },
+        {
+          "file": "packages/client/components/Reviews/ReviewSection.tsx",
+          "hash": "1609532396605498147"
+        },
+        {
+          "file": "packages/client/components/Reviews/Reviews.tsx",
+          "hash": "9358696298415589159"
+        },
+        {
+          "file": "packages/client/components/SearchBar.tsx",
+          "hash": "3205573107357792902"
+        },
+        {
+          "file": "packages/client/components/StarParallax.tsx",
+          "hash": "4992857401831506441"
+        },
+        {
+          "file": "packages/client/components/TopSelling.tsx",
+          "hash": "223312356398109549"
+        },
+        {
+          "file": "packages/client/components/colorCheckBox/CheckBox.tsx",
+          "hash": "13118007558601344326"
+        },
+        {
+          "file": "packages/client/components/sizeCheckBox/CheckBox.tsx",
+          "hash": "10787374284070913122"
+        },
+        {
+          "file": "packages/client/constants/index.ts",
+          "hash": "17497227615384492428"
+        },
+        {
+          "file": "packages/client/next.config.mjs",
+          "hash": "7225752870031151217"
+        },
+        {
+          "file": "packages/client/package.json",
+          "hash": "3555241507423132087",
+          "deps": [
+            "npm:@chromatic-com/storybook",
+            "npm:@storybook/addon-essentials",
+            "npm:@storybook/addon-interactions",
+            "npm:@storybook/addon-links",
+            "npm:@storybook/addon-onboarding",
+            "npm:@storybook/blocks",
+            "npm:@storybook/nextjs",
+            "npm:@storybook/react",
+            "npm:@storybook/test",
+            "npm:@types/node@20.16.5",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:eslint-plugin-storybook",
+            "npm:postcss@8.4.47",
+            "npm:storybook",
+            "npm:tailwindcss",
+            "npm:typescript",
+            "npm:@emotion/react",
+            "npm:@emotion/styled",
+            "npm:@gsap/react",
+            "npm:@mui/material",
+            "npm:@nextui-org/button",
+            "npm:@nextui-org/card",
+            "npm:@nextui-org/checkbox",
+            "npm:@nextui-org/dropdown",
+            "npm:@nextui-org/react",
+            "npm:@nextui-org/system",
+            "npm:@nextui-org/theme",
+            "npm:@storybook/addon-designs",
+            "npm:@storybook/addon-measure@8.3.3",
+            "npm:@storybook/addon-storysource",
+            "npm:@storybook/addon-viewport@8.3.3",
+            "npm:@tanstack/react-query",
+            "npm:@tanstack/react-query-devtools",
+            "npm:axios",
+            "npm:framer-motion",
+            "npm:gsap",
+            "npm:hamburger-react",
+            "npm:next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-icons",
+            "npm:react-just-parallax"
+          ]
+        },
+        {
+          "file": "packages/client/postcss.config.mjs",
+          "hash": "17882505348629598648"
+        },
+        {
+          "file": "packages/client/public/assets/img/Casual.png",
+          "hash": "1230901795821083253"
+        },
+        {
+          "file": "packages/client/public/assets/img/calvin-klein.png",
+          "hash": "13649087062275541062"
+        },
+        {
+          "file": "packages/client/public/assets/img/formal.png",
+          "hash": "17743621597321367578"
+        },
+        {
+          "file": "packages/client/public/assets/img/gucci.png",
+          "hash": "15307340203634454894"
+        },
+        {
+          "file": "packages/client/public/assets/img/gym.png",
+          "hash": "17753726437915799348"
+        },
+        {
+          "file": "packages/client/public/assets/img/party.jpg",
+          "hash": "9547421575637680015"
+        },
+        {
+          "file": "packages/client/public/assets/img/pexels-marleneleppanen-1183266.png",
+          "hash": "6004246487757281459"
+        },
+        {
+          "file": "packages/client/public/assets/img/prada.png",
+          "hash": "6261132541343520193"
+        },
+        {
+          "file": "packages/client/public/assets/img/t-shirt.webp",
+          "hash": "2748630408664558936"
+        },
+        {
+          "file": "packages/client/public/assets/img/versace.png",
+          "hash": "2489397909420880828"
+        },
+        {
+          "file": "packages/client/public/assets/img/zara.png",
+          "hash": "9342189707271163601"
+        },
+        {
+          "file": "packages/client/public/assets/svgs/1930264_check_complete_done_green_success_icon.svg",
+          "hash": "15538040644529668375"
+        },
+        {
+          "file": "packages/client/public/assets/svgs/dot-small-svgrepo-com.svg",
+          "hash": "14133594487879085616"
+        },
+        {
+          "file": "packages/client/public/assets/svgs/logo.svg",
+          "hash": "10230734186477549327"
+        },
+        {
+          "file": "packages/client/public/assets/svgs/star.svg",
+          "hash": "7905142404099204335"
+        },
+        {
+          "file": "packages/client/stories/Filter.stories.tsx",
+          "hash": "2746137815517159193"
+        },
+        {
+          "file": "packages/client/stories/Footer.stories.tsx",
+          "hash": "8982500751116501886"
+        },
+        {
+          "file": "packages/client/stories/NavBar.stories.ts",
+          "hash": "2982465322323148748"
+        },
+        {
+          "file": "packages/client/stories/ProductCard.stories.tsx",
+          "hash": "5405017459396905405"
+        },
+        {
+          "file": "packages/client/stories/Review.stories.tsx",
+          "hash": "12257060587059758468"
+        },
+        {
+          "file": "packages/client/stories/SearchBar.stories.ts",
+          "hash": "16957675096084899724"
+        },
+        {
+          "file": "packages/client/tailwind.config.ts",
+          "hash": "18271966592131581828"
+        },
+        {
+          "file": "packages/client/tsconfig.json",
+          "hash": "4586771708050266336"
+        },
+        {
+          "file": "packages/client/util/Providers.tsx",
+          "hash": "13323319251189160911"
+        }
+>>>>>>> f64d712e0e5556101b135c4c1e9959faad793d57
       ]
     }
   }

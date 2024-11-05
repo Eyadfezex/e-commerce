@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Rating from "./Rating";
+import Rating from "@/components/Reviews/Rating";
 
 interface PROPS {
   Pname: string;
