@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const slugify = require("slugify");
 
 const productSchema = new mongoose.Schema(
   {
@@ -42,29 +41,60 @@ const productSchema = new mongoose.Schema(
         url: String,
       },
     ],
-    createdAt: {
-      type: Date,
-      default: Date.now,
-    },
     slug: String,
     seller: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    colors: {
-      type: Array,
-      default: [],
+    colors: [
+      {
+        type: [String],
+        enum: [
+          "#00C12B",
+          "#F50606",
+          "#F5DD06",
+          "#F57906",
+          "#06CAF5",
+          "#063AF5",
+          "#7D06F5",
+          "#F506A4",
+          "#FFFFFF",
+          "#000000",
+        ],
+        default: ["#FFFFFF", "#000000"],
+      },
+    ],
+    sizes: [
+      {
+        type: String,
+        default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+        enum: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+      },
+    ],
+    quantity: {
+      type: Number,
+      required: [true, "Product quantity is required"],
+      min: [1, "Product quantity must be at least 1"],
+      default: 1,
     },
-    sizes: {
-      type: Array,
-      default: ["XXS", "XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"],
+    category: {
+      type: String,
+      enum: ["T-shirts", "Shorts", "Shirts", "Hoodies", "Pants"],
+      required: [true, "Product category is required"],
     },
   },
   {
+    timestamps: true,
     toJSON: { virtuals: true },
     toObject: { virtuals: true },
   }
 );
+
+productSchema.pre("save", function (next) {
+  if (this.isModified("name")) return next();
+  this.slug = this.name.toLowerCase().replace(/\s+/g, "-");
+  next();
+});
 
 productSchema.virtual("currentPrice").get(function () {
   return this.originalPrice - this.discountPrice;
@@ -86,7 +116,6 @@ productSchema.pre("save", function (next) {
       new Error("Discount price must be lower than the original price")
     );
   }
-  this.slug = slugify(this.name, { lower: true });
   next();
 });
 
