@@ -100,3 +100,26 @@ export const getReviews = async () => {
     throw error; // Propagate the error for further handling.
   }
 };
+
+/**
+ * Fetches the product details by its ID from the server.
+ *
+ * @param {string} id - The ID of the product to retrieve.
+ *
+ * @returns {Promise<Object>} - Returns a promise that resolves to the product object.
+ *
+ * @throws {Error} - Throws an error if the fetch operation fails.
+ */
+export const getProduct = async (id: string) => {
+  try {
+    // Sending GET request to fetch the product data using the provided product ID
+    const res = await instance.get(`/products/${id}`);
+    // Extracting the product data from the response
+    const product = res.data.data.doc;
+    return product; // Returning the fetched product
+  } catch (error) {
+    // Logging the error and throwing it again to be handled elsewhere
+    console.error("Error fetching product:", error);
+    throw error; // Re-throwing the error after logging it
+  }
+};
