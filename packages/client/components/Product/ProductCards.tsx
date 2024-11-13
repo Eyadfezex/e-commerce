@@ -35,10 +35,11 @@ interface Image {
 interface Product {
   id: React.Key | null | undefined;
   name: string;
+  originalPrice: number;
   currentPrice: number;
   ratingsAverage: number;
   images: Array<Image>;
-  discountPercentage: string;
+  discountPercentage: number;
   url: string;
   discountPrice: number;
 }
@@ -69,12 +70,14 @@ export const ProductCards = ({
       {data.map((item) => (
         <ProductCard
           key={item.id}
+          id={item.id}
           Pname={item.name}
-          price={item.currentPrice}
+          currentPrice={item.currentPrice}
           rate={item.ratingsAverage}
           PImage={item.images[0]?.url}
-          discountPerc={item.discountPercentage}
-          Mprice={item.discountPrice}
+          discountPercentage={item.discountPercentage}
+          discountPrice={item.discountPrice}
+          originalPrice={item.originalPrice}
         />
       ))}
     </div>
