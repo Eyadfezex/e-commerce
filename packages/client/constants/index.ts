@@ -64,43 +64,43 @@ export const DressCategories = [
 export const color = [
   {
     id: 1,
-    color: "00C12B",
+    color: "#00C12B",
   },
   {
     id: 2,
-    color: "F50606",
+    color: "#F50606",
   },
   {
     id: 3,
-    color: "F5DD06",
+    color: "#F5DD06",
   },
   {
     id: 4,
-    color: "F57906",
+    color: "#F57906",
   },
   {
     id: 5,
-    color: "06CAF5",
+    color: "#06CAF5",
   },
   {
     id: 6,
-    color: "063AF5",
+    color: "#063AF5",
   },
   {
     id: 7,
-    color: "7D06F5",
+    color: "#7D06F5",
   },
   {
     id: 8,
-    color: "F506A4",
+    color: "#F506A4",
   },
   {
     id: 9,
-    color: "FFFFFF",
+    color: "#FFFFFF",
   },
   {
     id: 10,
-    color: "000000",
+    color: "#000000",
   },
 ];
 
