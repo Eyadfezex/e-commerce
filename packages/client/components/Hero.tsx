@@ -13,7 +13,7 @@ import StarParallax from "./StarParallax";
 const Hero = () => {
   return (
     <section className="bg-[#F2F0F1] ">
-      <div className="flex justify-center pt-[3rem] min-h-[720px]">
+      <div className="flex justify-center pt-[3rem] 2xl:min-h-[720px]">
         <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-end xl:items-center w-full lg:w-[95%] xl:w-[80%] px-4 max-w-[1920px] gap-4 md:gap-10 ">
           <HeroContent />
           <div className="relative">
