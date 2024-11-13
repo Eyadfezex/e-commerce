@@ -20,8 +20,8 @@ export default function RootLayout({
       <head></head>
       <body>
         <Provider>
+          <NavBar />
           <main className="overflow-x-hidden font-sans ">
-            <NavBar />
             <NextBreadcrumb
               homeElement={"Home"}
               separator={<span> | </span>}
@@ -31,8 +31,8 @@ export default function RootLayout({
               capitalizeLinks
             />
             {children}
-            <Footer />
           </main>
+          <Footer />
         </Provider>
       </body>
     </html>
