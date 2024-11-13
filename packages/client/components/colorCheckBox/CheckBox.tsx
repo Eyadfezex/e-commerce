@@ -1,8 +1,17 @@
 import { useCheckbox, Chip, VisuallyHidden, tv } from "@nextui-org/react";
 import React from "react";
-
 import { FaCheck } from "react-icons/fa6";
 
+/**
+ * A custom checkbox component that displays a colored checkbox using the NextUI Chip component.
+ * It supports default selection and visual feedback when checked.
+ *
+ * @param {Object} props - The properties for the checkbox component.
+ * @param {string} props.color - The color to apply to the checkbox.
+ * @param {boolean} [props.defaultSelected=false] - Whether the checkbox is selected by default.
+ *
+ * @returns {JSX.Element} A styled checkbox component.
+ */
 interface Props {
   color: string;
   defaultSelected?: boolean;
@@ -18,9 +27,10 @@ export const CheckBox = ({ color, defaultSelected = false }: Props) => {
   } = useCheckbox({
     defaultSelected,
   });
+
   const checkbox = tv({
     slots: {
-      base: "border-default hover:bg-default-200 rounded-full  flex items-center justify-center", // added rounded-full, width, and height
+      base: "border-default hover:bg-default-200 rounded-full flex items-center justify-center px-2 py-4 ",
       content: "text-default-500",
     },
     variants: {
@@ -37,6 +47,7 @@ export const CheckBox = ({ color, defaultSelected = false }: Props) => {
       },
     },
   });
+
   const styles = checkbox({ isSelected, isFocusVisible });
 
   return (
@@ -51,13 +62,13 @@ export const CheckBox = ({ color, defaultSelected = false }: Props) => {
         }}
         color="primary"
         style={{
-          backgroundColor: `#${color}`,
+          backgroundColor: `${color}`,
         }}
         variant="faded"
         {...(getLabelProps() as any)}
       >
         {isSelected && (
-          <FaCheck color={color === "FFFFFF" ? "black" : "white"} />
+          <FaCheck color={color === "#FFFFFF" ? "black" : "white"} />
         )}
       </Chip>
     </label>
