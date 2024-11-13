@@ -19,7 +19,7 @@ const NavBar = () => {
             <div className="lg:hidden">
               <Hamburger size={24} rounded />
             </div>
-            <Link href=".">
+            <Link href="/">
               <Image
                 src={logo}
                 alt="logo"
