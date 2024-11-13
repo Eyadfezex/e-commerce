@@ -13,6 +13,7 @@ const meta: Meta<typeof OriginReview> = {
       control: {
         type: "range",
         min: 0,
+        step: 0.5,
         max: 5,
       },
     },
