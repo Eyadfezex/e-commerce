@@ -1,21 +1,37 @@
+/**
+ * This component renders a filter sidebar for a shopping or product list page.
+ * It provides filtering options for product categories, price, color, size, and dress styles,
+ * allowing users to customize their product search.
+ *
+ * The `Filter` component utilizes the `Accordion` for collapsible sections and
+ * `CheckboxGroup` and `Checkbox` for selectable filters. Additionally, a `Slider` is used
+ * for price filtering. The component also includes a button for applying selected filters.
+ */
+
 "use client";
 import React from "react";
 import { FaFilter } from "react-icons/fa";
 import { color, DressCategories, sizes, styles } from "@/constants";
 import { CheckboxGroup, Checkbox, Button } from "@nextui-org/react";
-import Accordion from "./Accordion";
-import { CheckBox as ColorCheckBox } from "@/components/colorCheckBox/CheckBox";
-import { CheckBox as SizeCheckBox } from "@/components/sizeCheckBox/CheckBox";
+import Accordion from "@/components/ui/Accordion";
+import { ColorCheckBox, SizeCheckBox } from "@/components/ui/CheckBox";
 import { Slider } from "@nextui-org/react";
 
+/**
+ * Filter Component
+ * @returns {JSX.Element} - A sidebar component with filter options
+ */
 export const Filter = () => {
   return (
     <div className="rounded-2xl border py-5 px-6 w-[295px] font-sans bg-white">
       <div className="flex flex-col items-center divide divide-y">
+        {/* Header section displaying the title "Filters" with an icon */}
         <div className="flex justify-between items-center w-full pb-5">
           <h2 className="font-Bold text-xl">Filters</h2>
           <FaFilter className="opacity-40" width={24} height={24} />
         </div>
+
+        {/* Categories Filter */}
         <div className="py-5 w-full">
           <Accordion key="1" heading="Categories">
             <CheckboxGroup>
@@ -31,6 +47,8 @@ export const Filter = () => {
             </CheckboxGroup>
           </Accordion>
         </div>
+
+        {/* Price Filter using a Slider */}
         <div className="w-full py-5">
           <Accordion key="2" heading="Price">
             <Slider
@@ -69,6 +87,8 @@ export const Filter = () => {
             />
           </Accordion>
         </div>
+
+        {/* Color Filter */}
         <div className="w-full py-5">
           <Accordion key="3" heading="Color">
             <div className="flex flex-wrap gap-2 py-2">
@@ -78,6 +98,8 @@ export const Filter = () => {
             </div>
           </Accordion>
         </div>
+
+        {/* Size Filter */}
         <div className="w-full py-5">
           <Accordion key="4" heading="Size">
             <CheckboxGroup>
@@ -91,6 +113,8 @@ export const Filter = () => {
             </CheckboxGroup>
           </Accordion>
         </div>
+
+        {/* Dress Style Filter */}
         <div className="w-full py-5">
           <Accordion key="5" heading="Dress Style">
             <CheckboxGroup>
@@ -106,6 +130,8 @@ export const Filter = () => {
             </CheckboxGroup>
           </Accordion>
         </div>
+
+        {/* Button to apply the selected filters */}
         <Button className="bg-black text-white w-full rounded-full py-6 mt-2">
           Apply Filter
         </Button>

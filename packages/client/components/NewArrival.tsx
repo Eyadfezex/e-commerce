@@ -21,7 +21,7 @@
 
 "use client";
 import React from "react";
-import { ProductCards } from "./ProductCards";
+import { ProductCards } from "@/components/Product/ProductCards";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";

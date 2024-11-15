@@ -8,7 +8,7 @@ import calvin_klein from "@/public/assets/img/calvin-klein.png";
 
 import React from "react";
 import HeroContent from "./HeroContent";
-import StarParallax from "./StarParallax";
+import StarParallax from "./ui/StarParallax";
 
 const Hero = () => {
   return (
