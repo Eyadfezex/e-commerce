@@ -82,6 +82,11 @@ const productSchema = new mongoose.Schema(
       enum: ["T-shirts", "Shorts", "Shirts", "Hoodies", "Pants"],
       required: [true, "Product category is required"],
     },
+    style: {
+      type: String,
+      enum: ["Casual", "Party", "Gym", "Formal"],
+      required: [true, "Product style is required"],
+    },
   },
   {
     timestamps: true,
