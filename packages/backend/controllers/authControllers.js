@@ -194,6 +194,20 @@ const setSeller = (req, res, next) => {
   }
   next(); // Proceed to the next middleware or route handler
 };
+const googleCallback = (req, res, next) => {
+  try {
+    if (!req.user) {
+      return res
+        .status(400)
+        .json({ message: "Authentication failed. Please try again." });
+    }
+    res.redirect("/profile");
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Something went wrong during authentication." });
+  }
+};
 
 module.exports = {
   signup,
@@ -204,4 +218,5 @@ module.exports = {
   resetPassword,
   updatePassword,
   setSeller,
+  googleCallback,
 };

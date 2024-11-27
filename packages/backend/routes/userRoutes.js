@@ -4,11 +4,6 @@ const AC = require("../controllers/authControllers");
 
 const router = express.Router();
 
-router.post("/signup", AC.signup);
-router.post("/login", AC.login);
-router.post("/forgotPassword", AC.forgotPassword);
-router.patch("/resetPassword/:token", AC.resetPassword);
-
 // Protect all routes after this middleware
 router.use(AC.protect);
 
