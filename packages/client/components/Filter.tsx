@@ -33,7 +33,7 @@ export const Filter = () => {
 
         {/* Categories Filter */}
         <div className="py-5 w-full">
-          <Accordion key="1" heading="Categories">
+          <Accordion key="1" heading="Categories" defaultExpanded={true}>
             <CheckboxGroup>
               {DressCategories.map((item) => (
                 <div
@@ -50,14 +50,16 @@ export const Filter = () => {
 
         {/* Price Filter using a Slider */}
         <div className="w-full py-5">
-          <Accordion key="2" heading="Price">
+          <Accordion key="2" heading="Price" defaultExpanded={true}>
             <Slider
+              label="Range"
               step={30}
               minValue={0}
               showTooltip={true}
               maxValue={1000}
               size="sm"
               defaultValue={[100, 500]}
+              formatOptions={{ style: "currency", currency: "USD" }}
               tooltipValueFormatOptions={{
                 style: "currency",
                 currency: "USD",
