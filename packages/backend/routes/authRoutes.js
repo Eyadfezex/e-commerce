@@ -1,6 +1,6 @@
 const express = require("express");
 // eslint-disable-next-line import/no-extraneous-dependencies
-const passport = require("passport");
+// const passport = require("passport");
 const AC = require("../controllers/authControllers");
 
 const router = express.Router();

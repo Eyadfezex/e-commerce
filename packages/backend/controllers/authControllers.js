@@ -125,6 +125,7 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 const OAuth2G = catchAsync(async (req, res) => {
+  // eslint-disable-next-line prefer-destructuring
   const token = req.body.token; // JWT from client
   if (!token) return res.status(401).send("Unauthorized");
 
