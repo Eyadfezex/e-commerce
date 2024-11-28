@@ -2,15 +2,67 @@ const crypto = require("crypto");
 const { promisify } = require("util");
 // eslint-disable-next-line import/no-extraneous-dependencies
 const jwt = require("jsonwebtoken");
+// eslint-disable-next-line import/no-extraneous-dependencies
+const { OAuth2Client } = require("google-auth-library");
 const User = require("../models/userModel");
 const catchAsync = require("../utils/catchAsync");
 const AppError = require("../utils/appError");
 const sendEmail = require("../utils/email");
 
-const signToken = function (id) {
+const CLIENT_ID = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
+
+const verifyGoogleToken = async function (token) {
+  const ticket = await CLIENT_ID.verifyIdToken({
+    idToken: token,
+    audience: process.env.GOOGLE_CLIENT_ID,
+  });
+  return ticket.getPayload(); // Returns Google user info
+};
+
+// const sendVerificationEmail = async function (user) {
+//   const verificationToken = user.createEmailVerificationToken();
+//   await user.save({ validateBeforeSave: false });
+//   const verificationUrl = `${process.env.CLIENT_URL}/verify-email?token=${verificationToken}`;
+//   try {
+//     await sendEmail({
+//       to: user.email,
+//       subject: "Please verify your email address",
+//       text: `Please click on the following link to verify your email address: ${verificationUrl}`,
+//     });
+//   } catch (error) {
+//     user.emailVerificationToken = undefined;
+//     user.emailVerificationTokenExpires = undefined;
+//     await user.save({ validateBeforeSave: false });
+//     return next(new AppError("Email could not be sent", 500));
+//   }
+// };
+// const verifyEmail = catchAsync(async (req, res, next) => {
+//   const hashedToken = crypto
+//     .createHash("sha256")
+//     .update(req.params.token)
+//     .digest("hex");
+
+//   const user = await User.findOne({ email: hashedToken });
+//   if (!user) {
+//     return next(new AppError("Token is invalid or has expired", 400));
+//   }
+
+//   user.emailVerified = true;
+//   user.emailVerificationToken = undefined;
+//   user.emailVerificationTokenExpires = undefined;
+//   await user.save({ validateBeforeSave: false });
+
+//   res.status(200).json({
+//     status: "success",
+//     message: "Email verified successfully",
+//   });
+// });
+
+const signToken = function (user) {
   return jwt.sign(
     {
-      id,
+      id: user._id,
+      email: user.email,
     },
     process.env.JWT_SECRET,
     {
@@ -19,8 +71,36 @@ const signToken = function (id) {
   );
 };
 
+// const OAuth2G = catchAsync(async (req, res) => {
+//   const token = req.body.token; // JWT from client
+//   if (!token) return res.status(401).send("Unauthorized");
+
+//   const googleUser = await verifyGoogleToken(token);
+
+//   // Check if user exists in the database
+//   let user = await User.findOne({ email: googleUser.email });
+
+//   if (!user) {
+//     // Register as a new user if not found
+//     user = await User.create({
+//       email: googleUser.email,
+//       name: googleUser.name,
+//     });
+//   }
+
+//   const customToken = signToken(user);
+
+//   res.status(200).json({
+//     status: "success",
+//     token: customToken,
+//     data: {
+//       user,
+//     },
+//   });
+// });
+
 const createSendToken = (user, statusCode, res) => {
-  const token = signToken(user._id);
+  const token = signToken(user);
   const cookieOptions = {
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 60 * 60 * 1000
@@ -44,11 +124,32 @@ const createSendToken = (user, statusCode, res) => {
   });
 };
 
+const OAuth2G = catchAsync(async (req, res) => {
+  const token = req.body.token; // JWT from client
+  if (!token) return res.status(401).send("Unauthorized");
+
+  const googleUser = await verifyGoogleToken(token);
+
+  // Check if user exists in the database
+  let user = await User.findOne({ email: googleUser.email });
+
+  if (!user) {
+    // Register as a new user if not found
+    user = await User.create({
+      email: googleUser.email,
+      name: googleUser.name,
+    });
+  }
+
+  // Use the reusable `createSendToken` function
+  createSendToken(user, 200, res);
+});
+
 const signup = catchAsync(async (req, res, next) => {
   const newUser = await User.create(req.body);
   createSendToken(newUser, 201, res);
 });
-
+//
 const login = catchAsync(async (req, res, next) => {
   const { email, password } = req.body;
 
@@ -65,7 +166,7 @@ const login = catchAsync(async (req, res, next) => {
   // 3) If everything ok, send token to client
   createSendToken(user, 200, res);
 });
-
+//
 const protect = catchAsync(async (req, res, next) => {
   // 1) getting token and check if it's there
   let token;
@@ -99,7 +200,7 @@ const protect = catchAsync(async (req, res, next) => {
   req.user = currentUser;
   next();
 });
-
+//
 const restrictTo = function (...roles) {
   return catchAsync(async (req, res, next) => {
     // roles ['admin','seller'].role='user'
@@ -194,20 +295,20 @@ const setSeller = (req, res, next) => {
   }
   next(); // Proceed to the next middleware or route handler
 };
-const googleCallback = (req, res, next) => {
-  try {
-    if (!req.user) {
-      return res
-        .status(400)
-        .json({ message: "Authentication failed. Please try again." });
-    }
-    res.redirect("/profile");
-  } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Something went wrong during authentication." });
-  }
-};
+// const googleCallback = (req, res, next) => {
+//   try {
+//     if (!req.user) {
+//       return res
+//         .status(400)
+//         .json({ message: "Authentication failed. Please try again." });
+//     }
+//     res.redirect("/profile");
+//   } catch (error) {
+//     res
+//       .status(500)
+//       .json({ message: "Something went wrong during authentication." });
+//   }
+// };
 
 module.exports = {
   signup,
@@ -218,5 +319,6 @@ module.exports = {
   resetPassword,
   updatePassword,
   setSeller,
-  googleCallback,
+  OAuth2G,
+  // googleCallback,
 };

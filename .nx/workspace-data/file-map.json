@@ -15,39 +15,209 @@
         "hash": "14365157803961030502"
       },
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": "pnpm-lock.yaml",
-        "hash": "11863457211211223204"
-      },
-      {
-        "file": "lerna-debug.log",
-        "hash": "15319855167597361204"
-      },
-      {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": ".gitignore",
-        "hash": "5975935908832553209"
-      },
-      {
-        "file": "package.json",
-        "hash": "7475657239625410702"
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       },
       {
         "file": "pnpm-workspace.yaml",
         "hash": "9928973617214098819"
       },
       {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "pnpm-lock.yaml",
+        "hash": "12199690601763279411"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15319855167597361204"
+      },
+      {
+        "file": "package.json",
+        "hash": "7475657239625410702"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5975935908832553209"
       }
     ],
     "projectFileMap": {
+      "backend": [
+        {
+          "file": "packages/backend/.eslintrc.json",
+          "hash": "4401581846539284694"
+        },
+        {
+          "file": "packages/backend/app.js",
+          "hash": "734248867511960849"
+        },
+        {
+          "file": "packages/backend/controllers/authControllers.js",
+          "hash": "14596909448123683809"
+        },
+        {
+          "file": "packages/backend/controllers/cartControllers.js",
+          "hash": "16668809165764197113"
+        },
+        {
+          "file": "packages/backend/controllers/demoControllers.js",
+          "hash": "1645063491457586569"
+        },
+        {
+          "file": "packages/backend/controllers/errorControllers.js",
+          "hash": "12604812669744798485"
+        },
+        {
+          "file": "packages/backend/controllers/handlerFactory.js",
+          "hash": "7611059326521926732"
+        },
+        {
+          "file": "packages/backend/controllers/orderControllers.js",
+          "hash": "10183249089542798604"
+        },
+        {
+          "file": "packages/backend/controllers/productControllers.js",
+          "hash": "7184301764222186044"
+        },
+        {
+          "file": "packages/backend/controllers/reviewControllers.js",
+          "hash": "11631247074221816665"
+        },
+        {
+          "file": "packages/backend/controllers/userControllers.js",
+          "hash": "16545570206220520875"
+        },
+        {
+          "file": "packages/backend/models/cartModel.js",
+          "hash": "15558999615403186275"
+        },
+        {
+          "file": "packages/backend/models/orderModel.js",
+          "hash": "1432791416264386252"
+        },
+        {
+          "file": "packages/backend/models/productModel.js",
+          "hash": "17790118267135941512"
+        },
+        {
+          "file": "packages/backend/models/reviewModel.js",
+          "hash": "5062196181786978968"
+        },
+        {
+          "file": "packages/backend/models/userModel.js",
+          "hash": "10297300342448859296"
+        },
+        {
+          "file": "packages/backend/package-lock.json",
+          "hash": "3413593426019901033"
+        },
+        {
+          "file": "packages/backend/package.json",
+          "hash": "396082176757449276",
+          "deps": [
+            "npm:eslint",
+            "npm:eslint-config-airbnb",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-import",
+            "npm:eslint-plugin-jsx-a11y",
+            "npm:eslint-plugin-node",
+            "npm:eslint-plugin-prettier",
+            "npm:eslint-plugin-react",
+            "npm:prettier",
+            "npm:bcryptjs",
+            "npm:body-parser",
+            "npm:cloudinary",
+            "npm:cors",
+            "npm:dotenv",
+            "npm:express",
+            "npm:express-mongo-sanitize",
+            "npm:express-rate-limit",
+            "npm:express-session",
+            "npm:firebase",
+            "npm:fs",
+            "npm:helmet",
+            "npm:hpp",
+            "npm:jsonwebtoken",
+            "npm:mongoose",
+            "npm:morgan",
+            "npm:multer",
+            "npm:multer-storage-cloudinary",
+            "npm:nodemailer",
+            "npm:passport",
+            "npm:passport-google-oauth20",
+            "npm:sharp",
+            "npm:slugify",
+            "npm:validator",
+            "npm:xss-clean"
+          ]
+        },
+        {
+          "file": "packages/backend/routes/authRoutes.js",
+          "hash": "7571616633658338269"
+        },
+        {
+          "file": "packages/backend/routes/cartRoutes.js",
+          "hash": "14887199484997819770"
+        },
+        {
+          "file": "packages/backend/routes/orderRoutes.js",
+          "hash": "15104009434573937719"
+        },
+        {
+          "file": "packages/backend/routes/productRoutes.js",
+          "hash": "9480939267961570108"
+        },
+        {
+          "file": "packages/backend/routes/reviewRoutes.js",
+          "hash": "15771568854399867896"
+        },
+        {
+          "file": "packages/backend/routes/userRoutes.js",
+          "hash": "6564750102562823471"
+        },
+        {
+          "file": "packages/backend/server.js",
+          "hash": "10894133449464681587"
+        },
+        {
+          "file": "packages/backend/strategies/googlestrategy.js",
+          "hash": "229666195573813133"
+        },
+        {
+          "file": "packages/backend/strategies/passportConfig.js",
+          "hash": "198111094974605442"
+        },
+        {
+          "file": "packages/backend/utils/apiFeatures.js",
+          "hash": "7521349989549670385"
+        },
+        {
+          "file": "packages/backend/utils/appError.js",
+          "hash": "1800749920025241040"
+        },
+        {
+          "file": "packages/backend/utils/catchAsync.js",
+          "hash": "17945249143726780164"
+        },
+        {
+          "file": "packages/backend/utils/cloudinary.js",
+          "hash": "13771137151666004492"
+        },
+        {
+          "file": "packages/backend/utils/email.js",
+          "hash": "15800405455870972947"
+        },
+        {
+          "file": "packages/backend/utils/multer.js",
+          "hash": "18396391561877493603"
+        }
+      ],
       "client": [
         {
           "file": "packages/client/.eslintrc.json",
@@ -424,175 +594,6 @@
         {
           "file": "packages/client/util/Providers.tsx",
           "hash": "10493877532714453771"
-        }
-      ],
-      "backend": [
-        {
-          "file": "packages/backend/.eslintrc.json",
-          "hash": "4401581846539284694"
-        },
-        {
-          "file": "packages/backend/app.js",
-          "hash": "16629084053599394021"
-        },
-        {
-          "file": "packages/backend/controllers/authControllers.js",
-          "hash": "14111973078059282712"
-        },
-        {
-          "file": "packages/backend/controllers/cartControllers.js",
-          "hash": "16668809165764197113"
-        },
-        {
-          "file": "packages/backend/controllers/demoControllers.js",
-          "hash": "1645063491457586569"
-        },
-        {
-          "file": "packages/backend/controllers/errorControllers.js",
-          "hash": "12604812669744798485"
-        },
-        {
-          "file": "packages/backend/controllers/handlerFactory.js",
-          "hash": "7611059326521926732"
-        },
-        {
-          "file": "packages/backend/controllers/orderControllers.js",
-          "hash": "10183249089542798604"
-        },
-        {
-          "file": "packages/backend/controllers/productControllers.js",
-          "hash": "7184301764222186044"
-        },
-        {
-          "file": "packages/backend/controllers/reviewControllers.js",
-          "hash": "11631247074221816665"
-        },
-        {
-          "file": "packages/backend/controllers/userControllers.js",
-          "hash": "16545570206220520875"
-        },
-        {
-          "file": "packages/backend/models/cartModel.js",
-          "hash": "15558999615403186275"
-        },
-        {
-          "file": "packages/backend/models/orderModel.js",
-          "hash": "1432791416264386252"
-        },
-        {
-          "file": "packages/backend/models/productModel.js",
-          "hash": "17790118267135941512"
-        },
-        {
-          "file": "packages/backend/models/reviewModel.js",
-          "hash": "5062196181786978968"
-        },
-        {
-          "file": "packages/backend/models/userModel.js",
-          "hash": "10297300342448859296"
-        },
-        {
-          "file": "packages/backend/package-lock.json",
-          "hash": "3413593426019901033"
-        },
-        {
-          "file": "packages/backend/package.json",
-          "hash": "582047750866451145",
-          "deps": [
-            "npm:eslint",
-            "npm:eslint-config-airbnb",
-            "npm:eslint-config-prettier",
-            "npm:eslint-plugin-import",
-            "npm:eslint-plugin-jsx-a11y",
-            "npm:eslint-plugin-node",
-            "npm:eslint-plugin-prettier",
-            "npm:eslint-plugin-react",
-            "npm:prettier",
-            "npm:bcryptjs",
-            "npm:cloudinary",
-            "npm:cors",
-            "npm:dotenv",
-            "npm:express",
-            "npm:express-mongo-sanitize",
-            "npm:express-rate-limit",
-            "npm:express-session",
-            "npm:firebase",
-            "npm:fs",
-            "npm:helmet",
-            "npm:hpp",
-            "npm:jsonwebtoken",
-            "npm:mongoose",
-            "npm:morgan",
-            "npm:multer",
-            "npm:multer-storage-cloudinary",
-            "npm:nodemailer",
-            "npm:passport",
-            "npm:passport-google-oauth20",
-            "npm:sharp",
-            "npm:slugify",
-            "npm:validator",
-            "npm:xss-clean"
-          ]
-        },
-        {
-          "file": "packages/backend/routes/authRoutes.js",
-          "hash": "7571616633658338269"
-        },
-        {
-          "file": "packages/backend/routes/cartRoutes.js",
-          "hash": "14887199484997819770"
-        },
-        {
-          "file": "packages/backend/routes/orderRoutes.js",
-          "hash": "15104009434573937719"
-        },
-        {
-          "file": "packages/backend/routes/productRoutes.js",
-          "hash": "9480939267961570108"
-        },
-        {
-          "file": "packages/backend/routes/reviewRoutes.js",
-          "hash": "15771568854399867896"
-        },
-        {
-          "file": "packages/backend/routes/userRoutes.js",
-          "hash": "6564750102562823471"
-        },
-        {
-          "file": "packages/backend/server.js",
-          "hash": "10894133449464681587"
-        },
-        {
-          "file": "packages/backend/strategies/googlestrategy.js",
-          "hash": "229666195573813133"
-        },
-        {
-          "file": "packages/backend/strategies/passportConfig.js",
-          "hash": "198111094974605442"
-        },
-        {
-          "file": "packages/backend/utils/apiFeatures.js",
-          "hash": "7521349989549670385"
-        },
-        {
-          "file": "packages/backend/utils/appError.js",
-          "hash": "1800749920025241040"
-        },
-        {
-          "file": "packages/backend/utils/catchAsync.js",
-          "hash": "17945249143726780164"
-        },
-        {
-          "file": "packages/backend/utils/cloudinary.js",
-          "hash": "13771137151666004492"
-        },
-        {
-          "file": "packages/backend/utils/email.js",
-          "hash": "15800405455870972947"
-        },
-        {
-          "file": "packages/backend/utils/multer.js",
-          "hash": "18396391561877493603"
         }
       ]
     }

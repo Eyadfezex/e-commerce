@@ -7,8 +7,9 @@ const googleStrategy = new GoogleStrategy(
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: "/auth/google/callback",
+    passReqToCallback: true,
   },
-  async (accessToken, refreshToken, profile, done) => {
+  async (request, accessToken, refreshToken, profile, done) => {
     try {
       let user = await User.findOne({ googleId: profile.id });
 
@@ -21,9 +22,9 @@ const googleStrategy = new GoogleStrategy(
       }
 
       // Pass the user object to the next middleware
-      return done(null, user);
+      return done(null, profile);
     } catch (error) {
-      // Handle errors during authentication
+      // Handle errors during authenticate ion
       return done(error, null);
     }
   }

@@ -5,22 +5,24 @@ const AC = require("../controllers/authControllers");
 
 const router = express.Router();
 
-// Google OAuth route
-router.get(
-  "/google",
-  passport.authenticate("google", {
-    scope: ["profile", "email"],
-  })
-);
+// // Google OAuth route
+// router.get(
+//   "/google",
+//   passport.authenticate("google", {
+//     scope: ["profile", "email"],
+//   })
+// );
 
-// Google OAuth callback route
-router.get(
-  "/google/callback",
-  passport.authenticate("google", {
-    failureRedirect: "/login",
-  }),
-  AC.googleCallback
-);
+// // Google OAuth callback route
+// router.get(
+//   "/google/callback",
+//   passport.authenticate("google", {
+//     failureRedirect: "/login",
+//   }),
+//   AC.googleCallback
+// );
+
+router.get("/google", AC.OAuth2G);
 
 router.post("/signup", AC.signup);
 router.post("/login", AC.login);
