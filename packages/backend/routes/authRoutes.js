@@ -22,7 +22,7 @@ const router = express.Router();
 //   AC.googleCallback
 // );
 
-router.get("/google", AC.OAuth2G);
+router.post("/google", AC.OAuth2G);
 
 router.post("/signup", AC.signup);
 router.post("/login", AC.login);
