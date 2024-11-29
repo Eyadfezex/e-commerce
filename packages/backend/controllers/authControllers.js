@@ -11,13 +11,13 @@ const sendEmail = require("../utils/email");
 
 const CLIENT_ID = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-const verifyGoogleToken = async function (token) {
-  const ticket = await CLIENT_ID.verifyIdToken({
-    idToken: token,
-    audience: process.env.GOOGLE_CLIENT_ID,
-  });
-  return ticket.getPayload(); // Returns Google user info
-};
+// const verifyGoogleToken = async function (token) {
+//   const ticket = await CLIENT_ID.verifyIdToken({
+//     idToken: token,
+//     audience: process.env.GOOGLE_CLIENT_ID,
+//   });
+//   return ticket.getPayload(); // Returns Google user info
+// };
 
 // const sendVerificationEmail = async function (user) {
 //   const verificationToken = user.createEmailVerificationToken();
@@ -72,34 +72,6 @@ const signToken = function (user) {
   );
 };
 
-// const OAuth2G = catchAsync(async (req, res) => {
-//   const token = req.body.token; // JWT from client
-//   if (!token) return res.status(401).send("Unauthorized");
-
-//   const googleUser = await verifyGoogleToken(token);
-
-//   // Check if user exists in the database
-//   let user = await User.findOne({ email: googleUser.email });
-
-//   if (!user) {
-//     // Register as a new user if not found
-//     user = await User.create({
-//       email: googleUser.email,
-//       name: googleUser.name,
-//     });
-//   }
-
-//   const customToken = signToken(user);
-
-//   res.status(200).json({
-//     status: "success",
-//     token: customToken,
-//     data: {
-//       user,
-//     },
-//   });
-// });
-
 const createSendToken = (user, statusCode, res) => {
   const token = signToken(user);
   const cookieOptions = {
@@ -125,27 +97,65 @@ const createSendToken = (user, statusCode, res) => {
   });
 };
 
-const OAuth2G = catchAsync(async (req, res) => {
-  // eslint-disable-next-line prefer-destructuring
-  const token = req.body.token; // JWT from client
-  if (!token) return res.status(401).send("Unauthorized");
+// const OAuth2G = catchAsync(async (req, res) => {
+//   // eslint-disable-next-line prefer-destructuring
+//   const token = req.body.token; // JWT from client
+//   if (!token) return res.status(401).send("Unauthorized");
 
-  const googleUser = await verifyGoogleToken(token);
+//   const googleUser = await verifyGoogleToken(token);
 
-  // Check if user exists in the database
-  let user = await User.findOne({ email: googleUser.email });
+//   // Check if user exists in the database
+//   let user = await User.findOne({ email: googleUser.email });
 
-  if (!user) {
-    // Register as a new user if not found
-    user = await User.create({
-      email: googleUser.email,
-      name: googleUser.name,
+//   if (!user) {
+//     // Register as a new user if not found
+//     user = await User.create({
+//       email: googleUser.email,
+//       name: googleUser.name,
+//     });
+//   }
+
+//   // Use the reusable `createSendToken` function
+//   createSendToken(user, 200, res);
+// });
+
+const OAuth2G = async (req, res) => {
+  try {
+    const { token } = req.body; // Expecting an ID token from the frontend
+    if (!token) {
+      return res.status(401).json({ error: "Unauthorized" });
+    }
+
+    // Verify the ID token
+    const ticket = await CLIENT_ID.verifyIdToken({
+      idToken: token,
+      audience: process.env.GOOGLE_CLIENT_ID, // Ensure the token is for your app
     });
-  }
 
-  // Use the reusable `createSendToken` function
-  createSendToken(user, 200, res);
-});
+    const payload = ticket.getPayload(); // Extract user information
+    const { sub, email, name } = payload; // sub is the unique user ID from Google
+
+    // Check if user already exists in database
+    let user = await User.findOne({ googleId: sub });
+    if (!user) {
+      // Create new user if doesn't exist
+      user = new User({
+        googleId: sub,
+        email: email,
+        name: name,
+      });
+      await user.save();
+    }
+
+    // Generate your app's session token (e.g., JWT)
+    const appToken = createSendToken(user); // Custom token generation function
+
+    return res.status(200).json({ token: appToken, user });
+  } catch (err) {
+    console.error("OAuth2G Error:", err.message);
+    return res.status(500).json({ error: "Internal Server Error" });
+  }
+};
 
 const signup = catchAsync(async (req, res, next) => {
   const newUser = await User.create(req.body);
@@ -297,20 +307,6 @@ const setSeller = (req, res, next) => {
   }
   next(); // Proceed to the next middleware or route handler
 };
-// const googleCallback = (req, res, next) => {
-//   try {
-//     if (!req.user) {
-//       return res
-//         .status(400)
-//         .json({ message: "Authentication failed. Please try again." });
-//     }
-//     res.redirect("/profile");
-//   } catch (error) {
-//     res
-//       .status(500)
-//       .json({ message: "Something went wrong during authentication." });
-//   }
-// };
 
 module.exports = {
   signup,
