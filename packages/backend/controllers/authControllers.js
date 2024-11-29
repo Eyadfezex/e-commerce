@@ -11,53 +11,6 @@ const sendEmail = require("../utils/email");
 
 const CLIENT_ID = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-// const verifyGoogleToken = async function (token) {
-//   const ticket = await CLIENT_ID.verifyIdToken({
-//     idToken: token,
-//     audience: process.env.GOOGLE_CLIENT_ID,
-//   });
-//   return ticket.getPayload(); // Returns Google user info
-// };
-
-// const sendVerificationEmail = async function (user) {
-//   const verificationToken = user.createEmailVerificationToken();
-//   await user.save({ validateBeforeSave: false });
-//   const verificationUrl = `${process.env.CLIENT_URL}/verify-email?token=${verificationToken}`;
-//   try {
-//     await sendEmail({
-//       to: user.email,
-//       subject: "Please verify your email address",
-//       text: `Please click on the following link to verify your email address: ${verificationUrl}`,
-//     });
-//   } catch (error) {
-//     user.emailVerificationToken = undefined;
-//     user.emailVerificationTokenExpires = undefined;
-//     await user.save({ validateBeforeSave: false });
-//     return next(new AppError("Email could not be sent", 500));
-//   }
-// };
-// const verifyEmail = catchAsync(async (req, res, next) => {
-//   const hashedToken = crypto
-//     .createHash("sha256")
-//     .update(req.params.token)
-//     .digest("hex");
-
-//   const user = await User.findOne({ email: hashedToken });
-//   if (!user) {
-//     return next(new AppError("Token is invalid or has expired", 400));
-//   }
-
-//   user.emailVerified = true;
-//   user.emailVerificationToken = undefined;
-//   user.emailVerificationTokenExpires = undefined;
-//   await user.save({ validateBeforeSave: false });
-
-//   res.status(200).json({
-//     status: "success",
-//     message: "Email verified successfully",
-//   });
-// });
-
 const signToken = function (user) {
   return jwt.sign(
     {
@@ -97,63 +50,52 @@ const createSendToken = (user, statusCode, res) => {
   });
 };
 
-// const OAuth2G = catchAsync(async (req, res) => {
-//   // eslint-disable-next-line prefer-destructuring
-//   const token = req.body.token; // JWT from client
-//   if (!token) return res.status(401).send("Unauthorized");
-
-//   const googleUser = await verifyGoogleToken(token);
-
-//   // Check if user exists in the database
-//   let user = await User.findOne({ email: googleUser.email });
-
-//   if (!user) {
-//     // Register as a new user if not found
-//     user = await User.create({
-//       email: googleUser.email,
-//       name: googleUser.name,
-//     });
-//   }
-
-//   // Use the reusable `createSendToken` function
-//   createSendToken(user, 200, res);
-// });
-
 const OAuth2G = async (req, res) => {
   try {
     const { token } = req.body; // Expecting an ID token from the frontend
     if (!token) {
-      return res.status(401).json({ error: "Unauthorized" });
+      return res
+        .status(401)
+        .json({ error: "Unauthorized", message: "Token is missing" });
     }
 
     // Verify the ID token
     const ticket = await CLIENT_ID.verifyIdToken({
       idToken: token,
-      audience: process.env.GOOGLE_CLIENT_ID, // Ensure the token is for your app
+      audience: process.env.GOOGLE_CLIENT_ID, // Ensure the token is intended for your app
     });
 
     const payload = ticket.getPayload(); // Extract user information
-    const { sub, email, name } = payload; // sub is the unique user ID from Google
+    // console.log(payload); // Log the user's information
 
-    // Check if user already exists in database
-    let user = await User.findOne({ googleId: sub });
+    if (!payload.email || !payload.sub) {
+      return res
+        .status(400)
+        .json({ error: "Bad Request", message: "Invalid token payload" });
+    }
+
+    // Check if user already exists in the database
+    let user = await User.findOne({ email: payload.email });
+    const randomPassword = crypto.randomBytes(16).toString("hex");
     if (!user) {
-      // Create new user if doesn't exist
+      // Create new user if not found
       user = new User({
-        googleId: sub,
-        email: email,
-        name: name,
+        googleId: payload.email,
+        email: payload.email,
+        name: payload.name,
+        password: randomPassword,
+        passwordConfirm: randomPassword,
       });
       await user.save();
     }
 
     // Generate your app's session token (e.g., JWT)
-    const appToken = createSendToken(user); // Custom token generation function
-
-    return res.status(200).json({ token: appToken, user });
+    createSendToken(user, 200, res); // Custom token generation function
   } catch (err) {
-    console.error("OAuth2G Error:", err.message);
-    return res.status(500).json({ error: "Internal Server Error" });
+    // console.error("OAuth2G Error:", err.message);
+    return res
+      .status(500)
+      .json({ error: "Internal Server Error", message: err.message });
   }
 };
 
