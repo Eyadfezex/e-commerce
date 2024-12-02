@@ -11,28 +11,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       },
       {
         "file": "package.json",
         "hash": "7475657239625410702"
       },
       {
-        "file": "nx.json",
-        "hash": "14365157803961030502"
+        "file": "lerna-debug.log",
+        "hash": "15319855167597361204"
       },
       {
         "file": ".gitignore",
         "hash": "5975935908832553209"
       },
       {
-        "file": "lerna-debug.log",
-        "hash": "15319855167597361204"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       },
       {
         "file": ".vscode/settings.json",
@@ -43,8 +39,12 @@
         "hash": "13824899221881159230"
       },
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14365157803961030502"
       }
     ],
     "projectFileMap": {
@@ -55,11 +55,11 @@
         },
         {
           "file": "packages/backend/app.js",
-          "hash": "4735069483668139301"
+          "hash": "6557288629191938932"
         },
         {
           "file": "packages/backend/controllers/authControllers.js",
-          "hash": "5855317057375314619"
+          "hash": "1546486192344702513"
         },
         {
           "file": "packages/backend/controllers/cartControllers.js",
@@ -161,7 +161,7 @@
         },
         {
           "file": "packages/backend/routes/authRoutes.js",
-          "hash": "9506362237560068294"
+          "hash": "18253261840564372401"
         },
         {
           "file": "packages/backend/routes/cartRoutes.js",
