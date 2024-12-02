@@ -52,7 +52,7 @@ const createSendToken = (user, statusCode, res) => {
 
 const OAuth2G = async (req, res) => {
   try {
-    const { token } = req.body; // Expecting an ID token from the frontend
+    const { token } = req.body;
     if (!token) {
       return res
         .status(401)
@@ -62,25 +62,37 @@ const OAuth2G = async (req, res) => {
     // Verify the ID token
     const ticket = await CLIENT_ID.verifyIdToken({
       idToken: token,
-      audience: process.env.GOOGLE_CLIENT_ID, // Ensure the token is intended for your app
+      audience: process.env.GOOGLE_CLIENT_ID,
     });
 
-    const payload = ticket.getPayload(); // Extract user information
-    // console.log(payload); // Log the user's information
+    const payload = ticket.getPayload();
 
-    if (!payload.email || !payload.sub) {
+    // Validate payload structure
+    if (!payload || !payload.email || !payload.sub) {
       return res
         .status(400)
         .json({ error: "Bad Request", message: "Invalid token payload" });
     }
 
-    // Check if user already exists in the database
+    // Check if the token is expired
+    const now = Math.floor(Date.now() / 1000);
+    if (payload.exp < now) {
+      return res
+        .status(401)
+        .json({ error: "Unauthorized", message: "Token has expired" });
+    }
+    // console.log("User Payload:", payload);
+
+    // Check if the user already exists in the database
     let user = await User.findOne({ email: payload.email });
-    const randomPassword = crypto.randomBytes(16).toString("hex");
+
     if (!user) {
-      // Create new user if not found
+      // Generate a secure random password for new users
+      const randomPassword = crypto.randomBytes(16).toString("hex");
+
+      // Create a new user
       user = new User({
-        googleId: payload.email,
+        googleId: payload.sub,
         email: payload.email,
         name: payload.name,
         password: randomPassword,
@@ -89,10 +101,18 @@ const OAuth2G = async (req, res) => {
       await user.save();
     }
 
-    // Generate your app's session token (e.g., JWT)
-    createSendToken(user, 200, res); // Custom token generation function
+    // Generate your application's session token
+    createSendToken(user, 200, res);
   } catch (err) {
-    // console.error("OAuth2G Error:", err.message);
+    // console.error("OAuth2G Error:", err);
+
+    // Handle specific error types for better debugging
+    if (err.message.includes("Token used too late")) {
+      return res
+        .status(401)
+        .json({ error: "Unauthorized", message: "Expired or invalid token" });
+    }
+
     return res
       .status(500)
       .json({ error: "Internal Server Error", message: err.message });
