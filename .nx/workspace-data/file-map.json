@@ -13,20 +13,45 @@
       {
         "file": "lerna.json",
         "hash": "13184516379351911297"
+<<<<<<< HEAD
+=======
       },
       {
-        "file": "lerna-debug.log",
-        "hash": "15319855167597361204"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
+      },
+      {
+        "file": "package.json",
+        "hash": "7475657239625410702"
+>>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
       },
       {
         "file": "nx.json",
         "hash": "14365157803961030502"
       },
       {
+<<<<<<< HEAD
+        "file": "nx.json",
+        "hash": "14365157803961030502"
+=======
+        "file": ".gitignore",
+        "hash": "5975935908832553209"
+      },
+      {
+        "file": "lerna-debug.log",
+        "hash": "15319855167597361204"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
+>>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
+      },
+      {
         "file": "pnpm-lock.yaml",
         "hash": "13824899221881159230"
       },
       {
+<<<<<<< HEAD
         "file": "package.json",
         "hash": "7475657239625410702"
       },
@@ -45,6 +70,10 @@
       {
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
+=======
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+>>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
       }
     ],
     "projectFileMap": {
@@ -55,11 +84,15 @@
         },
         {
           "file": "packages/backend/app.js",
+<<<<<<< HEAD
           "hash": "2185876833801315374"
+=======
+          "hash": "4735069483668139301"
+>>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
         },
         {
           "file": "packages/backend/controllers/authControllers.js",
-          "hash": "1546486192344702513"
+          "hash": "5855317057375314619"
         },
         {
           "file": "packages/backend/controllers/cartControllers.js",
@@ -161,7 +194,7 @@
         },
         {
           "file": "packages/backend/routes/authRoutes.js",
-          "hash": "18253261840564372401"
+          "hash": "9506362237560068294"
         },
         {
           "file": "packages/backend/routes/cartRoutes.js",

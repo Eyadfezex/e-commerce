@@ -1,4 +1,10 @@
 const express = require("express");
+// eslint-disable-next-line import/no-extraneous-dependencies
+// const passport = require("passport");
+// eslint-disable-next-line import/no-extraneous-dependencies
+// const session = require("express-session");
+// eslint-disable-next-line import/no-extraneous-dependencies
+// const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
@@ -6,8 +12,13 @@ const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const cors = require("cors");
+// eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
 
+<<<<<<< HEAD
 // Import routes
+=======
+// require("./strategies/passportConfig");
+>>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
 const AppError = require("./utils/appError");
 const GEH = require("./controllers/errorControllers");
 const productRouter = require("./routes/productRoutes");
@@ -35,12 +46,21 @@ const limiter = rateLimit({
 app.use("v1", limiter);
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: "10kb" }));
+// session management
+// app.use(
+//   session({ secret: "your-secret-key", resave: false, saveUninitialized: true })
+// );
+// app.use(bodyParser.urlencoded({ extended: false }));
 // Date sanitization against NoSQL query injection
 app.use(mongoSanitize());
 // Date sanitization against XSS
 app.use(xss());
 // Prevent parameter pollution
 app.use(hpp());
+// Passport middleware
+// app.use(passport.initialize());
+// app.use(passport.session());
+
 // Test middleware
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
