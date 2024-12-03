@@ -11,40 +11,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "package.json",
-        "hash": "7475657239625410702"
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
       },
       {
         "file": "lerna-debug.log",
         "hash": "15319855167597361204"
       },
       {
-        "file": ".gitignore",
-        "hash": "5975935908832553209"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
+        "file": "nx.json",
+        "hash": "14365157803961030502"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "13824899221881159230"
       },
       {
+        "file": "package.json",
+        "hash": "7475657239625410702"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5975935908832553209"
+      },
+      {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
       },
       {
-        "file": "nx.json",
-        "hash": "14365157803961030502"
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
       }
     ],
     "projectFileMap": {
@@ -55,7 +55,7 @@
         },
         {
           "file": "packages/backend/app.js",
-          "hash": "6557288629191938932"
+          "hash": "2185876833801315374"
         },
         {
           "file": "packages/backend/controllers/authControllers.js",

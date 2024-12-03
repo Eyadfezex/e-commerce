@@ -7,6 +7,7 @@ const xss = require("xss-clean");
 const hpp = require("hpp");
 const cors = require("cors");
 
+// Import routes
 const AppError = require("./utils/appError");
 const GEH = require("./controllers/errorControllers");
 const productRouter = require("./routes/productRoutes");

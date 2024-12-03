@@ -50,10 +50,9 @@ const createSendToken = (user, statusCode, res) => {
   });
 };
 
-const loginOAuth2G = async (req, res) => {
+const OAuth2G = async (req, res) => {
   try {
-    // eslint-disable-next-line prefer-destructuring
-    const token = req.body.token;
+    const { token } = req.body;
     if (!token) {
       return res
         .status(401)
@@ -85,13 +84,21 @@ const loginOAuth2G = async (req, res) => {
     // console.log("User Payload:", payload);
 
     // Check if the user already exists in the database
-    const user = await User.findOne({ email: payload.email });
+    let user = await User.findOne({ email: payload.email });
 
     if (!user) {
-      return res.status(401).json({
-        error: "Unauthorized",
-        message: "User not found. please signup",
+      // Generate a secure random password for new users
+      const randomPassword = crypto.randomBytes(16).toString("hex");
+
+      // Create a new user
+      user = new User({
+        googleId: payload.sub,
+        email: payload.email,
+        name: payload.name,
+        password: randomPassword,
+        passwordConfirm: randomPassword,
       });
+      await user.save();
     }
 
     // Generate your application's session token
@@ -112,83 +119,145 @@ const loginOAuth2G = async (req, res) => {
   }
 };
 
-const signupOAuth2G = async (req, res) => {
-  try {
-    // Validate request body
-    // eslint-disable-next-line prefer-destructuring
-    const token = req.body.token;
-    if (!token) {
-      return res.status(401).json({
-        status: "fail",
-        message: "Token is missing. Please provide a valid token.",
-      });
-    }
+// const loginOAuth2G = async (req, res) => {
+//   try {
+//     // eslint-disable-next-line prefer-destructuring
+//     const token = req.body.token;
+//     if (!token) {
+//       return res
+//         .status(401)
+//         .json({ error: "Unauthorized", message: "Token is missing" });
+//     }
 
-    // Verify Google ID token
-    const ticket = await CLIENT_ID.verifyIdToken({
-      idToken: token,
-      audience: process.env.GOOGLE_CLIENT_ID,
-    });
+//     // Verify the ID token
+//     const ticket = await CLIENT_ID.verifyIdToken({
+//       idToken: token,
+//       audience: process.env.GOOGLE_CLIENT_ID,
+//     });
 
-    const payload = ticket.getPayload();
+//     const payload = ticket.getPayload();
 
-    // Validate payload structure
-    if (!payload || !payload.email || !payload.sub) {
-      return res.status(400).json({
-        status: "fail",
-        message: "Invalid token payload. Please try again.",
-      });
-    }
+//     // Validate payload structure
+//     if (!payload || !payload.email || !payload.sub) {
+//       return res
+//         .status(400)
+//         .json({ error: "Bad Request", message: "Invalid token payload" });
+//     }
 
-    // Check token expiration
-    const now = Math.floor(Date.now() / 1000);
-    if (payload.exp < now) {
-      return res.status(401).json({
-        status: "fail",
-        message: "Token has expired. Please log in again.",
-      });
-    }
+//     // Check if the token is expired
+//     const now = Math.floor(Date.now() / 1000);
+//     if (payload.exp < now) {
+//       return res
+//         .status(401)
+//         .json({ error: "Unauthorized", message: "Token has expired" });
+//     }
+//     // console.log("User Payload:", payload);
 
-    // Check if the user already exists
-    const existingUser = await User.findOne({ email: payload.email });
-    if (existingUser) {
-      return res.status(400).json({
-        status: "fail",
-        message: "User already exists. Please log in instead.",
-      });
-    }
+//     // Check if the user already exists in the database
+//     const user = await User.findOne({ email: payload.email });
 
-    // Generate a secure random password for new users
-    const randomPassword = crypto.randomBytes(16).toString("hex");
+//     if (!user) {
+//       return res.status(401).json({
+//         error: "Unauthorized",
+//         message: "User not found. please signup",
+//       });
+//     }
 
-    // Create a new user
-    const user = await User.create({
-      googleId: payload.sub,
-      email: payload.email,
-      name: payload.name,
-      password: randomPassword,
-      passwordConfirm: randomPassword,
-    });
+//     // Generate your application's session token
+//     createSendToken(user, 200, res);
+//   } catch (err) {
+//     // console.error("OAuth2G Error:", err);
 
-    // Send the token and user details
-    createSendToken(user, 201, res);
-  } catch (err) {
-    console.error("signupOAuth2G Error:", err);
+//     // Handle specific error types for better debugging
+//     if (err.message.includes("Token used too late")) {
+//       return res
+//         .status(401)
+//         .json({ error: "Unauthorized", message: "Expired or invalid token" });
+//     }
 
-    // Handle specific errors for better debugging
-    if (err.message.includes("Token used too late")) {
-      return res.status(401).json({
-        status: "fail",
-        message: "Expired or invalid token. Please try again.",
-      });
-    }
+//     return res
+//       .status(500)
+//       .json({ error: "Internal Server Error", message: err.message });
+//   }
+// };
 
-    res.status(500).json({
-      status: "error",
-      message: "Internal Server Error. Please try again later.",
-    });
-  }
-};
+// const signupOAuth2G = async (req, res) => {
+//   try {
+//     // Validate request body
+//     // eslint-disable-next-line prefer-destructuring
+//     const token = req.body.token;
+//     if (!token) {
+//       return res.status(401).json({
+//         status: "fail",
+//         message: "Token is missing. Please provide a valid token.",
+//       });
+//     }
+
+//     // Verify Google ID token
+//     const ticket = await CLIENT_ID.verifyIdToken({
+//       idToken: token,
+//       audience: process.env.GOOGLE_CLIENT_ID,
+//     });
+
+//     const payload = ticket.getPayload();
+
+//     // Validate payload structure
+//     if (!payload || !payload.email || !payload.sub) {
+//       return res.status(400).json({
+//         status: "fail",
+//         message: "Invalid token payload. Please try again.",
+//       });
+//     }
+
+//     // Check token expiration
+//     const now = Math.floor(Date.now() / 1000);
+//     if (payload.exp < now) {
+//       return res.status(401).json({
+//         status: "fail",
+//         message: "Token has expired. Please log in again.",
+//       });
+//     }
+
+//     // Check if the user already exists
+//     const existingUser = await User.findOne({ email: payload.email });
+//     if (existingUser) {
+//       return res.status(400).json({
+//         status: "fail",
+//         message: "User already exists. Please log in instead.",
+//       });
+//     }
+
+//     // Generate a secure random password for new users
+//     const randomPassword = crypto.randomBytes(16).toString("hex");
+
+//     // Create a new user
+//     const user = await User.create({
+//       googleId: payload.sub,
+//       email: payload.email,
+//       name: payload.name,
+//       password: randomPassword,
+//       passwordConfirm: randomPassword,
+//     });
+
+//     // Send the token and user details
+//     createSendToken(user, 201, res);
+//   } catch (err) {
+//     console.error("signupOAuth2G Error:", err);
+
+//     // Handle specific errors for better debugging
+//     if (err.message.includes("Token used too late")) {
+//       return res.status(401).json({
+//         status: "fail",
+//         message: "Expired or invalid token. Please try again.",
+//       });
+//     }
+
+//     res.status(500).json({
+//       status: "error",
+//       message: "Internal Server Error. Please try again later.",
+//     });
+//   }
+// };
 
 const signup = catchAsync(async (req, res, next) => {
   const newUser = await User.create(req.body);
@@ -350,6 +419,7 @@ module.exports = {
   resetPassword,
   updatePassword,
   setSeller,
-  loginOAuth2G,
-  signupOAuth2G,
+  OAuth2G,
+  // loginOAuth2G,
+  // signupOAuth2G,
 };
