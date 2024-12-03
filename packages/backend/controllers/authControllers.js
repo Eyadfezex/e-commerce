@@ -119,7 +119,6 @@ const OAuth2G = async (req, res) => {
   }
 };
 
-<<<<<<< HEAD
 // const loginOAuth2G = async (req, res) => {
 //   try {
 //     // eslint-disable-next-line prefer-destructuring
@@ -260,8 +259,6 @@ const OAuth2G = async (req, res) => {
 //   }
 // };
 
-=======
->>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
 const signup = catchAsync(async (req, res, next) => {
   const newUser = await User.create(req.body);
   createSendToken(newUser, 201, res);
@@ -423,10 +420,6 @@ module.exports = {
   updatePassword,
   setSeller,
   OAuth2G,
-<<<<<<< HEAD
   // loginOAuth2G,
   // signupOAuth2G,
-=======
-  // googleCallback,
->>>>>>> b43aa8560d38918ea456aef1005ad8901400c1b9
 };
