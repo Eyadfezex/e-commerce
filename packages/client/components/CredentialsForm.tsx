@@ -2,6 +2,7 @@
 
 import { Button, cn, Input, Link, Switch } from "@nextui-org/react";
 import Image from "next/image";
+import { signIn } from "next-auth/react";
 import React, { useMemo, useState } from "react";
 import google from "@/public/assets/svgs/google-icon-logo-svgrepo-com.svg";
 import { IoEye } from "react-icons/io5";
@@ -16,6 +17,7 @@ export const CredentialsForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   // State for submission handling
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,21 +29,11 @@ export const CredentialsForm = () => {
   const validateEmail = (email: string) =>
     /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email);
 
-  // Validates password strength using a regex pattern
-  const validatePassword = (password: string) =>
-    /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,16}$/.test(password);
-
   // Determines if the email is invalid based on its value and format
   const isEmailInvalid = useMemo(() => {
     if (email === "") return false; // Skip validation for empty input
     return !validateEmail(email);
   }, [email]);
-
-  // Determines if the password is invalid based on its value and format
-  const isPasswordInvalid = useMemo(() => {
-    if (password === "") return false; // Skip validation for empty input
-    return !validatePassword(password);
-  }, [password]);
 
   // Updates the email state when the input value changes
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) =>
@@ -56,17 +48,22 @@ export const CredentialsForm = () => {
 
   // Handles the form submission process
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
     if (!email || !password) return; // Ensure inputs are not empty
-    setIsSubmitting(true); // Set submission state
 
-    try {
-      // Simulate a form submission or authentication API call
-      console.log("Form submitted successfully");
-    } catch (error) {
-      console.error("Error submitting form:", error); // Log errors
-    } finally {
-      setIsSubmitting(false); // Reset submission state
+    setIsSubmitting(true);
+    const result = await signIn("credentials", {
+      email,
+      password,
+      redirect: false, // Prevent redirect to handle errors gracefully
+    });
+
+    setIsSubmitting(false);
+
+    if (result?.error) {
+      setErrorMessage(result.error);
+    } else {
+      window.location.href = "/";
     }
   };
 
@@ -81,7 +78,6 @@ export const CredentialsForm = () => {
               type="email"
               value={email}
               onChange={handleEmailChange}
-              isInvalid={isEmailInvalid}
               color={isEmailInvalid ? "danger" : "default"}
               required
               radius="sm"
@@ -98,8 +94,6 @@ export const CredentialsForm = () => {
             <Input
               type={isVisible ? "text" : "password"}
               value={password}
-              isInvalid={isPasswordInvalid}
-              color={isPasswordInvalid ? "danger" : "default"}
               onChange={handlePasswordChange}
               required
               radius="sm"
@@ -141,12 +135,16 @@ export const CredentialsForm = () => {
               <Link href="#">Forgot password?</Link>
             </div>
             {/* Submit Button */}
+            {errorMessage && (
+              <p className="text-danger text-sm">{errorMessage}</p>
+            )}
             <Button
               color="primary"
               className="font-semibold text-base mt-3 tracking-wider"
               radius="sm"
               type="submit"
-              disabled={isSubmitting}
+              onClick={() => handleSubmit}
+              disabled={isSubmitting || (!email && !password)}
             >
               {isSubmitting ? "Signing in..." : "Sign in"}
             </Button>
@@ -155,7 +153,11 @@ export const CredentialsForm = () => {
       </div>
       {/* Google Sign-In Section */}
       <div className="pt-8 flex flex-col items-center gap-6">
-        <Button radius="sm" className="bg-[#333333] w-full">
+        <Button
+          radius="sm"
+          className="bg-[#333333] w-full"
+          onClick={() => signIn("google", { callbackUrl: "/" })}
+        >
           <Image src={google} alt="google" />
           <span className="text-white">Or sign in with Google</span>
         </Button>

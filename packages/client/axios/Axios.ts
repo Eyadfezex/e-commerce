@@ -2,9 +2,10 @@
 import axios from "axios";
 
 // Create an instance of axios with a base URL and timeout settings
-const instance = axios.create({
+export const instance = axios.create({
   baseURL: "http://127.0.0.1:10000/v1",
   timeout: 10000,
+  headers: { "Content-Type": "application/json" },
 });
 
 /**
@@ -31,10 +32,10 @@ export const getAllProducts = async () => {
  * @returns {Promise<Object>} A promise that resolves to an object containing the products and pagination info.
  * @throws Will throw an error if the fetch operation fails.
  */
-export const getProducts = async (limit = 10, page = 1) => {
+export const getProducts = async (limit = "10", page = "1") => {
   try {
     const res = await instance.get(`/products?limit=${limit}&page=${page}`);
-    return res.data.data; // Assuming the structure of the response contains the products and pagination info.
+    return res.data.data.doc; // Assuming the structure of the response contains the products and pagination info.
   } catch (error) {
     console.error("Error fetching products:", error);
     throw error; // Propagate the error for further handling.
