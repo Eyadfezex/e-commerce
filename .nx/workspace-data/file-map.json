@@ -11,8 +11,28 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
+        "file": "package.json",
+        "hash": "7475657239625410702"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "4514381337508238599"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
+      },
+      {
         "file": "package-lock.json",
         "hash": "8265667529379852321"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14365157803961030502"
       },
       {
         "file": ".gitignore",
@@ -20,27 +40,7 @@
       },
       {
         "file": "pnpm-lock.yaml",
-        "hash": "13824899221881159230"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14365157803961030502"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "4514381337508238599"
-      },
-      {
-        "file": "package.json",
-        "hash": "7475657239625410702"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
+        "hash": "14770196380414117059"
       },
       {
         "file": "lerna-debug.log",
@@ -71,11 +71,15 @@
         },
         {
           "file": "packages/client/app/api/auth/[...nextauth]/options.ts",
-          "hash": "5842607013616788608"
+          "hash": "2683082780346590454"
         },
         {
           "file": "packages/client/app/api/auth/[...nextauth]/route.ts",
           "hash": "15305893889684099417"
+        },
+        {
+          "file": "packages/client/app/auth/signin/page.tsx",
+          "hash": "1575210084333249186"
         },
         {
           "file": "packages/client/app/favicon.ico",
@@ -151,7 +155,7 @@
         },
         {
           "file": "packages/client/axios/Axios.ts",
-          "hash": "2205943958684465838"
+          "hash": "18221740017115009443"
         },
         {
           "file": "packages/client/chromatic.config.json",
@@ -163,7 +167,7 @@
         },
         {
           "file": "packages/client/components/CredentialsForm.tsx",
-          "hash": "1848177969838183719"
+          "hash": "15574102530515607142"
         },
         {
           "file": "packages/client/components/Filter.tsx",
@@ -251,11 +255,11 @@
         },
         {
           "file": "packages/client/next.config.mjs",
-          "hash": "7225752870031151217"
+          "hash": "9407340252929301326"
         },
         {
           "file": "packages/client/package.json",
-          "hash": "12561795826054694218",
+          "hash": "8824044914793625172",
           "deps": [
             "npm:@chromatic-com/storybook",
             "npm:@storybook/addon-essentials",
@@ -302,12 +306,17 @@
             "npm:react",
             "npm:react-dom",
             "npm:react-icons",
-            "npm:react-just-parallax"
+            "npm:react-just-parallax",
+            "npm:zod"
           ]
         },
         {
           "file": "packages/client/pages/Home.tsx",
           "hash": "3446392554914772181"
+        },
+        {
+          "file": "packages/client/pages/auth/SignIn.tsx",
+          "hash": "2662322505220084388"
         },
         {
           "file": "packages/client/postcss.config.mjs",
@@ -382,6 +391,14 @@
           "hash": "7905142404099204335"
         },
         {
+          "file": "packages/client/public/assets/svgs/whitelogo.svg",
+          "hash": "8612325043003706950"
+        },
+        {
+          "file": "packages/client/public/assets/svgs/whitestar.svg",
+          "hash": "7341336832437549290"
+        },
+        {
           "file": "packages/client/stories/CredentialsForm.stories.tsx",
           "hash": "15034650541208113567"
         },
@@ -415,7 +432,7 @@
         },
         {
           "file": "packages/client/tailwind.config.ts",
-          "hash": "18271966592131581828"
+          "hash": "11743396700434390789"
         },
         {
           "file": "packages/client/tsconfig.json",
@@ -453,7 +470,7 @@
         },
         {
           "file": "packages/backend/controllers/handlerFactory.js",
-          "hash": "7611059326521926732"
+          "hash": "1880351758021549827"
         },
         {
           "file": "packages/backend/controllers/orderControllers.js",
@@ -461,7 +478,7 @@
         },
         {
           "file": "packages/backend/controllers/productControllers.js",
-          "hash": "7184301764222186044"
+          "hash": "11492422528600789055"
         },
         {
           "file": "packages/backend/controllers/reviewControllers.js",

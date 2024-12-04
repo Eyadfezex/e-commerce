@@ -53,10 +53,11 @@ const getOne = (Model, popOptions) =>
     if (!doc) {
       return next(new AppError("No document found with that ID", 404));
     }
-
+    const totalProducts = await Model.countDocuments();
     res.status(200).json({
       status: "success",
       data: {
+        totalProducts,
         doc,
       },
     });
@@ -76,11 +77,11 @@ const getAll = (Model) =>
     const doc = await features.query;
     // const doc = await features.query.explain();
     //query.sort().select().skip().limit()
-
+    const totalProducts = await Model.countDocuments();
     res.status(200).json({
       status: "success",
-      results: doc.length,
       data: {
+        totalProducts,
         doc,
       },
     });

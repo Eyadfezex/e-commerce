@@ -11,10 +11,12 @@ const removeImage = HF.removeImage(Product);
 
 const getNewArrivalProducts = catchAsync(async (req, res, next) => {
   const product = await Product.find().sort({ createdAt: -1 }).limit(10);
+  const totalProducts = await Product.countDocuments();
   res.status(200).json({
     status: "success",
     results: product.length,
     data: {
+      totalProducts,
       product,
     },
   });
