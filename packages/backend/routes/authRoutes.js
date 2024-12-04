@@ -4,7 +4,8 @@ const AC = require("../controllers/authControllers");
 
 const router = express.Router();
 
-router.post("/login/google", AC.OAuth2G);
+router.post("/login/google", AC.OAuth2G /*AC.loginOAuth2G*/);
+// router.post("/signup/google", /*AC.signupOAuth2G*/);
 
 router.post("/signup", AC.signup);
 router.post("/login", AC.login);
