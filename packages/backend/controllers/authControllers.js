@@ -11,12 +11,10 @@ const sendEmail = require("../utils/email");
 
 const CLIENT_ID = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 
-const signToken = function (user) {
+const signToken = function (id) {
   return jwt.sign(
     {
-      id: user._id,
-      name: user.name,
-      email: user.email,
+      id,
     },
     process.env.JWT_SECRET,
     {
@@ -26,7 +24,7 @@ const signToken = function (user) {
 };
 
 const createSendToken = (user, statusCode, res) => {
-  const token = signToken(user);
+  const token = signToken(user._id);
   const cookieOptions = {
     expires: new Date(
       Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 60 * 60 * 1000

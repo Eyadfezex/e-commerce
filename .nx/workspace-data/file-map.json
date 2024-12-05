@@ -11,40 +11,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "lerna.json",
-        "hash": "13184516379351911297"
-      },
-      {
-        "file": "package.json",
-        "hash": "7475657239625410702"
-      },
-      {
         "file": ".vscode/settings.json",
         "hash": "4514381337508238599"
-      },
-      {
-        "file": "pnpm-workspace.yaml",
-        "hash": "9928973617214098819"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "8265667529379852321"
       },
       {
         "file": "nx.json",
         "hash": "14365157803961030502"
       },
       {
-        "file": ".gitignore",
-        "hash": "5975935908832553209"
+        "file": "package-lock.json",
+        "hash": "8265667529379852321"
       },
       {
         "file": "pnpm-lock.yaml",
         "hash": "14770196380414117059"
       },
       {
+        "file": "lerna.json",
+        "hash": "13184516379351911297"
+      },
+      {
         "file": "lerna-debug.log",
         "hash": "15319855167597361204"
+      },
+      {
+        "file": "package.json",
+        "hash": "7475657239625410702"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "5975935908832553209"
+      },
+      {
+        "file": "pnpm-workspace.yaml",
+        "hash": "9928973617214098819"
       }
     ],
     "projectFileMap": {
@@ -64,6 +64,10 @@
         {
           "file": "packages/client/.storybook/preview.ts",
           "hash": "13472062729864149085"
+        },
+        {
+          "file": "packages/client/HOC/authRedirect.tsx",
+          "hash": "1229523862278732795"
         },
         {
           "file": "packages/client/README.md",
@@ -441,6 +445,10 @@
         {
           "file": "packages/client/util/Providers.tsx",
           "hash": "10493877532714453771"
+        },
+        {
+          "file": "packages/client/util/SessionWrapper.tsx",
+          "hash": "4159715337441387054"
         }
       ],
       "backend": [
