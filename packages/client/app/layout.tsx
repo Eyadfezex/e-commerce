@@ -29,7 +29,7 @@ export default function RootLayout({
                 separator={<span> | </span>}
                 activeClasses="text-black font-bold"
                 containerClasses="flex py-5 w-full"
-                listClasses="hover:underline mx-2 "
+                listClasses="hover:underline mx-2"
                 capitalizeLinks
               />
               {children}
