@@ -3,18 +3,6 @@ import Image from "next/image";
 import Rating from "@/components/Reviews/Rating";
 import Link from "next/link";
 
-// Defining the props type for the ProductCard component
-interface PROPS {
-  Pname: string; // Product name
-  originalPrice: number; // Original price before any discount
-  currentPrice: number; // Current price after discount (if applicable)
-  discountPrice: number; // The price after discount (may or may not be used)
-  discountPercentage: number; // Percentage of discount applied
-  rate: number; // Rating of the product (used in the Rating component)
-  id: React.Key | null | undefined; // Unique product ID for the link
-  PImage: string; // Image URL of the product
-}
-
 /**
  * ProductCard component to display a product's details including image, name, price, discount, and rating.
  *
@@ -30,22 +18,26 @@ interface PROPS {
  * @returns JSX.Element - The JSX rendering the product card.
  */
 export const ProductCard = ({
-  rate = 0, // Default value if no rate is provided
-  Pname = "Eyad Ahmed", // Default product name if not passed
+  rating = 0, // Default value if no rate is provided
+  productName = "Eyad Ahmed", // Default product name if not passed
   currentPrice = 130, // Default current price if not passed
   originalPrice = 160, // Default original price if not passed
   discountPrice, // Discounted price can be optionally passed
-  id, // Product ID is required for navigation
+  productId, // Product ID is required for navigation
   discountPercentage = 30, // Default discount percentage if not passed
-  PImage, // Product image is required
-}: PROPS) => {
+  productImage, // Product image is required
+}: ProductCardProps) => {
+  // Check if required props (productId and productImage) are missing
+  if (!productId || !productImage) {
+    return null; // Prevent rendering if required props are not available
+  }
   return (
-    <Link href={`products/${id}`}>
-      <div className="flex flex-col gap-2 max-w-[240px] text-wrap">
+    <Link href={`product/${productId}`}>
+      <div className="flex flex-col gap-2 max-w-[295px] text-wrap">
         {/* Product image container */}
-        <div className="relative w-60 h-64 rounded-2xl overflow-hidden">
+        <div className="relative w-[295px] h-[295px] rounded-2xl overflow-hidden border">
           <Image
-            src={PImage}
+            src={productImage}
             alt="Product image"
             width={300}
             height={300}
@@ -55,9 +47,9 @@ export const ProductCard = ({
         {/* Product details */}
         <div className="flex flex-col gap-2">
           <h2 className="font-sans font-bold text-xl" id="product-name">
-            {Pname}
+            {productName}
           </h2>
-          <Rating value={rate} /> {/* Display product rating */}
+          <Rating value={rating} /> {/* Display product rating */}
         </div>
         {/* Pricing information */}
         <div className="flex items-center gap-2 font-bold text-2xl">
