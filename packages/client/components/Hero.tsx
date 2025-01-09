@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="bg-[#F2F0F1]">
       <div className="flex justify-center pt-[3rem] 2xl:min-h-[720px]">
-        <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-end xl:items-center w-full lg:w-[95%] xl:w-[80%] px-4 max-w-[1920px] gap-4 md:gap-10 ">
+        <div className="flex flex-col lg:flex-row lg:justify-between items-center lg:items-end xl:items-center w-full lg:w-[95%] xl:w-[85%] px-4 max-w-[1920px] gap-4 md:gap-10 ">
           <HeroContent />
           <div className="relative">
             <Image
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex justify-center py-8 bg-black">
-        <div className="flex flex-wrap gap-4 md:gap-10 justify-center lg:justify-between items-center w-full lg:w-[95%] xl:w-[80%] px-[16px] max-w-[1920px]">
+        <div className="flex flex-wrap gap-4 md:gap-10 justify-center lg:justify-between items-center w-full lg:w-[95%] xl:w-[85%] px-[16px] max-w-[1920px]">
           <Image
             src={versace}
             alt="logo"
