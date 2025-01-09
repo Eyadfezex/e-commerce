@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { usePathname } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 type TBreadCrumbProps = {
   homeElement: ReactNode;
@@ -30,6 +31,9 @@ const NextBreadcrumb = ({
 }: TBreadCrumbProps) => {
   const paths = usePathname();
   const pathNames = paths ? paths.split("/").filter((path) => path) : [];
+  const searchParams = useSearchParams();
+
+  const category = searchParams?.get("category");
 
   // Filter out segments that appear to be IDs
   const filteredPathNames = pathNames.filter(
@@ -37,13 +41,17 @@ const NextBreadcrumb = ({
   );
 
   // Return null if the path is the root or only contains IDs
-  if (paths === "/" || filteredPathNames.length === 0) {
+  if (
+    paths === "/" ||
+    filteredPathNames.length === 0 ||
+    paths === "/auth/signin"
+  ) {
     return null;
   }
 
   return (
     <div className="flex justify-center">
-      <div className="w-full lg:w-[95%] xl:w-[80%] px-4">
+      <div className="w-full lg:w-[95%] xl:w-[85%] px-4 max-w-[1920px]">
         <ul className={containerClasses} aria-label="Breadcrumb">
           <li className={listClasses}>
             <Link href="/">{homeElement}</Link>
@@ -52,7 +60,9 @@ const NextBreadcrumb = ({
           {filteredPathNames.map((link, index) => {
             const href = `/${filteredPathNames.slice(0, index + 1).join("/")}`;
             const itemClasses =
-              paths === href ? `${listClasses} ${activeClasses}` : listClasses;
+              paths === href && !category
+                ? `${listClasses} ${activeClasses}`
+                : listClasses;
             const itemLink = capitalizeLinks
               ? link.charAt(0).toUpperCase() + link.slice(1)
               : link;
@@ -66,6 +76,16 @@ const NextBreadcrumb = ({
               </React.Fragment>
             );
           })}
+          {category && (
+            <>
+              {separator}
+              <li className={`${listClasses} ${activeClasses}`}>
+                {capitalizeLinks
+                  ? category.charAt(0).toUpperCase() + category.slice(1)
+                  : category}
+              </li>
+            </>
+          )}
         </ul>
       </div>
     </div>
