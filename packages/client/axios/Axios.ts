@@ -35,7 +35,7 @@ export const getAllProducts = async () => {
 export const getProducts = async (limit = "10", page = "1") => {
   try {
     const res = await instance.get(`/products?limit=${limit}&page=${page}`);
-    return res.data.data.doc; // Assuming the structure of the response contains the products and pagination info.
+    return res.data.data; // Assuming the structure of the response contains the products and pagination info.
   } catch (error) {
     console.error("Error fetching products:", error);
     throw error; // Propagate the error for further handling.
