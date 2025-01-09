@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import logo from "@/public/assets/svgs/logo.svg";
 import Image from "next/image";
@@ -11,13 +12,18 @@ import { RiMastercardFill } from "react-icons/ri";
 import { BiLogoPaypal } from "react-icons/bi";
 import { FaApplePay } from "react-icons/fa6";
 import { FaGooglePay } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
   const year = new Date();
+  const path = usePathname();
+  if (path == "/auth/signin") {
+    return null;
+  }
   return (
     <footer className="bg-zinc-200 font-sans">
       <div className="flex justify-center py-20">
-        <div className="flex flex-col px-4 w-full lg:w-[95%] xl:w-[80%] gap-16 max-w-[1920px]">
+        <div className="flex flex-col px-4 w-full lg:w-[95%] xl:w-[85%] gap-16 max-w-[1920px]">
           <div className="flex flex-col lg:flex-row gap-6 md:gap-16">
             <div className="lg:max-w-[248px]">
               <Image src={logo} alt="logo" className="w-[144px]" />
