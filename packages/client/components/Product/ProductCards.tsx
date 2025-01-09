@@ -28,6 +28,7 @@ import React from "react";
 import { ProductCard } from "./ProductCard";
 import { Skeleton } from "@nextui-org/react";
 import Stack from "@mui/material/Stack";
+import { motion } from "framer-motion";
 interface Image {
   url: string; // Assuming the image object contains a 'url' property
   // Add any other properties that the image object may have
@@ -70,11 +71,11 @@ export const ProductCards = ({
       {data.map((item) => (
         <ProductCard
           key={item.id}
-          id={item.id}
-          Pname={item.name}
+          productId={item.id}
+          productName={item.name}
           currentPrice={item.currentPrice}
-          rate={item.ratingsAverage}
-          PImage={item.images[0]?.url}
+          rating={item.ratingsAverage}
+          productImage={item.images[0]?.url}
           discountPercentage={item.discountPercentage}
           discountPrice={item.discountPrice}
           originalPrice={item.originalPrice}
@@ -100,14 +101,14 @@ const CardsSkeleton = () => {
   return (
     <div className="flex gap-4 justify-center">
       {Array.from({ length: 6 }, (_, index) => (
-        <div key={index}>
+        <motion.div key={index} exit={{ opacity: 0 }}>
           <Stack className="gap-4">
             <Skeleton className="w-[240px] h-[256px] rounded-lg bg-default-200" />
             <Skeleton className="text-xl font-bold font-sans rounded-lg bg-default-200" />
             <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
             <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
           </Stack>
-        </div>
+        </motion.div>
       ))}
     </div>
   );
