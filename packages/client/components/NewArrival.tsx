@@ -36,7 +36,7 @@ const NewArrival = () => {
   return (
     <section>
       <div className="flex justify-center py-12 lg:py-20">
-        <div className="flex flex-col items-center px-4 w-full lg:w-[95%] xl:w-[80%] max-w-[1920px] gap-8 ">
+        <div className="flex flex-col items-center px-4 w-full lg:w-[95%] xl:w-[85%] max-w-[1920px] gap-8 ">
           <h2 className="font-bebas font-black text-4xl lg:text-5xl uppercase -tracking-wider text-center">
             NEW ARRIVALS
           </h2>

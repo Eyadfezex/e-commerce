@@ -28,7 +28,7 @@ const Reviews = () => {
   return (
     <section>
       <div className="flex justify-center py-12 lg:py-20">
-        <div className="flex flex-col px-4 gap-10 w-full lg:w-[95%] xl:w-[80%] max-w-[1920px]">
+        <div className="flex flex-col px-4 gap-10 w-full lg:w-[95%] xl:w-[85%] max-w-[1920px]">
           <div className="flex justify-between w-full">
             <h2 className="font-bebas font-black text-4xl lg:text-5xl -tracking-wider">
               OUR HAPPY CUSTOMERS
