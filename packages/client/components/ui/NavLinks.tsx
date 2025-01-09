@@ -30,11 +30,12 @@ const NavLinks = () => {
         <DropdownMenu className="focus:outline-none  bg-zinc-50 p-4 font-bold rounded-lg ">
           {dropDownItems.map((item, id) => (
             <DropdownItem
+              href={item.url}
               className="focus:outline-none py-1 flex justify-start gap-[0.1rem]"
               key={id}
               startContent={<Image src={dot} alt="icon" className="w-[24px]" />}
             >
-              <Link href={item.url}>{item.name}</Link>
+              {item.name}
             </DropdownItem>
           ))}
         </DropdownMenu>

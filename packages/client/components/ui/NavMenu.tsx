@@ -5,7 +5,9 @@ import { dropDownItems, navLinks } from "@/constants";
 import dot from "@/public/assets/svgs/dot-small-svgrepo-com.svg";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import star from "@/public/assets/svgs/star.svg";
-const NavMenu = () => {
+import { motion } from "framer-motion";
+
+const NavMenu = ({ isOn }: { isOn: boolean }) => {
   return (
     <div className="flex justify-center py-7  bg-white lg:hidden border shadow-xl">
       <div className="flex flex-col gap-14 w-full px-7">
@@ -38,9 +40,18 @@ const NavMenu = () => {
             </Link>
           ))}
         </div>
-        <div className="w-full flex justify-center">
+        <motion.div
+          initial={{ x: -150, rotate: 0 }}
+          animate={isOn ? { x: 0, rotate: 180 } : { x: -150, rotate: 0 }}
+          transition={
+            isOn
+              ? { duration: 1.5, delay: 0.3, ease: "backOut" }
+              : { duration: 1.5, ease: "backOut" }
+          }
+          className="w-full flex justify-center"
+        >
           <Image src={star} alt="star" width={50} />
-        </div>
+        </motion.div>
         <div>
           <Link href="#" className="text-sm font-light">
             Privacy Policy <br /> Terms & Conditions

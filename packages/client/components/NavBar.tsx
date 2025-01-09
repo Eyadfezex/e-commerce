@@ -17,7 +17,7 @@ import SearchBar from "./ui/SearchBar";
 import Image from "next/image";
 import logo from "@/public/assets/svgs/logo.svg";
 import { motion } from "framer-motion";
-
+import { usePathname } from "next/navigation";
 import NavLinks from "./ui/NavLinks";
 import NavMenu from "./ui/NavMenu";
 
@@ -27,21 +27,30 @@ import NavMenu from "./ui/NavMenu";
  */
 const NavBar = () => {
   const [isOn, setIsOn] = useState(false);
-
+  const path = usePathname();
+  if (path == "/auth/signin") {
+    return null;
+  }
   return (
     <header className="relative z-20">
       <motion.div
         animate={{
           x: isOn ? 0 : -200,
         }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={
+          isOn
+            ? { duration: 0.5, ease: "easeInOut" }
+            : { duration: 0.5, ease: "easeInOut", delay: "0.3" }
+        }
         className="absolute top-16"
       >
-        <NavMenu />
+        <NavMenu isOn={isOn} />
       </motion.div>
       <nav className="w-full relative bg-white z-10">
         <div className="flex justify-center py-[0.5rem] md:py-[1rem]">
-          <div className="flex justify-between items-center px-[16px] md:gap-[10rem] lg:w-[95%] xl:w-[80%] lg:gap-[2rem] w-full max-w-[1920px]">
+          <div
+            className={`flex justify-between items-center px-[16px]  md:gap-[10rem] lg:w-[95%] xl:w-[85%] lg:gap-[2rem] w-full max-w-[1920px] ${path !== "/" && "border-b pb-4"}`}
+          >
             {/* Left side of the NavBar: logo, hamburger menu, nav links, and search bar */}
             <div className="flex items-center gap-[0.5rem] md:gap-[1rem] xl:gap-[2rem] w-full">
               {/* Hamburger menu icon for mobile view */}
@@ -70,13 +79,17 @@ const NavBar = () => {
             {/* Right side of the NavBar: icons for search, cart, and account */}
             <div className="flex items-center gap-[0.5rem]">
               {/* Search icon (visible on smaller screens) */}
-              <IoSearch size={24} className="md:hidden" />
+              <div className="md:hidden">
+                <IoSearch size={24} />
+              </div>
 
               {/* Shopping cart icon */}
               <RiShoppingCart2Line size={24} />
 
               {/* User account icon */}
-              <MdAccountCircle size={24} />
+              <Link href="auth/signin">
+                <MdAccountCircle size={24} />
+              </Link>
             </div>
           </div>
         </div>
