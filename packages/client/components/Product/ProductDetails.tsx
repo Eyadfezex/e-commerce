@@ -59,7 +59,7 @@ export const ProductDetails = ({ id }: { id: string }) => {
       <div className="flex justify-center py-4">
         <div className="flex flex-col lg:flex-row items-center lg:items-start px-4 w-full lg:w-[95%] xl:w-[85%] max-w-[1920px] gap-4 lg:gap-8">
           {/* Main product image display */}
-          <div className="flex flex-col lg:flex-row-reverse w-full lg:w-[50%] h-[30rem] lg:h-full gap-3 max-h-[580px] min-h-[580px]">
+          <div className="flex flex-col lg:flex-row-reverse w-full lg:w-[50%] h-[30rem] md:h-[55rem] lg:h-full gap-3 lg:max-h-[580px] min-h-[580px]">
             <div className="overflow-hidden rounded-2xl relative w-full h-full">
               <Image
                 blurDataURL="https://placehold.co/600x400"
@@ -71,7 +71,7 @@ export const ProductDetails = ({ id }: { id: string }) => {
               />
             </div>
             {/* Image thumbnails */}
-            <div className="flex lg:flex-col gap-3 w-full lg:w-[22%] h-[34%] lg:h-full">
+            <div className="flex lg:flex-col gap-3 w-full lg:w-[22%] h-[20%] lg:h-full">
               {PImages?.map((img) => (
                 <div
                   key={img?.id}
@@ -231,8 +231,8 @@ const SkeletonDetails = () => {
     <section>
       <div className="flex justify-center py-4">
         <div className="flex flex-col lg:flex-row items-center lg:items-start px-4 w-full lg:w-[95%] xl:w-[85%] max-w-[1920px] gap-4 lg:gap-8">
-          <div className="flex flex-col lg:flex-row-reverse w-full lg:w-[50%] h-[30rem] lg:h-full gap-3 max-h-[580px] min-h-[580px]">
-            <Skeleton className="w-full rounded-2xl bg-default-200" />
+          <div className="flex flex-col lg:flex-row-reverse w-full lg:w-[50%] h-[30rem]  lg:h-full gap-3 max-h-[580px] min-h-[580px]">
+            <Skeleton className="w-full rounded-2xl bg-default-200 h-full" />
             <div className="flex lg:flex-col gap-3 w-full lg:w-[22%] h-[34%] lg:h-full">
               {Array.from({ length: 3 }, (_, index) => (
                 <Skeleton

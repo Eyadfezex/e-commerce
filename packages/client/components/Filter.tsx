@@ -23,7 +23,7 @@ import { Slider } from "@nextui-org/react";
  */
 export const Filter = () => {
   return (
-    <div className="rounded-2xl border py-5 px-6 w-[300px] font-sans bg-white h-fit">
+    <div className="rounded-t-2xl lg:rounded-2xl border py-5  px-6  lg:w-[300px] font-sans left-0 bg-white h-fit  lg:block">
       <div className="flex flex-col items-center divide divide-y">
         {/* Header section displaying the title "Filters" with an icon */}
         <div className="flex justify-between items-center w-full pb-5">

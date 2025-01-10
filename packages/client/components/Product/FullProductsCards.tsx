@@ -13,13 +13,13 @@ const Products = ({ productsData, isLoading }: Props) => {
   if (isLoading) {
     return (
       <motion.div
-        className="flex flex-wrap gap-[3%]  gap-y-8 "
+        className="flex flex-wrap justify-between md:justify-start gap-y-4  gap-[1%]  lg:gap-y-8 2xl:justify-start 2xl:gap-[1%] 2xl:gap-y-8 "
         exit={{ opacity: 0 }}
       >
         {Array.from({ length: productsData?.length || 12 }, (_, index) => (
           <div key={index}>
             <Stack className="gap-4">
-              <Skeleton className="w-[295px] h-[295px] rounded-lg bg-default-200" />
+              <Skeleton className="w-[172px] h-[174px] lg:w-[295px] lg:h-[295px] rounded-lg bg-default-200" />
               <Skeleton className="text-xl font-bold font-sans rounded-lg bg-default-200" />
               <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
               <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
@@ -31,7 +31,7 @@ const Products = ({ productsData, isLoading }: Props) => {
   }
 
   return (
-    <div className="flex flex-wrap  gap-[3%]    gap-y-8 ">
+    <div className="flex flex-wrap justify-between md:justify-start gap-y-4  gap-[1%]  lg:gap-y-8 2xl:justify-start 2xl:gap-[1%] 2xl:gap-y-8 ">
       {productsData?.map((item) => (
         <ProductCard
           key={item.id}
