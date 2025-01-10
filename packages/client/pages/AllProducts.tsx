@@ -24,31 +24,28 @@ const updateSearchParams = (
   callback?: () => void
 ): void => {
   try {
-    // Get the current search parameters
     const searchParams = new URLSearchParams(window.location.search);
 
     // Update or delete search parameters
     Object.entries(params).forEach(([key, value]) => {
       if (value === null || value === undefined) {
-        searchParams.delete(key); // Remove parameter
+        searchParams.delete(key);
       } else {
-        searchParams.set(key, String(value)); // Update or add parameter
+        searchParams.set(key, String(value));
       }
     });
 
-    // Create the new URL
-    const newUrl = `${window.location.pathname}?${searchParams.toString()}`;
-    console.log("Updated URL:", newUrl); // Debugging
+    // Update the browser's history state
+    window.history.pushState(
+      {},
+      "",
+      `${window.location.pathname}?${searchParams.toString()}`
+    );
 
-    // Update the browser's URL without reloading the page
-    window.history.pushState({}, "", newUrl);
-
-    // Execute the callback function if provided
-    if (callback) {
-      callback();
-    }
+    // Execute the callback if provided
+    if (callback) callback();
   } catch (error) {
-    console.error("Error updating search parameters:", error);
+    console.error("Failed to update search params:", error);
   }
 };
 
