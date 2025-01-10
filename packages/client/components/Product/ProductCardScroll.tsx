@@ -1,5 +1,5 @@
 /**
- * ProductCards Component
+ * ProductCardScroll Component
  *
  * This component is responsible for rendering a list of product cards based on the provided data.
  * It handles different states of product loading, including error handling, loading state,
@@ -14,14 +14,14 @@
  * @component
  * @example
  * return (
- *   <ProductCards
+ *   <ProductCardScroll
  *     data={products}
  *     error={loadError}
  *     isLoading={loading}
  *   />
  * )
  *
- * @returns {JSX.Element} The rendered ProductCards component.
+ * @returns {JSX.Element} The rendered ProductCardScroll component.
  */
 
 import React from "react";
@@ -45,7 +45,7 @@ interface Product {
   discountPrice: number;
 }
 
-export const ProductCards = ({
+export const ProductCardScroll = ({
   data,
   error,
   isLoading,

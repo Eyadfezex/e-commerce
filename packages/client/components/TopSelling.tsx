@@ -8,7 +8,7 @@
 
 "use client";
 import React from "react";
-import { ProductCards } from "@/components/Product/ProductCards"; // Component for rendering product cards
+import { ProductCardScroll } from "@/components/Product/ProductCardScroll"; // Component for rendering product cards
 import Link from "next/link";
 import { Button } from "@nextui-org/button";
 import { useQuery } from "@tanstack/react-query"; // React Query hook for data fetching
@@ -36,7 +36,11 @@ const TopSelling = () => {
 
           {/* Product cards displayed in a horizontally scrollable container */}
           <div className="overflow-x-scroll w-full">
-            <ProductCards data={data} error={error} isLoading={isLoading} />
+            <ProductCardScroll
+              data={data}
+              error={error}
+              isLoading={isLoading}
+            />
           </div>
 
           {/* Button to view all top-selling products */}

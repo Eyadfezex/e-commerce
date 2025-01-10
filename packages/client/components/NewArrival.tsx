@@ -4,7 +4,7 @@
  * This component fetches and displays a list of new arrival products.
  * It utilizes the `useQuery` hook from React Query to manage data fetching
  * and loading states. The fetched products are displayed using the
- * `ProductCards` component. If the data is still loading or an error occurs,
+ * `ProductCardScroll` component. If the data is still loading or an error occurs,
  * appropriate loading indicators or error messages are shown.
  *
  * The component also includes a button that links to a detailed page
@@ -21,7 +21,7 @@
 
 "use client";
 import React from "react";
-import { ProductCards } from "@/components/Product/ProductCards";
+import { ProductCardScroll } from "@/components/Product/ProductCardScroll";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
@@ -41,7 +41,11 @@ const NewArrival = () => {
             NEW ARRIVALS
           </h2>
           <div className="overflow-x-scroll w-full">
-            <ProductCards data={data} error={error} isLoading={isLoading} />
+            <ProductCardScroll
+              data={data}
+              error={error}
+              isLoading={isLoading}
+            />
           </div>
           <Link href="/newarrival">
             <Button className="border py-4 rounded-full w-[200px] ">
