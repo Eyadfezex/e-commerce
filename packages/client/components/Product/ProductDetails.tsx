@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import placeholder from "@/public/assets/svgs/placeholder.svg";
 import BasicRating from "../Reviews/Rating";
@@ -12,6 +12,7 @@ import { Button } from "@nextui-org/button";
 import { useQuery } from "@tanstack/react-query";
 import { getProduct } from "@/axios/Axios";
 import { Skeleton } from "@nextui-org/react";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 /**
  * ProductDetails component
@@ -29,7 +30,7 @@ export const ProductDetails = ({ id }: { id: string }) => {
     queryFn: ({ queryKey }) => getProduct(queryKey[1]),
   });
 
-  const PImages: Array<{ url: string; id: string }> = data?.images || [];
+  const PImages = useMemo(() => data?.images || [], [data?.images]);
   const productName = data?.name || "Product Name";
   const productDescription = data?.description || "No description available.";
   const productColors = data?.colors;
@@ -47,7 +48,7 @@ export const ProductDetails = ({ id }: { id: string }) => {
     }
   }, [PImages]);
 
-  const handleSetImage = (e: string) => {
+  const handleSetImage = (e: string | StaticImport) => {
     setViewedImage(e);
   };
 
@@ -72,23 +73,28 @@ export const ProductDetails = ({ id }: { id: string }) => {
             </div>
             {/* Image thumbnails */}
             <div className="flex lg:flex-col gap-3 w-full lg:w-[22%] h-[20%] lg:h-full">
-              {PImages?.map((img) => (
-                <div
-                  key={img?.id}
-                  className={`overflow-hidden rounded-2xl relative h-full w-[40%] lg:w-full max-w-[111px] max-h-[106px] lg:max-w-[150px] lg:max-h-[200px] ${viewedImage == img?.url ? "border border-black" : null}`}
-                  onClick={() => handleSetImage(img?.url)}
-                >
-                  <Image
-                    placeholder="blur"
-                    blurDataURL="https://placehold.co/600x400"
-                    src={img.url}
-                    width={100}
-                    height={100}
-                    alt="product"
-                    className="absolute w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {PImages?.map(
+                (img: {
+                  id: React.Key | null | undefined;
+                  url: string | StaticImport;
+                }) => (
+                  <div
+                    key={img?.id}
+                    className={`overflow-hidden rounded-2xl relative h-full w-[40%] lg:w-full max-w-[111px] max-h-[106px] lg:max-w-[150px] lg:max-h-[200px] ${viewedImage == img?.url ? "border border-black" : null}`}
+                    onClick={() => handleSetImage(img?.url)}
+                  >
+                    <Image
+                      placeholder="blur"
+                      blurDataURL="https://placehold.co/600x400"
+                      src={img.url}
+                      width={100}
+                      height={100}
+                      alt="product"
+                      className="absolute w-full h-full object-cover"
+                    />
+                  </div>
+                )
+              )}
             </div>
           </div>
           {/* Product details section */}

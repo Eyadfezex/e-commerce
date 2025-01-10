@@ -37,7 +37,7 @@ const SignIn = () => {
             <div className="row-span-1 h-[10vh]"></div>
             <div className="row-span-6 bg-black flex justify-center">
               <div className="w-full flex justify-end px-5 relative">
-                <img
+                <Image
                   src="https://i.ibb.co/cKB9mgC/pexels-marleneleppanen-1183266.webp"
                   alt="model"
                   className="w-[70%] h-auto absolute bottom-[0%] right-[13%]"
