@@ -34,6 +34,7 @@ const NavBar = () => {
   return (
     <header className="relative z-20">
       <motion.div
+        initial={{ x: -200 }}
         animate={{
           x: isOn ? 0 : -200,
         }}

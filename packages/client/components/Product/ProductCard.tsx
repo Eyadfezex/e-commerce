@@ -17,6 +17,7 @@ import Link from "next/link";
  *
  * @returns JSX.Element - The JSX rendering the product card.
  */
+
 export const ProductCard = ({
   rating = 0, // Default value if no rate is provided
   productName = "Eyad Ahmed", // Default product name if not passed
@@ -31,11 +32,19 @@ export const ProductCard = ({
   if (!productId || !productImage) {
     return null; // Prevent rendering if required props are not available
   }
+
+  // Utility function to limit words
+  const limitWords = (text: string, maxWords: number): string => {
+    const words = text.split(" ");
+    return words.length > maxWords
+      ? words.slice(0, maxWords).join(" ") + " ..."
+      : text;
+  };
   return (
     <Link href={`product/${productId}`}>
-      <div className="flex flex-col gap-2 max-w-[295px] text-wrap">
+      <div className="flex flex-col gap-2 max-w-[172px] lg:max-w-[250px] xl:max-w-[295px] text-wrap">
         {/* Product image container */}
-        <div className="relative w-[295px] h-[295px] rounded-2xl overflow-hidden border">
+        <div className="relative w-[172px] h-[174px] lg:w-[250px] lg:h-[250px] xl:w-[295px] xl:h-[295px] rounded-2xl overflow-hidden border">
           <Image
             src={productImage}
             alt="Product image"
@@ -46,13 +55,16 @@ export const ProductCard = ({
         </div>
         {/* Product details */}
         <div className="flex flex-col gap-2">
-          <h2 className="font-sans font-bold text-xl" id="product-name">
-            {productName}
+          <h2
+            className="font-sans font-bold text-lg lg:text-xl"
+            id="product-name"
+          >
+            {limitWords(productName, 5)}
           </h2>
           <Rating value={rating} /> {/* Display product rating */}
         </div>
         {/* Pricing information */}
-        <div className="flex items-center gap-2 font-bold text-2xl">
+        <div className="flex items-center gap-2 font-bold  text-xl lg:text-2xl">
           ${currentPrice} {/* Display current price */}
           {discountPrice !== 0 && (
             <>
