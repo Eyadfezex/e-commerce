@@ -26,9 +26,8 @@
 
 import React from "react";
 import { ProductCard } from "./ProductCard";
-import { Skeleton } from "@nextui-org/react";
-import Stack from "@mui/material/Stack";
 import { motion } from "framer-motion";
+import { ProductCardSkeleton } from "../skeletons/ProductSkeleton";
 interface Image {
   url: string; // Assuming the image object contains a 'url' property
   // Add any other properties that the image object may have
@@ -102,12 +101,7 @@ const CardsSkeleton = () => {
     <div className="flex gap-4 justify-center">
       {Array.from({ length: 6 }, (_, index) => (
         <motion.div key={index} exit={{ opacity: 0 }}>
-          <Stack className="gap-4">
-            <Skeleton className="w-[240px] h-[256px] rounded-lg bg-default-200" />
-            <Skeleton className="text-xl font-bold font-sans rounded-lg bg-default-200" />
-            <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
-            <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
-          </Stack>
+          <ProductCardSkeleton />
         </motion.div>
       ))}
     </div>

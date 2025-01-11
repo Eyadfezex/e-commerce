@@ -1,8 +1,7 @@
 import React from "react";
 import { ProductCard } from "./ProductCard";
-import { Stack } from "@mui/material";
-import { Skeleton } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import { ProductCardSkeleton } from "../skeletons/ProductSkeleton";
 
 interface Props {
   productsData: ProductsData[];
@@ -18,12 +17,7 @@ const Products = ({ productsData, isLoading }: Props) => {
       >
         {Array.from({ length: productsData?.length || 12 }, (_, index) => (
           <div key={index}>
-            <Stack className="gap-4">
-              <Skeleton className="w-[172px] h-[174px] lg:w-[295px] lg:h-[295px] rounded-lg bg-default-200" />
-              <Skeleton className="text-xl font-bold font-sans rounded-lg bg-default-200" />
-              <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
-              <Skeleton className="w-[210px] h-[20px] rounded-lg bg-default-200" />
-            </Stack>
+            <ProductCardSkeleton />
           </div>
         ))}
       </motion.div>
