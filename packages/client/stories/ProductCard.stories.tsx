@@ -8,14 +8,14 @@ const meta: Meta<typeof OriginProductCard> = {
   },
   tags: ["autodocs"],
   argTypes: {
-    rate: { control: { type: "range", min: 0, max: 5, step: 0.5 } },
+    rating: { control: { type: "range", min: 0, max: 5, step: 0.5 } },
     currentPrice: {
       control: "number",
     },
-    id: {
+    productId: {
       control: "number",
     },
-    Pname: {
+    productName: {
       control: "text",
     },
     originalPrice: {
@@ -28,7 +28,7 @@ const meta: Meta<typeof OriginProductCard> = {
       control: "text",
     },
 
-    PImage: {
+    productImage: {
       control: "text",
     },
   },
@@ -40,25 +40,25 @@ type Story = StoryObj<typeof meta>;
 
 export const ProductCard: Story = {
   render: ({
-    rate,
+    rating,
     currentPrice,
-    Pname,
+    productName,
     originalPrice,
     discountPercentage,
-    PImage,
+    productImage,
     discountPrice,
-    id,
+    productId,
   }) => {
     return (
       <OriginProductCard
-        rate={rate}
+        rating={rating}
         currentPrice={currentPrice}
-        Pname={Pname}
+        productName={productName}
         originalPrice={originalPrice}
         discountPercentage={discountPercentage}
         discountPrice={discountPrice}
-        PImage={PImage}
-        id={id}
+        productImage={productImage}
+        productId={productId}
       />
     );
   },
