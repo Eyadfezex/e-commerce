@@ -23,10 +23,10 @@ export const ProductCard = ({
   productName = "Eyad Ahmed", // Default product name if not passed
   currentPrice = 130, // Default current price if not passed
   originalPrice = 160, // Default original price if not passed
-  discountPrice, // Discounted price can be optionally passed
-  productId, // Product ID is required for navigation
+  discountPrice = 50, // Discounted price can be optionally passed
+  productId = 1, // Product ID is required for navigation
   discountPercentage = 30, // Default discount percentage if not passed
-  productImage, // Product image is required
+  productImage = "https://placehold.co/600x400", // Product image is required
 }: ProductCardProps) => {
   // Check if required props (productId and productImage) are missing
   if (!productId || !productImage) {
