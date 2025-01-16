@@ -6,7 +6,7 @@ import placeholder from "@/public/assets/svgs/placeholder.svg";
 import BasicRating from "../Reviews/Rating";
 import { ColorCheckBox, SizeCheckBox } from "../ui/CheckBox";
 import { IoIosAdd } from "react-icons/io";
-
+import { Lens } from "../ui/lens";
 import { IoIosRemove } from "react-icons/io";
 import { Button } from "@nextui-org/button";
 import { useQuery } from "@tanstack/react-query";
@@ -48,6 +48,8 @@ export const ProductDetails = ({ id }: { id: string }) => {
     }
   }, [PImages]);
 
+  const [hovered, setHovered] = useState(false);
+
   const handleSetImage = (e: string | StaticImport) => {
     setViewedImage(e);
   };
@@ -62,14 +64,16 @@ export const ProductDetails = ({ id }: { id: string }) => {
           {/* Main product image display */}
           <div className="flex flex-col lg:flex-row-reverse w-full lg:w-[50%] h-[30rem] md:h-[55rem] lg:h-full gap-3 lg:max-h-[580px] min-h-[580px]">
             <div className="overflow-hidden rounded-2xl relative w-full h-full">
-              <Image
-                blurDataURL="https://placehold.co/600x400"
-                src={viewedImage}
-                width={100}
-                height={100}
-                alt={productName}
-                className="absolute w-full h-full object-cover"
-              />
+              <Lens hovering={hovered} setHovering={setHovered}>
+                <Image
+                  blurDataURL="https://placehold.co/600x400"
+                  src={viewedImage}
+                  width={1000}
+                  height={1000}
+                  alt={productName}
+                  className="absolute w-full h-full object-cover"
+                />
+              </Lens>
             </div>
             {/* Image thumbnails */}
             <div className="flex lg:flex-col gap-3 w-full lg:w-[22%] h-[20%] lg:h-full">
@@ -87,8 +91,8 @@ export const ProductDetails = ({ id }: { id: string }) => {
                       placeholder="blur"
                       blurDataURL="https://placehold.co/600x400"
                       src={img.url}
-                      width={100}
-                      height={100}
+                      width={1000}
+                      height={1000}
                       alt="product"
                       className="absolute w-full h-full object-cover"
                     />
