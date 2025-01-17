@@ -48,8 +48,8 @@ export const ProductCard = ({
           <Image
             src={productImage}
             alt="Product image"
-            width={300}
-            height={300}
+            width={1000}
+            height={1000}
             className=" absolute w-full h-full object-cover "
           />
         </div>
