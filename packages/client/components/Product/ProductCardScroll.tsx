@@ -67,7 +67,7 @@ export const ProductCardScroll = ({
 
   return (
     <div className="flex gap-4">
-      {data.map((item) => (
+      {data?.map((item) => (
         <ProductCard
           key={item.id}
           productId={item.id}
