@@ -48,7 +48,7 @@ const productSchema = new mongoose.Schema(
     },
     colors: [
       {
-        type: [String],
+        type: String,
         enum: [
           "#00C12B",
           "#F50606",
