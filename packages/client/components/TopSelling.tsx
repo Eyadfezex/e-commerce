@@ -35,7 +35,7 @@ const TopSelling = () => {
           </h2>
 
           {/* Product cards displayed in a horizontally scrollable container */}
-          <div className="overflow-x-scroll w-full">
+          <div className="overflow-x-scroll pb-5 w-full">
             <ProductCardScroll
               data={data}
               error={error}
