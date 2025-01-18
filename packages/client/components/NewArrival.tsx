@@ -40,7 +40,7 @@ const NewArrival = () => {
           <h2 className="font-bebas font-black text-4xl lg:text-5xl uppercase -tracking-wider text-center">
             NEW ARRIVALS
           </h2>
-          <div className="overflow-x-scroll w-full">
+          <div className="overflow-x-scroll pb-5 w-full">
             <ProductCardScroll
               data={data}
               error={error}
