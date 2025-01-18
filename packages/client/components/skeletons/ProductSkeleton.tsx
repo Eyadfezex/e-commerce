@@ -78,12 +78,12 @@ export const SkeletonDetails = () => {
             </div>
 
             <div className="flex gap-2 py-7">
-              <Skeleton className="h-7 w-[7rem] rounded-full" />
-              <Skeleton className="h-7 w-[7rem] rounded-full" />
-              <Skeleton className="h-7 w-[7rem] rounded-full" />
+              <Skeleton className="h-[32px] w-[59px] rounded-full" />
+              <Skeleton className="h-[32px] w-[59px] rounded-full" />
+              <Skeleton className="h-[32px] w-[59px] rounded-full" />
             </div>
 
-            <div className="flex justify-between gap-2 pt-7">
+            <div className="flex justify-between gap-2 pt-5">
               <Skeleton className="h-10 w-[30%] rounded-full" />
               <Skeleton className="h-10 w-[70%] rounded-full" />
             </div>

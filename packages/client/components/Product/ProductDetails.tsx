@@ -141,12 +141,8 @@ export const ProductDetails = ({ id }: { id: string }) => {
  *
  * @returns {JSX.Element} - The rendered ColorPicker component.
  */
-const ColorPicker = ({
-  colors = ["#FF24FF", "#FF4F45", "#8EFF"],
-}: {
-  colors: Array<string>;
-}) => {
-  if (colors == null || undefined || []) {
+const ColorPicker = ({ colors }: { colors: Array<string> }) => {
+  if (colors.length === 0) {
     return null;
   }
   return (
