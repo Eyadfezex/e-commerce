@@ -5,7 +5,7 @@
  * It extracts the `id` parameter from the route and passes it as a prop to the `ProductPage` component.
  */
 
-import ProductPage from "@/pages/Product";
+import ProductPage from "@/pages/product-details/Product";
 import React from "react";
 
 /**

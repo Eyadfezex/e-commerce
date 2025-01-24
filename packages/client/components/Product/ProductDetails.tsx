@@ -66,7 +66,7 @@ export const ProductDetails = ({ id }: { id: string }) => {
             <div className="overflow-hidden rounded-2xl relative w-full h-full">
               <Lens hovering={hovered} setHovering={setHovered}>
                 <Image
-                  blurDataURL="https://placehold.co/600x400"
+                  priority
                   src={viewedImage}
                   width={1000}
                   height={1000}
