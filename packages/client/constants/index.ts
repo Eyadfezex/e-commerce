@@ -24,22 +24,22 @@ export const dropDownItems = [
   {
     id: 1,
     name: "Casual",
-    url: "products?category=casual",
+    url: "/products?category=casual",
   },
   {
     id: 2,
     name: "Formal",
-    url: "products?category=Formal",
+    url: "/products?category=Formal",
   },
   {
     id: 3,
     name: "Gym",
-    url: "products?category=gym",
+    url: "/products?category=gym",
   },
   {
     id: 4,
     name: "Party",
-    url: "products?category=Party",
+    url: "/products?category=Party",
   },
 ];
 

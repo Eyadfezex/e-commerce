@@ -15,7 +15,7 @@ export const OrderTicket = ({
   name = "Gradient Graphic T-shirt",
   size = "large",
   price = 145,
-  image,
+  image = "https://placehold.co/600x400",
   color = "white",
   quantity = 1,
 }: OrderTicketProps) => {
@@ -25,7 +25,7 @@ export const OrderTicket = ({
         <div className="flex gap-4 w-full items-center">
           <div className="relative min-w-[124px] min-h-[124px]  rounded-lg overflow-hidden border">
             <Image
-              src="https://placehold.co/600x400"
+              src={image}
               alt="Product image"
               width={1000}
               height={1000}
