@@ -1,13 +1,5 @@
-Here's your updated README with **pnpm** instead of **npm** and other improvements:  
 
-- **Uses `pnpm` for package management**  
-- **Enhances contribution guidelines**  
-- **Adds deployment instructions**  
-- **Improves the features list with future roadmap items**  
-
----
-
-## E-Commerce Platform (Monorepo)
+# E-Commerce Platform (Monorepo)
 
 Welcome to the **E-Commerce Platform**! This project is a full-stack e-commerce solution built as a **monorepo**, using modern tools and technologies to provide a seamless shopping experience. The repository is structured with separate packages for the **backend** and **client** (frontend), managed using **Lerna** and **Nx** for efficient development and scalability.
 
@@ -219,14 +211,16 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## Contact
 
+front-end:
 📧 **Email**: [Eyad__Ahmed@outlook.com](mailto:Eyad__Ahmed@outlook.com)  
 🔗 **GitHub**: [Eyadfezex](https://github.com/Eyadfezex)  
-💼 **LinkedIn**: [Eyad Ahmed](https://www.linkedin.com/in/eyadahmed/)  
+💼 **LinkedIn**: [Eyad Ahmed](https://www.linkedin.com/in/eyad-ahmed-13382a273/)  
+
+backEnd:
+📧 **Email**: [abdelrhmanfawzy38@gmail.com](mailto:abdelrhmanfawzy38@gmail.com)  
+🔗 **GitHub**: [Dev-Abdelrhman](https://github.com/Dev-Abdelrhman)  
+💼 **LinkedIn**: [Abdelrhman Fawzy](https://www.linkedin.com/in/abdelrhman-fawzy-742a34262)  
 
 ---
 
 Thank you for checking out the **E-Commerce Platform**! Happy coding! 🚀🔥  
-
----
-
-Let me know if you need further refinements! 🚀
