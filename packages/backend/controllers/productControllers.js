@@ -21,6 +21,29 @@ const getNewArrivalProducts = catchAsync(async (req, res, next) => {
     },
   });
 });
+const searchProducts = catchAsync(async (req, res, next) => {
+  const { query } = req.query;
+  if (!query) {
+    res.status(404).json({
+      status: "fail",
+      message: "Invalid search query",
+    });
+  }
+
+  const searchQuery = query.toString().trim();
+
+  const products = await Product.find({
+    $or: [
+      { name: { $regex: searchQuery, $options: "i" } },
+      { description: { $regex: searchQuery, $options: "i" } },
+    ],
+  });
+  res.status(200).json({
+    status: "success",
+    results: products.length,
+    data: products,
+  });
+});
 
 const getAllProducts = HF.getAll(Product);
 const getOneProduct = HF.getOne(Product, { path: "reviews" });
@@ -38,4 +61,5 @@ module.exports = {
   uploadImages,
   getNewArrivalProducts,
   removeImage,
+  searchProducts,
 };
