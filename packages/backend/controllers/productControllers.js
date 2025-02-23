@@ -36,8 +36,55 @@ const searchProducts = catchAsync(async (req, res, next) => {
     $or: [
       { name: { $regex: searchQuery, $options: "i" } },
       { description: { $regex: searchQuery, $options: "i" } },
+      { category: { $regex: searchQuery, $options: "i" } },
     ],
   });
+  res.status(200).json({
+    status: "success",
+    results: products.length,
+    data: products,
+  });
+});
+
+const filterProducts = catchAsync(async (req, res, next) => {
+  const query = req.query;
+  let filter = {};
+
+  if (query.category) {
+    filter.category = query.category;
+  }
+
+  if (query.style) {
+    filter.style = query.style;
+  }
+  if (query.colors) {
+    filter.colors = query.colors;
+  }
+  if (query.sizes) {
+    filter.sizes = query.sizes;
+  }
+  if (query.minPrice || query.maxPrice) {
+    filter.currentPrice = {};
+    if (query.minPrice) {
+      filter.currentPrice.$gte = parseFloat(query.minPrice);
+    }
+    if (query.maxPrice) {
+      filter.currentPrice.$lte = parseFloat(query.maxPrice);
+    }
+  }
+  if (query.ratingsAverage) {
+    filter.ratingsAverage = { $gte: parseFloat(query.ratingsAverage) };
+  }
+
+  const products = await Product.find(filter);
+  
+  if (!products || products.length === 0) {
+    return res.status(404).json({
+      status: "fail",
+      message: "No products found matching the filters.",
+    });
+  }
+
   res.status(200).json({
     status: "success",
     results: products.length,
@@ -62,4 +109,5 @@ module.exports = {
   getNewArrivalProducts,
   removeImage,
   searchProducts,
+  filterProducts,
 };

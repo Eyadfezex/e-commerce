@@ -22,6 +22,7 @@ router
 
 router.route("/new").get(PC.getNewArrivalProducts);
 router.route("/search").get(PC.searchProducts);
+router.route("/filter").get(PC.filterProducts);
 router
   .route("/:id")
   .get(PC.getOneProduct)
